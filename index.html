@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown to Your Special Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <div class="polaroid">
+      <img src="img.jpg" alt="Wrapped gift box">
+      <p><small>sorry ngga ada foto lagi wkwkw</small></p>
+    </div>
+    
+    <h2>Ready for a sweet little countdown to your birthday?</h2>
+    <button onclick="startCountdown()">Let's Begin!</button>
+    
+    <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1;"></canvas>
+  </div>
+
+  <div id="main-content" class="main-content hidden">
+    <h1>Countdown to Your Special Day!</h1>
+    
+    <div class="countdown" id="countdown"></div>
+    
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    
+    <div id="day-button-container" class="day-buttons"></div>
+    
+    <div class="message" id="message">
+      <p>Click on each day to reveal a special message!</p>
+    </div>
+    
+    <div class="audio-control">
+      <audio id="bg-music" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <button onclick="toggleAudio()">Mute Music</button>
+    </div>
+  </div>
+  
+  <div class="floating-hearts" id="floating-hearts"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
