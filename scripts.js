@@ -10,31 +10,25 @@ const floatingHearts = document.getElementById("floating-hearts");
 // Messages and images for each day
 const dayContents = [
     {
-    message: `<p>Hari pertama countdown nih!</p>
-                <p>Nanti tiap hari ada satu hal kecil.</p> 
-                <p>Semoga bikin kamu senyum dikit lah minimal 😄</p>`,
+    message: `<p>Day 1 😄</p>`,
     image: "day1.png"
     },
     {
-    message: `<p>Tiba-tiba ada yang video call pas lagi UAS 🤯</p>
-                <p>Sumpah itu random banget. Eh tapi... jangan-jangan kamu sengaja ya wkwkw</p>`,
+    message: `<p>Day 2 😄</p>`,
     image: "day2.jpg"
     },
     {
-    message: `<p>Gara-gara ngga punya foto aslinya, jadinya animasi aja wkwkw</p>
-                <p>Naik motor, jalanan rusak, tapi tetap seru.</p>`,
+    message: `<p>Day 3 😄</p>`,
     image: "day3.png"
     },
     {
-    message: `<p>btw, ini ngapain ya?</p>
-                <p>Lagi rekam, kamu malah nyelonong haha</p>`,
+    message: `<p>Day 4 😄</p>`,
     video: "day4.mp4",
     autoplay: true,  
     loop: true
     },
     {
-    message: `<p>Waktu main ludo. Aku asal nyeletuk, yang kalah jadi pacarku...</p>
-                <p>Dan kamu kalah 😳 Tapi jangan-jangan kamu sengaja kalah ya? 😏</p>`,
+    message: `<p>Day 5 😄 😏</p>`,
     image: "day5.webp"
     },
     {
@@ -48,17 +42,7 @@ const dayContents = [
 const specialMessage = {
     message: `
     <h3>Happy Birthday! 🎉🎉</h3>
-    <p>Hari ini ulang tahun kamu.</p>
-    <p>Aku udah mikir lama mau ngucapin gimana... dan akhirnya cuma kepikiran satu kalimat:</p>
-    <p><strong>Will you marry me?</strong></p>
-    <p>Just kidding! 😜</p>
-    <p>(tapi kalo kamu jawab "iya" juga ngga apa-apa sih hehe).</p>
-
-    <img src="cake.png" alt="Birthday Cake" class="birthday-cake">
-    <p>You're amazing, and I'm so happy to know you. May your day be as sweet as your laugh and as bright as your future.</p>
-    <p>Yang penting, aku benar-benar berharap kamu bahagia hari ini.</p>
-    <P>Selamat ulang tahun.</P>
-    <p><small>(P.S. Sorry web nya sederhana, soalnya baru belajar hehe.)</small></p>
+    <p>Hehe</p>
     `,
     //image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" -->
 };
