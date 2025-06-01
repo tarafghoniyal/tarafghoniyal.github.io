@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat Training - Nama Anda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Nama Anda</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Tentang Saya</a></li>
+                    <li><a href="projects.html">Proyek</a></li>
+                    <li><a href="certificates.html" class="active">Sertifikat</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="certificates-section">
+        <div class="container">
+            <h2 class="section-title">Sertifikat Training & Sertifikasi</h2>
+            
+            <div class="certificates-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="instrumentation">Instrumentasi</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="safety">Keselamatan</button>
+            </div>
+            
+            <div class="certificates-gallery" id="certificates-gallery">
+                <!-- Sertifikat 1 -->
+                <a href="images/certificates/cert1.jpg" class="certificate-item" data-category="instrumentation">
+                    <img src="images/certificates/thumb-cert1.jpg" alt="Sertifikat PLC">
+                    <div class="certificate-info">
+                        <h3>Pelatihan PLC Advanced</h3>
+                        <p>Omron Industrial Automation - 2022</p>
+                    </div>
+                </a>
+                
+                <!-- Sertifikat 2 -->
+                <a href="images/certificates/cert2.jpg" class="certificate-item" data-category="iot">
+                    <img src="images/certificates/thumb-cert2.jpg" alt="Sertifikat IoT">
+                    <div class="certificate-info">
+                        <h3>IoT Specialist Certification</h3>
+                        <p>IoT Institute - 2021</p>
+                    </div>
+                </a>
+                
+                <!-- Sertifikat 3 -->
+                <a href="images/certificates/cert3.jpg" class="certificate-item" data-category="programming">
+                    <img src="images/certificates/thumb-cert3.jpg" alt="Sertifikat Embedded C">
+                    <div class="certificate-info">
+                        <h3>Embedded C Programming</h3>
+                        <p>Embedded Systems Academy - 2020</p>
+                    </div>
+                </a>
+                
+                <!-- Sertifikat 4 -->
+                <a href="images/certificates/cert4.jpg" class="certificate-item" data-category="safety">
+                    <img src="images/certificates/thumb-cert4.jpg" alt="Sertifikat K3">
+                    <div class="certificate-info">
+                        <h3>Sertifikasi K3 Listrik</h3>
+                        <p>Kemnaker RI - 2019</p>
+                    </div>
+                </a>
+                
+                <!-- Tambahkan sertifikat lainnya sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Nama Anda. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-researchgate"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Inisialisasi lightGallery
+        lightGallery(document.getElementById('certificates-gallery'), {
+            selector: '.certificate-item',
+            download: false,
+            counter: false
+        });
+
+        // Filter sertifikat
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                const items = document.querySelectorAll('.certificate-item');
+                
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
