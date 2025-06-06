@@ -1,192 +1,129 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" data-theme="light" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek - Electrical Engineer</title>
+    <title data-key="projects.title">Projects - Electrical Engineer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
-    <header>
+    <!-- Theme/Language Toggle -->
+    <div class="settings-panel">
+        <button id="themeToggle" aria-label="Toggle theme" class="tooltip">
+            <i class="fas fa-moon"></i>
+            <span class="tooltip-text" data-key="tooltip.theme">Toggle Theme</span>
+        </button>
+        <div class="language-switcher">
+            <button data-lang="en" class="active tooltip">
+                EN
+                <span class="tooltip-text" data-key="tooltip.english">English</span>
+            </button>
+            <button data-lang="id" class="tooltip">
+                ID
+                <span class="tooltip-text" data-key="tooltip.indonesian">Indonesian</span>
+            </button>
+            <button data-lang="ja" class="tooltip">
+                JA
+                <span class="tooltip-text" data-key="tooltip.japanese">Japanese</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <h1><a href="index.html">Nama Anda</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Tentang Saya</a></li>
-                    <li><a href="projects.html" class="active">Proyek</a></li>
-                    <li><a href="certificates.html">Sertifikat</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                    <span class="logo-text">Taraf Ghoniyal Muttaqin</span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" data-key="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-key="nav.about">About</a></li>
+                    <li><a href="projects.html" class="nav-link" data-key="nav.projects">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link" data-key="nav.certificates">Certificates</a></li>
+                    <li><a href="contact.html" class="nav-link" data-key="nav.contact">Contact</a></li>
                 </ul>
+                
+                <div class="nav-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section class="projects-section">
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
         <div class="container">
-            <h2 class="section-title">Proyek Saya</h2>
-            
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="control">Kontrol Industri</button>
-                <button class="filter-btn" data-filter="iot">IoT</button>
-                <button class="filter-btn" data-filter="hardware">Hardware</button>
+            <div class="projects-hero-content">
+                <h1 class="projects-hero-title" data-key="projects.hero_title">Project <span>Portfolio</span></h1>
+                <p class="projects-hero-subtitle" data-key="projects.hero_subtitle">Innovative solutions in control instrumentation and IoT</p>
+                <div class="projects-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label" data-key="projects.projects_completed">Projects Completed</span>
+                    </div>
+                    <!-- Other stats with data-key attributes -->
+                </div>
             </div>
-            
-            <div class="projects-grid">
-                <!-- Proyek 1 -->
-                <div class="project-card" data-category="control" id="project1">
-                    <div class="project-gallery">
-                        <a href="images/projects/control1.jpg">
-                            <img src="images/projects/control1-thumb.jpg" alt="Sistem Kontrol PID">
-                        </a>
-                        <a href="images/projects/control2.jpg" class="hidden"></a>
-                        <a href="images/projects/control3.jpg" class="hidden"></a>
-                    </div>
-                    <div class="project-details">
-                        <h3>Sistem Kontrol PID untuk Heat Exchanger</h3>
-                        <div class="project-meta">
-                            <span><i class="far fa-calendar-alt"></i> Januari 2022</span>
-                            <span><i class="fas fa-tags"></i> PLC, PID, SCADA</span>
-                        </div>
-                        <p>Mendesain dan mengimplementasikan sistem kontrol PID untuk mengatur suhu pada heat exchanger industri menggunakan PLC Siemens S7-1200 dan antarmuka HMI. Sistem mampu mengurangi overshoot sebesar 40% dan meningkatkan stabilitas proses.</p>
-                        
-                        <h4>Fitur Utama:</h4>
-                        <ul class="project-features">
-                            <li>Pengaturan parameter PID secara real-time</li>
-                            <li>Antarmuka SCADA untuk monitoring</li>
-                            <li>Alarm dan sistem proteksi</li>
-                            <li>Data logging untuk analisis</li>
-                        </ul>
-                        
-                        <h4>Teknologi Digunakan:</h4>
-                        <div class="tech-tags">
-                            <span>Siemens TIA Portal</span>
-                            <span>WinCC SCADA</span>
-                            <span>PID Compact</span>
-                            <span>Modbus TCP</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Proyek 2 -->
-                <div class="project-card" data-category="iot" id="project2">
-                    <div class="project-gallery">
-                        <a href="images/projects/iot1.jpg">
-                            <img src="images/projects/iot1-thumb.jpg" alt="Sistem IoT">
-                        </a>
-                        <a href="images/projects/iot2.jpg" class="hidden"></a>
-                        <a href="images/projects/iot3.jpg" class="hidden"></a>
-                    </div>
-                    <div class="project-details">
-                        <h3>Sistem Monitoring Energi Berbasis IoT</h3>
-                        <div class="project-meta">
-                            <span><i class="far fa-calendar-alt"></i> Agustus 2021</span>
-                            <span><i class="fas fa-tags"></i> ESP32, MQTT, Cloud</span>
-                        </div>
-                        <p>Mengembangkan sistem monitoring konsumsi energi real-time untuk pabrik menggunakan ESP32 dengan sensor arus/PZEM-004T. Data dikirim ke cloud melalui MQTT dan divisualisasikan dalam dashboard berbasis web dengan analisis tren harian/mingguan.</p>
-                        
-                        <h4>Fitur Utama:</h4>
-                        <ul class="project-features">
-                            <li>Pengukuran daya, arus, tegangan real-time</li>
-                            <li>Notifikasi melebihi threshold</li>
-                            <li>Antarmuka web responsif</li>
-                            <li>Integrasi dengan sistem ERP perusahaan</li>
-                        </ul>
-                        
-                        <h4>Teknologi Digunakan:</h4>
-                        <div class="tech-tags">
-                            <span>ESP32</span>
-                            <span>Node-RED</span>
-                            <span>InfluxDB</span>
-                            <span>Grafana</span>
-                            <span>Mosquitto MQTT</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Proyek 3 -->
-                <div class="project-card" data-category="hardware" id="project3">
-                    <div class="project-gallery">
-                        <a href="images/projects/hardware1.jpg">
-                            <img src="images/projects/hardware1-thumb.jpg" alt="Custom Controller">
-                        </a>
-                        <a href="images/projects/hardware2.jpg" class="hidden"></a>
-                        <a href="images/projects/hardware3.jpg" class="hidden"></a>
-                    </div>
-                    <div class="project-details">
-                        <h3>Custom Industrial Controller Board</h3>
-                        <div class="project-meta">
-                            <span><i class="far fa-calendar-alt"></i> Maret 2020</span>
-                            <span><i class="fas fa-tags"></i> PCB, STM32, Embedded</span>
-                        </div>
-                        <p>Mendesain dan memproduksi custom controller board berbasis STM32 untuk aplikasi khusus di industri makanan. Board ini menggantikan solusi komersial yang mahal dengan fungsionalitas yang disesuaikan dengan kebutuhan proses khusus klien.</p>
-                        
-                        <h4>Fitur Utama:</h4>
-                        <ul class="project-features">
-                            <li>4 channel input analog 4-20mA</li>
-                            <li>8 channel output relay</li>
-                            <li>Komunikasi RS485/Modbus</li>
-                            <li>Proteksi surge dan isolasi</li>
-                        </ul>
-                        
-                        <h4>Teknologi Digunakan:</h4>
-                        <div class="tech-tags">
-                            <span>STM32F103</span>
-                            <span>Altium Designer</span>
-                            <span>Embedded C</span>
-                            <span>Modbus RTU</span>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="circuit-overlay"></div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-key="projects.filter_all">All Projects</button>
+                <button class="filter-btn" data-filter="control" data-key="projects.filter_control">Industrial Control</button>
+                <!-- Other filter buttons with data-key attributes -->
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Projects Grid -->
+    <section class="projects-grid-section">
         <div class="container">
-            <p>&copy; 2023 Nama Anda. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-researchgate"></i></a>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="control" data-id="project1">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/control1.jpg" alt="PID Control System">
+                            <div class="project-badge" data-key="projects.badge_plc">PLC • SCADA</div>
+                            <div class="project-hover">
+                                <a href="projects/project1.html" class="project-view">
+                                    <i class="fas fa-eye"></i> <span data-key="projects.view_details">View Details</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-key="projects.project1_title">PID Control System for Heat Exchanger</h3>
+                            <p class="project-excerpt" data-key="projects.project1_desc">Advanced PID control implementation for industrial temperature stabilization</p>
+                            <div class="project-tech">
+                                <span>Siemens PLC</span>
+                                <span>WinCC</span>
+                                <span>PID Compact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More projects with data-key attributes -->
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        // Inisialisasi lightGallery untuk setiap proyek
-        document.querySelectorAll('.project-gallery').forEach(gallery => {
-            lightGallery(gallery, {
-                selector: 'a:not(.hidden)',
-                download: false,
-                counter: false
-            });
-        });
-
-        // Filter proyek
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                const filter = btn.getAttribute('data-filter');
-                const projects = document.querySelectorAll('.project-card');
-                
-                projects.forEach(project => {
-                    if (filter === 'all' || project.getAttribute('data-category') === filter) {
-                        project.style.display = 'flex';
-                    } else {
-                        project.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>

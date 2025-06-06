@@ -1,141 +1,115 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" data-theme="light" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak - Electrical Engineer</title>
+    <title data-key="contact.title">Contact - Electrical Engineer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <!-- Theme/Language Toggle -->
+    <div class="settings-panel">
+        <button id="themeToggle" aria-label="Toggle theme" class="tooltip">
+            <i class="fas fa-moon"></i>
+            <span class="tooltip-text" data-key="tooltip.theme">Toggle Theme</span>
+        </button>
+        <div class="language-switcher">
+            <button data-lang="en" class="active tooltip">
+                EN
+                <span class="tooltip-text" data-key="tooltip.english">English</span>
+            </button>
+            <button data-lang="id" class="tooltip">
+                ID
+                <span class="tooltip-text" data-key="tooltip.indonesian">Indonesian</span>
+            </button>
+            <button data-lang="ja" class="tooltip">
+                JA
+                <span class="tooltip-text" data-key="tooltip.japanese">Japanese</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <h1><a href="index.html">Nama Anda</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Tentang Saya</a></li>
-                    <li><a href="projects.html">Proyek</a></li>
-                    <li><a href="certificates.html">Sertifikat</a></li>
-                    <li><a href="contact.html" class="active">Kontak</a></li>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                    <span class="logo-text">Taraf Ghoniyal Muttaqin</span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" data-key="nav.home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-key="nav.about">About</a></li>
+                    <li><a href="projects.html" class="nav-link" data-key="nav.projects">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link" data-key="nav.certificates">Certificates</a></li>
+                    <li><a href="contact.html" class="nav-link" data-key="nav.contact">Contact</a></li>
                 </ul>
+                
+                <div class="nav-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section class="contact-section">
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
         <div class="container">
-            <h2 class="section-title">Hubungi Saya</h2>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Informasi Kontak</h3>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>email@anda.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Telepon</h4>
-                            <p>+62 812-3456-7890</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Lokasi</h4>
-                            <p>Kota Anda, Indonesia</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Jam Kerja</h4>
-                            <p>Senin - Jumat: 09.00 - 17.00</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-telegram-plane"></i></a>
-                    </div>
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title" data-key="contact.hero_title">Contact <span>Me</span></h1>
+                <p class="contact-hero-subtitle" data-key="contact.hero_subtitle">Let's discuss about projects or collaboration opportunities</p>
+                <div class="contact-hero-buttons">
+                    <a href="#contact-form" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> <span data-key="contact.send_message">Send Message</span>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-calendar-alt"></i> <span data-key="contact.schedule_meeting">Schedule Meeting</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-wave"></div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 data-key="contact.form_title">Send Message</h2>
+                    <p data-key="contact.form_subtitle">Fill out the form below and I'll contact you as soon as possible</p>
                 </div>
                 
-                <div class="contact-form">
-                    <h3>Kirim Pesan</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-key="contact.form_name">Full Name</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
-                        
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subjek" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Pesan Anda" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Kirim Pesan</button>
-                    </form>
-                </div>
+                    </div>
+                    
+                    <!-- More form fields with data-key placeholders -->
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> <span data-key="contact.send_button">Send Message</span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <section class="location-section">
-        <div class="container">
-            <h3 class="section-subtitle">Lokasi Saya</h3>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8003503931746!2d107.61879841431748!3d-6.902720669411785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e639b2078f2d%3A0x301e8f1fc28b8b0!2sBandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Nama Anda. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-researchgate"></i></a>
-            </div>
-        </div>
-    </footer>
-
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        // Form submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send the data to a server
-            // For demo, we'll just show an alert
-            alert(`Terima kasih, ${name}! Pesan Anda telah terkirim. Saya akan segera menghubungi Anda melalui email.`);
-            
-            // Reset form
-            this.reset();
-        });
-    </script>
 </body>
 </html>
