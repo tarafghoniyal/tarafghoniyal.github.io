@@ -9,6 +9,8 @@
     --footer-bg: #f1f1f1;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+    --cert-bg: #ffffff;
+    --cert-text: #333333; 
 }
 
 [data-theme="dark"] {
@@ -21,6 +23,8 @@
     --header-bg: rgba(30, 30, 30, 0.9);
     --footer-bg: #1a1a1a;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --cert-bg: #1e1e1e;
+    --cert-text: #e0e0e0;
 }
 
 * {
@@ -42,6 +46,22 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Di dark mode selector */
+[data-theme="dark"] .certificates-section {
+  --card-bg: #1e1e1e; /* Warna card dark */
+  --text-color: #e0e0e0; /* Warna text */
+}
+
+[data-theme="dark"] .certificate-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid #333;
+}
+
+[data-theme="dark"] .certificate-info p {
+  color: #aaa;
 }
 
 /* Header Styles */
