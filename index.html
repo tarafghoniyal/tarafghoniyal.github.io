@@ -1,221 +1,321 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" data-lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-key="title">Portfolio - Electrical Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title data-i18n="title">Electrical Engineer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
 </head>
 <body>
-    <!-- Theme/Language Toggle -->
-    <div class="settings-panel">
-        <button id="themeToggle" aria-label="Toggle theme" class="tooltip">
-            <i class="fas fa-moon"></i>
-            <span class="tooltip-text" data-key="tooltip.theme">Toggle Theme</span>
-        </button>
-        <div class="language-switcher">
-            <button data-lang="en" class="active tooltip">
-                EN
-                <span class="tooltip-text" data-key="tooltip.english">English</span>
-            </button>
-            <button data-lang="id" class="tooltip">
-                ID
-                <span class="tooltip-text" data-key="tooltip.indonesian">Indonesian</span>
-            </button>
-            <button data-lang="ja" class="tooltip">
-                JA
-                <span class="tooltip-text" data-key="tooltip.japanese">Japanese</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="circuit-line"></div>
-            <div class="circuit-line"></div>
-            <div class="circuit-line"></div>
-            <div class="circuit-chip">
-                <i class="fas fa-bolt"></i>
-            </div>
-        </div>
-        <p class="loading-text" data-key="loading">Loading Portfolio...</p>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
+    <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
-                    <span class="logo-text">Taraf Ghoniyal Muttaqin</span>
-                </a>
+                <span class="initials">EE</span>
+                <span class="full-name" data-i18n="name">Taraf Ghoniyal Muttaqin</span>
             </div>
-            
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active" data-key="nav.home">Home</a></li>
-                    <li><a href="about.html" class="nav-link" data-key="nav.about">About</a></li>
-                    <li><a href="projects.html" class="nav-link" data-key="nav.projects">Projects</a></li>
-                    <li><a href="certificates.html" class="nav-link" data-key="nav.certificates">Certificates</a></li>
-                    <li><a href="contact.html" class="nav-link" data-key="nav.contact">Contact</a></li>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
-                
-                <div class="nav-toggle">
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
             </nav>
+            <div class="settings">
+                <div class="language-selector">
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="id">Bahasa Indonesia</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Di dalam <header> -->
+        <div class="status-badge">
+        <span class="sensor-value">PLC: <span id="plc-status">ONLINE</span></span>
+        <span class="sensor-value">IoT: <span id="iot-status">●</span></span>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line" data-key="hero.greeting">Hi, I'm</span>
-                        <span class="title-name">Taraf Ghoniyal Muttaqin</span>
-                    </h1>
-                    <div class="hero-subtitle">
-                        <span class="subtitle-text" data-key="hero.profession">Electrical Engineer</span>
-                        <span class="subtitle-typed"></span>
-                    </div>
-                    <p class="hero-description" data-key="hero.description">
-                        Specialist in industrial control instrumentation design and smart IoT solutions with 5+ years of experience.
-                    </p>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="hero.title">Innovative Electrical Solutions</h1>
+                    <p class="subtitle" data-i18n="hero.subtitle">Powering the future with cutting-edge electrical engineering</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">
-                            <span data-key="hero.projects_button">View Projects</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="contact.html" class="btn btn-secondary">
-                            <span data-key="hero.contact_button">Contact Me</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </a>
+                        <a href="#projects" class="btn primary" data-i18n="hero.viewProjects">View Projects</a>
+                        <a href="#contact" class="btn secondary" data-i18n="hero.contactMe">Contact Me</a>
                     </div>
                 </div>
-                
                 <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="images/hero-engineer.webp" alt="Electrical Engineer" class="main-image" loading="lazy">
-                        <div class="tech-icons">
-                            <div class="icon" data-tooltip="PLC"><i class="fas fa-sliders-h"></i></div>
-                            <div class="icon" data-tooltip="IoT"><i class="fas fa-network-wired"></i></div>
-                            <div class="icon" data-tooltip="Embedded"><i class="fas fa-microchip"></i></div>
-                            <div class="icon" data-tooltip="SCADA"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="circuit-animation"></div>
+                    <img src="images/engineer.png" alt="Electrical Engineer" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-i18n="about.title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-i18n="about.text1">I am a passionate electrical engineer with over 10 years of experience in designing, implementing, and maintaining electrical systems across various industries.</p>
+                        <p data-i18n="about.text2">My expertise spans power systems, control engineering, renewable energy integration, and industrial automation. I am committed to delivering efficient, sustainable, and innovative electrical solutions.</p>
+                        <div class="skills">
+                            <div class="skill" data-percent="90">
+                                <div class="skill-info">
+                                    <span data-i18n="skill1">Power Systems</span>
+                                    <span class="percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-percent="85">
+                                <div class="skill-info">
+                                    <span data-i18n="skill2">Control Systems</span>
+                                    <span class="percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill" data-percent="80">
+                                <div class="skill-info">
+                                    <span data-i18n="skill3">Renewable Energy</span>
+                                    <span class="percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/hero-engineer.png" alt="About Me">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <h2 data-i18n="expertise.title">Areas of Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 data-i18n="expertise1.title">Power Systems</h3>
+                        <p data-i18n="expertise1.desc">Design and analysis of electrical power generation, transmission, and distribution systems.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 data-i18n="expertise2.title">Control Systems</h3>
+                        <p data-i18n="expertise2.desc">Development of control algorithms and automation systems for industrial applications.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3 data-i18n="expertise3.title">Renewable Energy</h3>
+                        <p data-i18n="expertise3.desc">Integration of solar, wind, and other renewable sources into existing power grids.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 data-i18n="expertise4.title">Industrial Automation</h3>
+                        <p data-i18n="expertise4.desc">Design and implementation of automated systems for manufacturing processes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 data-i18n="projects.title">Featured Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="projects.all">All</button>
+                    <button class="filter-btn" data-filter="power" data-i18n="projects.power">Power Systems</button>
+                    <button class="filter-btn" data-filter="control" data-i18n="projects.control">Control Systems</button>
+                    <button class="filter-btn" data-filter="renewable" data-i18n="projects.renewable">Renewable Energy</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="power">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Power Grid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn" data-i18n="projects.view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project1.title">Smart Grid Implementation</h3>
+                            <p data-i18n="project1.desc">Modernization of urban power distribution network with smart monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="control">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Control Panel">
+                            <div class="project-overlay">
+                                <a href="#" class="btn" data-i18n="projects.view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project2.title">Automated Manufacturing</h3>
+                            <p data-i18n="project2.desc">PLC-based control system for automotive parts production line.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="renewable">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Solar Farm">
+                            <div class="project-overlay">
+                                <a href="#" class="btn" data-i18n="projects.view">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project3.title">Solar Microgrid</h3>
+                            <p data-i18n="project3.desc">Off-grid solar power system for remote community with battery storage.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="hero-scroll">
-            <span data-key="hero.scroll">Scroll Down</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Expertise Section -->
-    <section class="expertise">
+        <section id="certificates" class="certificates">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-key="expertise.title">My Expertise</h2>
-                <p class="section-subtitle" data-key="expertise.subtitle">Areas I specialize in and passionate about</p>
-            </div>
+            <h2 data-i18n="certificates.title">Featured Certifications</h2>
             
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-sliders-h"></i>
+            <!-- Grid Sertifikat -->
+            <div class="certificates-grid">
+            <!-- Sertifikat 1 -->
+            <div class="certificate-card" data-category="power">
+                <div class="certificate-img-container">
+                <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Certification" class="certificate-img">
+                <div class="certificate-hover">
+                    <a href="assets/certificates/cert1-full.jpg" data-lightbox="certificates" data-title="Advanced Power Systems" class="view-btn">
+                    <i class="fas fa-expand"></i>
+                    </a>
+                    <a href="assets/certificates/cert1.pdf" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="certificate-info">
+                <h3 data-i18n="certificate1.title">Advanced Power Systems</h3>
+                <p class="issuer" data-i18n="certificate1.issuer">IEEE • 2022</p>
+                <span class="credential-id">Credential ID: EE-2022-001</span>
+                </div>
+            </div>
+
+            <!-- Sertifikat 2 -->
+            <div class="certificate-card" data-category="safety">
+                <div class="certificate-img-container">
+                <img src="assets/certificates/cert2-thumb.jpg" alt="Electrical Safety Certification" class="certificate-img">
+                <div class="certificate-hover">
+                    <a href="assets/certificates/cert2-full.jpg" data-lightbox="certificates" data-title="Electrical Safety" class="view-btn">
+                    <i class="fas fa-expand"></i>
+                    </a>
+                    <a href="https://example.com/verify/EE-2021-005" target="_blank" class="verify-btn">
+                    <i class="fas fa-shield-alt"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="certificate-info">
+                <h3 data-i18n="certificate2.title">Electrical Safety Standards</h3>
+                <p class="issuer" data-i18n="certificate2.issuer">OSHA • 2021</p>
+                <span class="credential-id">Credential ID: EE-2021-005</span>
+                </div>
+            </div>
+
+            <!-- Tombol View All -->
+            <div class="certificate-card view-all-card">
+                <div class="view-all-content">
+                <i class="fas fa-folder-open"></i>
+                <h3>View All Certificates</h3>
+                <a href="certificates.html" class="btn">Explore</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tarafghoniyalmuttaqin@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 813-2988-8355</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="contact.location">Bekasi, Indonesia</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/tarafghoniyalmuttaqin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/tarafghoniyal" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/6281329888355" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="card-title" data-key="expertise.control_title">Control Instrumentation</h3>
-                    <p class="card-description" data-key="expertise.control_desc">
-                        Industrial control systems using PLC, SCADA, DCS, and PID control.
-                    </p>
-                    <ul class="card-skills">
-                        <li data-key="expertise.skill1">PLC Programming</li>
-                        <li data-key="expertise.skill2">SCADA/HMI</li>
-                        <li data-key="expertise.skill3">PID Control</li>
-                        <li data-key="expertise.skill4">DCS</li>
-                    </ul>
+                    <form class="contact-form" action="https://formspree.io/f/mwpbvnlw" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder=" " required>
+                            <label data-i18n="contact.name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder=" " required>
+                            <label data-i18n="contact.email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder=" ">
+                            <label data-i18n="contact.subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder=" " required></textarea>
+                            <label data-i18n="contact.message">Message</label>
+                        </div>
+                        <button type="submit" class="btn primary" data-i18n="contact.send">Send Message</button>
+                    </form>
                 </div>
-                
-                <!-- Other expertise cards with data-key attributes -->
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Projects Preview Section -->
-    <section class="projects-preview">
+    <footer>
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-key="projects.title">Featured Projects</h2>
-                <p class="section-subtitle" data-key="projects.subtitle">Some of my best completed works</p>
-            </div>
-            
-            <div class="projects-slider swiper">
-                <div class="swiper-wrapper">
-                    <!-- Project slides with data-key attributes -->
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            
-            <div class="projects-more">
-                <a href="projects.html" class="btn btn-outline">
-                    <span data-key="projects.view_all">View All Projects</span>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="logo">
-                        <a href="index.html">
-                            <span class="logo-icon"><i class="fas fa-bolt"></i></span>
-                            <span class="logo-text">Taraf Ghoniyal Muttaqin</span>
-                        </a>
-                    </div>
-                    <p class="footer-description" data-key="footer.desc">
-                        Electrical Engineer specializing in Control Instrumentation and IoT with 5+ years of industry experience.
-                    </p>
-                </div>
-                
-                <!-- Footer other sections with data-key attributes -->
-            </div>
-            
-            <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year"></span> <span data-key="footer.copyright">All rights reserved</span></p>
-                <p class="credit" data-key="footer.credit">Made with <i class="fas fa-heart"></i> by Taraf</p>
-            </div>
+            <p data-i18n="footer.copyright">© 2025 Electrical Engineer Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
