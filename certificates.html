@@ -19,6 +19,11 @@
       top: var(--header-height);
     }
   </style>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
 </head>
 <body>
     <!-- Header (Sama seperti index.html) -->
@@ -30,12 +35,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" style="position: relative; z-index: 1001;">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#expertise">Expertise</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="index.html#certificates">Certificates</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav.home" style="position: relative; z-index: 1001;">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="index.html#expertise" data-i18n="nav.expertise">Expertise</a></li>
+                    <li><a href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="index.html#certificates" data-i18n="nav.certificates">Certificates</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
                     <!-- <li><a href="certificates.html" class="active">Certificates</a></li> -->
                 </ul>
             </nav>
@@ -116,7 +121,9 @@
     </main>
 
     <footer>
-        <!-- Sama seperti index.html -->
+        <div class="container">
+            <p data-i18n="footer.copyright">© 2025 Electrical Engineer Portfolio. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Script -->
@@ -130,5 +137,15 @@
         window.location.href = this.href;
         });
     </script>
+
+    <div class="mobile-menu">
+        <button id="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </div>
 </body>
 </html>

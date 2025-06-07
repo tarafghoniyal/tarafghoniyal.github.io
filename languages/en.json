@@ -46,8 +46,8 @@
     "contact.send": "Send Message",
     "footer.copyright": "© 2025 Electrical Engineer Portfolio. All rights reserved.",
     "nav.certificates": "Certificates",
-    "certificates.title": "My Certifications",
-    "certificates.hero.title": "My Certifications",
+    "certificates.title": "Featured Certificates",
+    "certificates.hero.title": "My Certificates",
     "certificates.hero.subtitle": "Proof of expertise in electrical engineering",
     "certificates.filter.all": "All",
     "certificates.filter.power": "Power Systems",
@@ -60,5 +60,12 @@
     "certificate1.date": "June 2022",
     "certificate2.title": "Electrical Safety Standards",
     "certificate2.issuer": "Issued by: OSHA",
-    "certificate2.date": "March 2023"
+    "certificate2.date": "March 2023",
+    "certificates.viewAll": "View All Certificates",
+    "projects.filter.all": "All",
+    "projects.filter.automation": "Automation",
+    "projects.filter.power": "Power Systems",
+    "projects.hero.title": "My Projects",
+    "projects.hero.subtitle": "Proof of expertise in electrical engineering",
+    "projects.viewAll": "View All Projects"
 }

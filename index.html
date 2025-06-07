@@ -152,109 +152,117 @@
         <section id="projects" class="projects">
             <div class="container">
                 <h2 data-i18n="projects.title">Featured Projects</h2>
-                <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all" data-i18n="projects.all">All</button>
-                    <button class="filter-btn" data-filter="power" data-i18n="projects.power">Power Systems</button>
-                    <button class="filter-btn" data-filter="control" data-i18n="projects.control">Control Systems</button>
-                    <button class="filter-btn" data-filter="renewable" data-i18n="projects.renewable">Renewable Energy</button>
-                </div>
+                
+                <!-- Projects Grid -->
                 <div class="projects-grid">
-                    <div class="project-card" data-category="power">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250" alt="Power Grid">
-                            <div class="project-overlay">
-                                <a href="#" class="btn" data-i18n="projects.view">View Project</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 data-i18n="project1.title">Smart Grid Implementation</h3>
-                            <p data-i18n="project1.desc">Modernization of urban power distribution network with smart monitoring.</p>
-                        </div>
+                <!-- Project 1 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-img-container">
+                    <img src="assets/projects/automation-thumb.jpg" alt="Industrial Automation">
+                    <div class="project-overlay">
+                        <a href="project-details.html?id=1" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
                     </div>
-                    <div class="project-card" data-category="control">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250" alt="Control Panel">
-                            <div class="project-overlay">
-                                <a href="#" class="btn" data-i18n="projects.view">View Project</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 data-i18n="project2.title">Automated Manufacturing</h3>
-                            <p data-i18n="project2.desc">PLC-based control system for automotive parts production line.</p>
-                        </div>
                     </div>
-                    <div class="project-card" data-category="renewable">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250" alt="Solar Farm">
-                            <div class="project-overlay">
-                                <a href="#" class="btn" data-i18n="projects.view">View Project</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 data-i18n="project3.title">Solar Microgrid</h3>
-                            <p data-i18n="project3.desc">Off-grid solar power system for remote community with battery storage.</p>
-                        </div>
+                    <div class="project-info">
+                    <h3 data-i18n="project1.title">PLC-Based Automation</h3>
+                    <p data-i18n="project1.desc">Conveyor belt control system</p>
                     </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="power">
+                    <div class="project-img-container">
+                    <img src="assets/projects/power-thumb.jpg" alt="Power Grid">
+                    <div class="project-overlay">
+                        <a href="project-details.html?id=2" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="project-info">
+                    <h3 data-i18n="project2.title">Smart Grid Implementation</h3>
+                    <p data-i18n="project2.desc">Voltage monitoring system</p>
+                    </div>
+                </div>
+
+                <!-- View All Card -->
+                <div class="project-card view-all-card">
+                    <div class="view-all-content">
+                    <i class="fas fa-folder-open"></i>
+                    <h3 data-i18n="projects.viewAll">View All Projects</h3>
+                    <a href="projects.html" class="btn">Explore</a>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
 
         <section id="certificates" class="certificates">
-        <div class="container">
-            <h2 data-i18n="certificates.title">Featured Certifications</h2>
-            
-            <!-- Grid Sertifikat -->
-            <div class="certificates-grid">
-            <!-- Sertifikat 1 -->
-            <div class="certificate-card" data-category="power">
-                <div class="certificate-img-container">
-                <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Certification" class="certificate-img">
-                <div class="certificate-hover">
-                    <a href="assets/certificates/cert1-full.jpg" data-lightbox="certificates" data-title="Advanced Power Systems" class="view-btn">
-                    <i class="fas fa-expand"></i>
-                    </a>
-                    <a href="assets/certificates/cert1.pdf" download class="download-btn">
-                    <i class="fas fa-download"></i>
-                    </a>
+            <div class="container">
+                <h2 data-i18n="certificates.title">Featured Certificates</h2>
+                
+                <!-- Grid Sertifikat -->
+                <div class="certificates-grid">
+                <!-- Sertifikat 1 -->
+                <div class="certificate-card" data-category="power">
+                    <div class="certificate-img-container">
+                    <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Certification" class="certificate-img">
+                    <div class="certificate-hover">
+                        <a href="assets/certificates/cert1-full.jpg" data-lightbox="certificates" data-title="Advanced Power Systems" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                        <a href="assets/certificates/cert1.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="certificate-info">
+                    <h3 data-i18n="certificate1.title">Advanced Power Systems</h3>
+                    <p class="issuer" data-i18n="certificate1.issuer">IEEE • 2022</p>
+                    <span class="credential-id">Credential ID: EE-2022-001</span>
+                    </div>
                 </div>
-                </div>
-                <div class="certificate-info">
-                <h3 data-i18n="certificate1.title">Advanced Power Systems</h3>
-                <p class="issuer" data-i18n="certificate1.issuer">IEEE • 2022</p>
-                <span class="credential-id">Credential ID: EE-2022-001</span>
-                </div>
-            </div>
 
-            <!-- Sertifikat 2 -->
-            <div class="certificate-card" data-category="safety">
-                <div class="certificate-img-container">
-                <img src="assets/certificates/cert2-thumb.jpg" alt="Electrical Safety Certification" class="certificate-img">
-                <div class="certificate-hover">
-                    <a href="assets/certificates/cert2-full.jpg" data-lightbox="certificates" data-title="Electrical Safety" class="view-btn">
-                    <i class="fas fa-expand"></i>
-                    </a>
-                    <a href="https://example.com/verify/EE-2021-005" target="_blank" class="verify-btn">
-                    <i class="fas fa-shield-alt"></i>
-                    </a>
+                <!-- Sertifikat 2 -->
+                <div class="certificate-card" data-category="safety">
+                    <div class="certificate-img-container">
+                    <img src="assets/certificates/cert2-thumb.jpg" alt="Electrical Safety Certification" class="certificate-img">
+                    <div class="certificate-hover">
+                        <a href="assets/certificates/cert2-full.jpg" data-lightbox="certificates" data-title="Electrical Safety" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                        <a href="https://example.com/verify/EE-2021-005" target="_blank" class="verify-btn">
+                        <i class="fas fa-shield-alt"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="certificate-info">
+                    <h3 data-i18n="certificate2.title">Electrical Safety Standards</h3>
+                    <p class="issuer" data-i18n="certificate2.issuer">OSHA • 2021</p>
+                    <span class="credential-id">Credential ID: EE-2021-005</span>
+                    </div>
                 </div>
-                </div>
-                <div class="certificate-info">
-                <h3 data-i18n="certificate2.title">Electrical Safety Standards</h3>
-                <p class="issuer" data-i18n="certificate2.issuer">OSHA • 2021</p>
-                <span class="credential-id">Credential ID: EE-2021-005</span>
-                </div>
-            </div>
 
-            <!-- Tombol View All -->
-            <div class="certificate-card view-all-card">
-                <div class="view-all-content">
-                <i class="fas fa-folder-open"></i>
-                <h3>View All Certificates</h3>
-                <a href="certificates.html" class="btn">Explore</a>
+                <!-- View All Card -->
+                <!-- <div class="certificate-card view-all-certificates">
+                    <div class="view-all-content">
+                    <i class="fas fa-folder-open fa-2x"></i>
+                    <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
+                    <a href="certificates.html" class="btn">Explore</a>
+                    </div>
+                </div> -->
+
+                <div class="project-card view-all-card">
+                    <div class="view-all-content">
+                    <i class="fas fa-folder-open"></i>
+                    <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
+                    <a href="certificates.html" class="btn">Explore</a>
+                    </div>
+                </div>
                 </div>
             </div>
-            </div>
-        </div>
         </section>
 
         <section id="contact" class="contact">
@@ -317,5 +325,15 @@
     </footer>
 
     <script src="js/script.js"></script>
+
+    <div class="mobile-menu">
+        <button id="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </div>
 </body>
 </html>

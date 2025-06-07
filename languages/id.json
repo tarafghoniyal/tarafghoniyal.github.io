@@ -60,5 +60,12 @@
     "certificate1.date": "Juni 2022",
     "certificate2.title": "Standar Keselamatan Listrik",
     "certificate2.issuer": "Diterbitkan oleh: OSHA",
-    "certificate2.date": "Maret 2023"
+    "certificate2.date": "Maret 2023",
+    "certificates.viewAll": "Lihat Semua Sertifikat",
+    "projects.filter.all": "Semua",
+    "projects.filter.automation": "Sistem Kendali",
+    "projects.filter.power": "Sistem Tenaga",
+    "projects.hero.title": "Proyek Saya",
+    "projects.hero.subtitle": "Bukti keahlian di bidang teknik elektro",
+    "projects.viewAll": "Lihat Semua Proyek"
 }

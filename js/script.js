@@ -179,4 +179,41 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('iot-status').style.color = 
         Math.random() > 0.1 ? '#4CAF50' : '#F44336';
     }, 3000);
+
+    // Project Filter
+    const projectFilters = document.querySelectorAll('.project-filters .filter-btn');
+    const projectItems = document.querySelectorAll('.project-card');
+
+    projectFilters.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            projectFilters.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filter = button.dataset.filter;
+            
+            projectItems.forEach(item => {
+            if (filter === 'all' || item.dataset.category === filter) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+            });
+        });
+    });
+
+    // Fungsi toggle header
+    function toggleHeader() {
+    const header = document.querySelector('header');
+    if (window.innerWidth <= 1024) {
+        header.style.display = 'none';
+    } else {
+        header.style.display = 'block';
+    }
+    }
+
+    // Jalankan saat load dan resize
+    window.addEventListener('load', toggleHeader);
+    window.addEventListener('resize', toggleHeader);
 });

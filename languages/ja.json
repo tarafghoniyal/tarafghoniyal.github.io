@@ -60,5 +60,12 @@
     "certificate1.date": "2022年6月",
     "certificate2.title": "電気安全基準",
     "certificate2.issuer": "発行: OSHA",
-    "certificate2.date": "2023年3月"
+    "certificate2.date": "2023年3月",
+    "certificates.viewAll": "すべての証明書を表示する",
+    "projects.filter.all": "すべて",
+    "projects.filter.automation": "制御システム",
+    "projects.filter.power": "電力システム",
+    "projects.hero.title": "私のプロジェクト",
+    "projects.hero.subtitle": "電気工学の専門知識の証明",
+    "projects.viewAll": "すべてのプロジェクトを表示する"
 }
