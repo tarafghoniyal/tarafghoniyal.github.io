@@ -216,4 +216,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Jalankan saat load dan resize
     window.addEventListener('load', toggleHeader);
     window.addEventListener('resize', toggleHeader);
+
+    // Toggle mobile menu
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        document.querySelector('.mobile-nav').classList.toggle('active');
+    });
+
+    // Sembunyikan saat memilih link
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.mobile-nav').classList.remove('active');
+        });
+    });
 });
