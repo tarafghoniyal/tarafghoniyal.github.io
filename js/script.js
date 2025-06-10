@@ -228,4 +228,23 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.mobile-nav').classList.remove('active');
         });
     });
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const menuIcon = mobileBtn.querySelector('i');
+
+    mobileBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-times');
+    });
+
+    // Close when clicking a link
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            menuIcon.classList.replace('fa-times', 'fa-bars');
+        });
+    });
 });
