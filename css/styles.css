@@ -900,7 +900,7 @@ footer {
 }
 
 .mobile-menu-btn {
-  display: block; /* pastikan muncul */
+  display: none; /* pastikan muncul */
   position: fixed;
   top: 15px;
   right: 15px;
@@ -967,7 +967,7 @@ footer {
   
   /* Alternatif: Ganti dengan hamburger menu */
   .mobile-menu {
-    display: block;
+    display: none;
   }
   
   #mobile-menu-toggle {
@@ -976,6 +976,10 @@ footer {
     border: none;
     padding: 10px;
     border-radius: 50%;
+  }
+
+  .mobile-menu-btn {
+    display: none;
   }
 }
 
@@ -995,6 +999,10 @@ footer {
     
     .contact-content {
         flex-direction: column;
+    }
+
+    .mobile-menu-btn {
+    display: none;
     }
 }
 
@@ -1027,6 +1035,10 @@ footer {
     .mobile-nav.active {
       display: flex;
     }
+
+    .mobile-menu-btn {
+    display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1047,6 +1059,16 @@ footer {
     .profile-img {
         width: 250px;
         height: 250px;
+    }
+
+    .logo .full-name {
+    white-space: normal;     /* Di mobile: izinkan jadi dua baris */
+    word-break: break-word;  /* Putuskan kata jika perlu */
+    max-width: 150px;        /* Batasi agar tidak menabrak hamburger */
+    }
+
+    .mobile-menu-btn {
+    display: block;
     }
 }
 
@@ -1109,6 +1131,16 @@ footer {
     .mobile-nav {
         display: none;
     }
+
+    .logo .full-name {
+    white-space: normal;     /* Di mobile: izinkan jadi dua baris */
+    word-break: break-word;  /* Putuskan kata jika perlu */
+    max-width: 150px;        /* Batasi agar tidak menabrak hamburger */
+    }
+
+    .mobile-menu-btn {
+    display: none;
+    }
 }
 
 header {
@@ -1154,7 +1186,7 @@ header {
 /* Mobile styles */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: none;
   }
 
   .nav-links {
@@ -1177,5 +1209,9 @@ header {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  .mobile-menu-btn {
+    display: block;
   }
 }
