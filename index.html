@@ -14,30 +14,6 @@
     <link rel="manifest" href="assets/site.webmanifest" />
 </head>
 <body>
-    <!-- Mobile Only Header (optional, if not using same header) -->
-    <!-- Mobile Sidebar Menu -->
-    <header class="mobile-header">
-        <div class="mobile-header-top">
-            <div class="mobile-logo">EE</div>
-            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
-            <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <nav class="mobile-sidebar" id="mobileSidebar">
-            <button class="close-btn" id="closeSidebar" aria-label="Close Navigation">
-            &times;
-            </button>
-            <ul>
-            <li><a href="#home" data-i18n="nav.home">Home</a></li>
-            <li><a href="#about" data-i18n="nav.about">About</a></li>
-            <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
-            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-            <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
-            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <header>
         <div class="container">
             <button class="mobile-menu-btn" aria-label="Toggle Navigation">
@@ -355,26 +331,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        const sidebar = document.getElementById('mobileSidebar');
-        const openBtn = document.querySelector('.mobile-menu-toggle');
-        const closeBtn = document.getElementById('closeSidebar');
-
-        openBtn.addEventListener('click', () => {
-            sidebar.classList.add('open');
-        });
-
-        closeBtn.addEventListener('click', () => {
-            sidebar.classList.remove('open');
-        });
-
-        // Optional: close sidebar on link click
-        sidebar.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-            sidebar.classList.remove('open');
-            });
-        });
-    </script>
-
 </body>
 </html>

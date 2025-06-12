@@ -161,9 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
-    const nav = document.querySelector('.mobile-header-nav');
-    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-  });
-
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('show');
+  };
 });
