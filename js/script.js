@@ -160,4 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
       menuIcon.classList.add('fa-bars');
     });
   });
+
+  document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
+    const nav = document.querySelector('.mobile-header-nav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  });
+
 });

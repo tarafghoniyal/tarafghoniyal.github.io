@@ -1,3 +1,8 @@
+/* Mencegah horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
     --primary-color: #4a6fa5;
     --secondary-color: #166088;
@@ -887,7 +892,7 @@ footer {
 
 /* CSS Mobile Menu */
 .mobile-menu {
-  display: none;
+  display: block;
   position: fixed;
   top: 10px;
   right: 10px;
@@ -895,7 +900,7 @@ footer {
 }
 
 .mobile-menu-btn {
-  display: block;
+  display: block; /* pastikan muncul */
   position: fixed;
   top: 15px;
   right: 15px;
@@ -912,7 +917,7 @@ footer {
 
 /* Mobile Navigation (Hidden by default) */
 .mobile-nav {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -1008,7 +1013,7 @@ footer {
     }
 
     header {
-    display: none !important;
+    display: block !important;
     }
 
     .mobile-menu-btn {
@@ -1042,5 +1047,66 @@ footer {
     .profile-img {
         width: 250px;
         height: 250px;
+    }
+}
+
+.mobile-header {
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+}
+
+.mobile-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-logo .initials {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.mobile-menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.mobile-header-nav {
+    display: none;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.mobile-header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-header-nav ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-header-nav ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .mobile-header {
+        display: block;
+    }
+
+    header:not(.mobile-header),
+    .mobile-nav {
+        display: none;
     }
 }

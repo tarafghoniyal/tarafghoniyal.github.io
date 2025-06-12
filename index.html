@@ -14,6 +14,26 @@
     <link rel="manifest" href="assets/site.webmanifest" />
 </head>
 <body>
+    <!-- Mobile Only Header (optional, if not using same header) -->
+    <header class="mobile-header">
+        <div class="mobile-container">
+            <div class="mobile-logo">
+                <span class="initials">EE</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-dropdown" id="mobileDropdownMenu">
+            <a href="#home" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+    </header>
+
     <header>
         <div class="container">
             <button class="mobile-menu-btn" aria-label="Toggle Navigation">
