@@ -1,81 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="certificates.title">My Certifications | Electrical Engineer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Lightbox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <style>
-    :root {
-      --header-height: 80px;
-    }
-    main {
-      padding-top: var(--header-height);
-    }
-    .certificate-filters {
-      top: var(--header-height);
-    }
-  </style>
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
 </head>
 <body>
-    <button class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Navigation Mobile -->
-    <nav class="mobile-nav">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#home" data-i18n="nav.home">Home</a></li>
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-    <!-- Tambahkan link lain -->
-    </nav>
-
-    <!-- Header (Sama seperti index.html) -->
     <header style="height: var(--header-height);">
         <div class="container">
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="logo">
                 <span class="initials">EE</span>
                 <span class="full-name" data-i18n="name">Taraf Ghoniyal Muttaqin</span>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" data-i18n="nav.home" style="position: relative; z-index: 1001;">Home</a></li>
-                    <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
-                    <li><a href="index.html#expertise" data-i18n="nav.expertise">Expertise</a></li>
-                    <li><a href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
-                    <li><a href="index.html#certificates" data-i18n="nav.certificates">Certificates</a></li>
-                    <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
-                    <!-- <li><a href="certificates.html" class="active">Certificates</a></li> -->
+                <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="index.html#expertise" data-i18n="nav.expertise">Expertise</a></li>
+                <li><a href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="index.html#certificates" data-i18n="nav.certificates">Certificates</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </nav>
-            <!-- Toggle Theme & Bahasa -->
             <div class="settings">
                 <div class="language-selector">
-                    <select id="language-select">
-                        <option value="en">English</option>
-                        <option value="id">Bahasa Indonesia</option>
-                        <option value="ja">日本語</option>
-                    </select>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="ja">日本語</option>
+                </select>
                 </div>
                 <button id="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
+                <i class="fas fa-moon"></i>
                 </button>
             </div>
         </div>
     </header>
+
+    <nav class="mobile-nav">
+        <a href="index.html#home" data-i18n="nav.home">Home</a>
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#expertise" data-i18n="nav.expertise">Expertise</a>
+        <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="index.html#certificates" data-i18n="nav.certificates">Certificates</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
 
     <main>
         <section class="certificates-hero">

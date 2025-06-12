@@ -39,6 +39,7 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     transition: var(--transition);
+    overflow-x: hidden;
 }
 
 .container {
@@ -170,7 +171,7 @@ header {
     width: 100%;
     background-color: var(--header-bg);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 999;
     box-shadow: var(--shadow);
     transition: var(--transition);
     display: block;
@@ -894,11 +895,11 @@ footer {
 }
 
 .mobile-menu-btn {
-  display: none;
+  display: block;
   position: fixed;
   top: 15px;
   right: 15px;
-  z-index: 1001;
+  z-index: 1100;
   background: var(--primary-color);
   color: white;
   border: none;
@@ -927,6 +928,10 @@ footer {
 }
 
 .mobile-nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: translateX(0);
 }
 
@@ -941,10 +946,18 @@ footer {
   z-index: -1;
 }
 
+.mobile-nav a {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   header {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
   
   /* Alternatif: Ganti dengan hamburger menu */
