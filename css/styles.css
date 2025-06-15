@@ -16,6 +16,13 @@ html, body {
     --transition: all 0.3s ease;
     --cert-bg: #ffffff;
     --cert-text: #333333; 
+    --bg-color: #f9f9f9;
+    --heading-color: #2c3e50;
+    --card-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    --border-color: #eee;
+    --button-bg: #2c3e50;
+    --button-hover: #1a252f;
+    --mobile-breakpoint: 768px;
 }
 
 [data-theme="dark"] {
@@ -32,6 +39,18 @@ html, body {
     --cert-text: #e0e0e0;
 }
 
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --heading-color: #f5f5f5;
+    --meta-color: #b0b0b0;
+    --card-bg: #2d2d2d;
+    --card-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    --border-color: #444;
+    --button-bg: #4a6fa5;
+    --button-hover: #3a5a8f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +64,8 @@ body {
     background-color: var(--bg-color);
     transition: var(--transition);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -420,6 +441,179 @@ nav a:hover::after {
     object-fit: cover;
     border: 5px solid var(--primary-color);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Detail Header */
+.project-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: var(--heading-color);
+}
+
+.project-header .project-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: var(--meta-color);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+/* Project Content */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-main {
+    width: 100%;
+    order: 1;
+}
+
+.project-sidebar {
+    width: 100%;
+    order: 2;
+}
+
+/* Project Gallery */
+.project-gallery {
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Project Description */
+.project-description h2 {
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.project-description p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Project Details */
+.project-details {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.project-details h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+}
+
+.detail-item {
+    margin-bottom: 12px;
+}
+
+.detail-item h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--heading-color);
+}
+
+.detail-item p {
+    margin: 0;
+    color: var(--meta-color);
+    font-size: 0.9rem;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background: var(--button-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background 0.3s;
+    font-size: 0.95rem;
+    gap: 8px;
+}
+
+.back-button:hover {
+    background: var(--button-hover);
+}
+
+/* Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+}
+
+.theme-toggle i {
+    font-size: 1.1rem;
 }
 
 @keyframes rotate {
@@ -947,7 +1141,7 @@ footer {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: whitesmoke;
   z-index: -1;
 }
 
@@ -958,7 +1152,201 @@ footer {
   font-size: 1.2rem;
 }
 
-/* Responsive Design */
+.certificate-img {
+  max-width: 100%;  /* Maksimal lebar sesuai container */
+  height: auto;     /* Tinggi menyesuaikan proporsi */
+  display: block;   /* Hindari space bawah */
+  margin: 0 auto;   /* Pusatkan gambar */
+  border: 1px solid #ddd; /* Opsional: beri border */
+  border-radius: 4px;     /* Opsional: sudut melengkung */
+}
+
+.certificate-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.certificate-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.certificate-card:hover .certificate-img {
+  transform: scale(1.05);
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.certificate-overlay i {
+  color: white;
+  font-size: 2rem;
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-info {
+  padding: 20px;
+}
+
+.certificate-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.certificate-info p {
+  margin: 0 0 10px;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.certificate-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.certificate-date {
+  color: #95a5a6;
+  font-size: 0.85rem;
+}
+
+.pdf-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: #e74c3c;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.pdf-view-btn:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+.pdf-badge {
+  background: rgba(255,255,255,0.2);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.btn-text {
+  font-weight: 500;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .certificate-card {
+    background: #336699;
+  }
+  
+  .certificate-info h3 {
+    /* color: #ecf0f1; */
+    color: #FFFFFF;
+  }
+  
+  .certificate-info p {
+    /* color: #bdc3c7; */
+    color: #D0D0D0;
+  }
+  
+  .certificate-date {
+    /* color: #95a5a6; */
+    color: #D0D0D0;
+  }
+  
+  .pdf-view-btn {
+    background: #c0392b;
+  }
+  
+  .pdf-view-btn:hover {
+    background: #a5281b;
+  }
+}
+
+/* Responsive Desktop */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .project-content {
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    .project-main {
+        flex: 1 1 70%;
+        order: 1;
+    }
+    
+    .project-sidebar {
+        flex: 1 1 25%;
+        order: 2;
+    }
+    
+    .project-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .main-image {
+        max-height: 400px;
+    }
+    
+    .thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+
+    /* Tombol back tetap di project-main di desktop */
+    .project-main .back-button {
+        display: inline-flex;
+    }
+    
+    .project-sidebar .back-button {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
   header {
     display: flex;
@@ -1039,6 +1427,18 @@ footer {
     .mobile-menu-btn {
     display: none;
     }
+
+    /* Tombol back di project-main disembunyikan di mobile */
+    .project-main .back-button {
+        display: none;
+    }
+    
+    /* Tombol back ditampilkan di sidebar di mobile */
+    .project-sidebar .back-button {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1069,6 +1469,31 @@ footer {
 
     .mobile-menu-btn {
     display: block;
+    }
+
+    .project-header h1 {
+        font-size: 1.6rem;
+        line-height: 1.3; /* Better for small screens */
+    }
+    
+    .project-header .project-meta {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.85rem; /* Slightly smaller text */
+    }
+    
+    .mobile-back-button {
+        width: 100%;
+        padding: 12px 15px;
+        margin-top: 10px;
+    }
+    
+    .project-details {
+        padding: 12px; /* Slightly reduced padding */
+    }
+    
+    .main-image {
+        max-height: 250px; /* Slightly smaller image */
     }
 }
 
@@ -1214,4 +1639,33 @@ header {
   .mobile-menu-btn {
     display: block;
   }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion) {
+    body, 
+    .thumbnail, 
+    .theme-toggle,
+    .back-button {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .thumbnail:hover {
+        transform: none;
+    }
+    
+    /* Enhanced focus styles */
+    a:focus,
+    button:focus,
+    [tabindex="0"]:focus {
+        outline: 3px solid var(--button-bg);
+        outline-offset: 2px;
+    }
+    
+    /* Visible focus for keyboard users */
+    .back-button:focus {
+        position: relative;
+        z-index: 1;
+    }
 }

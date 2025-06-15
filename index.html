@@ -227,64 +227,84 @@
             <div class="container">
                 <h2 data-i18n="certificates.title">Featured Certificates</h2>
                 
-                <!-- Grid Sertifikat -->
                 <div class="certificates-grid">
-                <!-- Sertifikat 1 -->
-                <div class="certificate-card" data-category="power">
-                    <div class="certificate-img-container">
-                    <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Certification" class="certificate-img">
-                    <div class="certificate-hover">
-                        <a href="assets/certificates/cert1-full.jpg" data-lightbox="certificates" data-title="Advanced Power Systems" class="view-btn">
-                        <i class="fas fa-expand"></i>
-                        </a>
-                        <a href="assets/certificates/cert1.pdf" download class="download-btn">
-                        <i class="fas fa-download"></i>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="certificate-info">
-                    <h3 data-i18n="certificate1.title">Advanced Power Systems</h3>
-                    <p class="issuer" data-i18n="certificate1.issuer">IEEE • 2022</p>
-                    <span class="credential-id">Credential ID: EE-2022-001</span>
-                    </div>
-                </div>
+                    <!-- Item 1 -->
+                    <div class="certificate-card" data-category="power">
+                        <div class="certificate-image-container">
+                            <a href="assets/certificates/cert1.jpg"
+                                data-lightbox="certificates" 
+                                data-title="Advanced Power Systems Certification"
+                                target="_blank" 
+                                rel="noopener noreferrer">
 
-                <!-- Sertifikat 2 -->
-                <div class="certificate-card" data-category="safety">
-                    <div class="certificate-img-container">
-                    <img src="assets/certificates/cert2-thumb.jpg" alt="Electrical Safety Certification" class="certificate-img">
-                    <div class="certificate-hover">
-                        <a href="assets/certificates/cert2-full.jpg" data-lightbox="certificates" data-title="Electrical Safety" class="view-btn">
-                        <i class="fas fa-expand"></i>
-                        </a>
-                        <a href="https://example.com/verify/EE-2021-005" target="_blank" class="verify-btn">
-                        <i class="fas fa-shield-alt"></i>
-                        </a>
-                    </div>
-                    </div>
-                    <div class="certificate-info">
-                    <h3 data-i18n="certificate2.title">Electrical Safety Standards</h3>
-                    <p class="issuer" data-i18n="certificate2.issuer">OSHA • 2021</p>
-                    <span class="credential-id">Credential ID: EE-2021-005</span>
-                    </div>
-                </div>
+                                <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Cert" class="certificate-img">
+                                <div class="certificate-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="certificate-info">
+                            <h3 data-i18n="certificate1.title">Advanced Power Systems</h3>
+                            <p data-i18n="certificate1.issuer">Issued by: IEEE</p>
+                            <p class="credential-id">Credential ID: EE-2021-005</p>
+                            <div class="certificate-meta">
+                                <span class="certificate-date" data-i18n="certificate1.date">June 2022</span>
 
-                <!-- View All Card -->
-                <!-- <div class="certificate-card view-all-certificates">
-                    <div class="view-all-content">
-                    <i class="fas fa-folder-open fa-2x"></i>
-                    <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
-                    <a href="certificates.html" class="btn">Explore</a>
+                                <a href="path/to/certificate.pdf" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pdf-view-btn"
+                                    title="View PDF in new tab">
+                                    <span class="btn-text">View Certificate</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
 
-                <div class="project-card view-all-card">
-                    <div class="view-all-content">
-                    <i class="fas fa-folder-open"></i>
-                    <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
-                    <a href="certificates.html" class="btn">Explore</a>
+                    <!-- Item 2 -->
+                    <div class="certificate-card" data-category="safety">
+                        <div class="certificate-image-container">
+                            <a href="assets/certificates/ISO 9001.jpg" 
+                                data-lightbox="certificates" 
+                                data-title="Electrical Safety Certification"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+
+                                <img src="assets/certificates/ISO 9001.jpg" alt="Safety Cert" class="certificate-img">
+                                <div class="certificate-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="certificate-info">
+                            <h3 data-i18n="certificate2.title">Electrical Safety Standards</h3>
+                            <p data-i18n="certificate2.issuer">Issued by: OSHA</p>
+                            <p class="credential-id">Credential ID: EE-2021-005</p>
+                            <div class="certificate-meta">
+                                <span class="certificate-date" data-i18n="certificate2.date">March 2023</span>
+                                
+                                <a href="path/to/certificate.pdf" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pdf-view-btn"
+                                    title="View PDF in new tab">
+                                    <span class="btn-text">View Certificate</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="project-card view-all-card">
+                        <div class="view-all-content">
+                        <i class="fas fa-folder-open"></i>
+                        <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
+                        <a href="certificates.html" class="btn">Explore</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

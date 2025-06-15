@@ -1,0 +1,29 @@
+{
+    "title": "電気エンジニアのポートフォリオ",
+    "name": "タラフ・ゴニヤル・ムタキン",
+    "footer.copyright": "© 2025 電気技師のポートフォリオ。全著作権所有。",
+    "nav": {
+        "home": "ホーム",
+        "about": "について",
+        "expertise": "専門知識",
+        "projects": "プロジェクト",
+        "certificates": "証明書",
+        "contact": "連絡先"
+    },
+    "project": {
+        "title": "プロジェクト詳細",
+        "category": "カテゴリー",
+        "overview": "プロジェクト概要",
+        "technical": "技術的詳細",
+        "results": "結果",
+        "details": "プロジェクト詳細",
+        "client": "クライアント",
+        "technologies": "技術",
+        "duration": "期間",
+        "type": "プロジェクトタイプ",
+        "back_button": "プロジェクトに戻る"
+    },
+    "footer": {
+        "copyright": "© 2025 電気技師のポートフォリオ。全著作権所有。"
+    }
+}

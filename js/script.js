@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Theme Toggle
+  /// Theme Toggle
   const themeToggle = document.getElementById('theme-toggle');
   const currentTheme = localStorage.getItem('theme') || 'light';
 
@@ -21,12 +21,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Language Selector
   const languageSelect = document.getElementById('language-select');
-  languageSelect.addEventListener('change', function() {
-    const lang = this.value;
-    loadLanguage(lang);
-  });
+  
+  // Get language from URL parameter or localStorage
+  const urlParams = new URLSearchParams(window.location.search);
+  let currentLang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+  
+  // Set the dropdown to current language
+  if (languageSelect) {
+    languageSelect.value = currentLang;
+  }
+  
+  // Load current language immediately
+  loadLanguage(currentLang);
 
-  loadLanguage('en');
+  if (languageSelect) {
+    languageSelect.addEventListener('change', function() {
+      const lang = this.value;
+      localStorage.setItem('selectedLanguage', lang); // Save to localStorage
+      
+      // Update URL with language parameter without reloading
+      const newUrl = updateQueryStringParameter(window.location.href, 'lang', lang);
+      window.history.pushState({ path: newUrl }, '', newUrl);
+      
+      loadLanguage(lang);
+    });
+  }
+
+  // Helper function to update URL parameters
+  function updateQueryStringParameter(uri, key, value) {
+    const re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+    const separator = uri.indexOf('?') !== -1 ? "&" : "?";
+    if (uri.match(re)) {
+      return uri.replace(re, '$1' + key + "=" + value + '$2');
+    }
+    return uri + separator + key + "=" + value;
+  }
 
   // Load language JSON
   function loadLanguage(lang) {
@@ -165,4 +194,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('navMenu');
     nav.classList.toggle('show');
   };
+
+  // Initialize theme from localStorage or system preference
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  
+  // Initialize language from URL parameter or localStorage
+  let language = urlParams.get('lang') || localStorage.getItem('language') || 'en';
+            
 });

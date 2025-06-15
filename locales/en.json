@@ -1,0 +1,28 @@
+{
+    "title": "Electrical Engineer Portfolio",
+    "name": "Taraf Ghoniyal Muttaqin",
+    "footer.copyright": "© 2025 Electrical Engineer Portfolio. All rights reserved.",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "expertise": "Expertise",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "contact": "Contact"
+    },
+    "project": {
+        "category": "Category",
+        "overview": "Project Overview",
+        "technical": "Technical Details",
+        "results": "Results",
+        "details": "Project Details",
+        "client": "Client",
+        "technologies": "Technologies",
+        "duration": "Duration",
+        "type": "Project Type",
+        "back_button": "Back to Projects"
+    },
+    "footer": {
+        "copyright": "© 2025 Electrical Engineer Portfolio. All rights reserved."
+    }
+}

@@ -69,5 +69,16 @@
     "projects.filter.power": "電力システム",
     "projects.hero.title": "私のプロジェクト",
     "projects.hero.subtitle": "電気工学の専門知識の証明",
-    "projects.viewAll": "すべてのプロジェクトを表示する"
+    "projects.viewAll": "すべてのプロジェクトを表示する",
+    "project.title": "プロジェクト詳細",
+    "project.category": "カテゴリー",
+    "project.overview": "プロジェクト概要",
+    "project.technical": "技術的詳細",
+    "project.results": "結果",
+    "project.details": "プロジェクト詳細",
+    "project.client": "クライアント",
+    "project.technologies": "技術",
+    "project.duration": "期間",
+    "project.type": "プロジェクトタイプ",
+    "project.back_button": "プロジェクトに戻る"
 }

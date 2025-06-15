@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        .project-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project-header {
+            margin-bottom: 30px;
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .project-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .project-thumbnail {
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .project-section {
+            margin-bottom: 20px;
+        }
+        .project-details-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-container">
+        <div id="project-content">
+            <!-- Konten akan diisi oleh JavaScript -->
+        </div>
+    </div>
+
+    <script>
+         // Fungsi utama untuk memuat project
+        async function loadProject() {
+            try {
+                // 1. Ambil ID dari URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const projectId = urlParams.get('id');
+                
+                if (!projectId) throw new Error("No project ID specified");
+                
+                // 2. Muat data projects
+                const response = await fetch('projects.json');
+                if (!response.ok) throw new Error("Failed to load projects data");
+                
+                const data = await response.json();
+                
+                // 3. Validasi ID project
+                if (!data[projectId]) {
+                    throw new Error(`Project with ID ${projectId} not found`);
+                }
+                
+                // 4. Render project
+                renderProject(data[projectId], data.project);
+                
+            } catch (error) {
+                console.error("Error:", error.message);
+                renderError(error.message);
+            }
+        }
+        
+        // Fungsi render project
+        function renderProject(projectData, labels) {
+            const { translations, mainImage, thumbnails, date } = projectData;
+            const content = document.getElementById('project-content');
+            
+            content.innerHTML = `
+                <div class="project-header">
+                    <h1>${translations.title}</h1>
+                    <p><strong>${labels.category}:</strong> ${translations.category}</p>
+                    ${date ? `<p><strong>Date:</strong> ${date}</p>` : ''}
+                </div>
+                
+                ${mainImage ? `
+                <div class="project-image-container">
+                    <img src="${mainImage}" alt="${translations.title}" class="project-image" id="main-project-image">
+                </div>
+                ` : ''}
+                
+                ${thumbnails?.length > 0 ? `
+                <div class="project-thumbnails">
+                    ${thumbnails.map(thumb => `
+                        <img src="${thumb}" alt="Thumbnail" class="project-thumbnail" 
+                             onclick="document.getElementById('main-project-image').src = '${thumb}'">
+                    `).join('')}
+                </div>
+                ` : ''}
+                
+                <div class="project-section">
+                    <h2>${labels.overview}</h2>
+                    <p>${translations.overview}</p>
+                </div>
+                
+                <div class="project-section">
+                    <h2>${labels.technical}</h2>
+                    <p>${translations.technical}</p>
+                </div>
+                
+                <div class="project-section">
+                    <h2>${labels.results}</h2>
+                    <p>${translations.results}</p>
+                </div>
+                
+                <div class="project-section">
+                    <h2>${labels.details}</h2>
+                    <div class="project-details-grid">
+                        ${renderDetailRow(labels.client, translations.client)}
+                        ${renderDetailRow(labels.technologies, translations.technologies)}
+                        ${renderDetailRow(labels.duration, translations.duration)}
+                        ${renderDetailRow(labels.type, translations.type)}
+                    </div>
+                </div>
+                
+                <a href="projects.html" class="back-button">${labels.back_button}</a>
+            `;
+        }
+        
+        // Fungsi pembantu untuk detail baris
+        function renderDetailRow(label, value) {
+            return `
+                <div><strong>${label}:</strong></div>
+                <div>${value || 'N/A'}</div>
+            `;
+        }
+        
+        // Fungsi error handling
+        function renderError(message) {
+            document.getElementById('project-content').innerHTML = `
+                <h1>Project Not Found</h1>
+                <p>${message}</p>
+                <a href="projects.html" class="back-button">Back to Projects</a>
+            `;
+        }
+        
+        // Jalankan saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', loadProject);
+    </script>
+</body>
+</html>

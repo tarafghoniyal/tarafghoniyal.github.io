@@ -69,5 +69,16 @@
     "projects.filter.power": "Sistem Tenaga",
     "projects.hero.title": "Proyek Saya",
     "projects.hero.subtitle": "Bukti keahlian di bidang teknik elektro",
-    "projects.viewAll": "Lihat Semua Proyek"
+    "projects.viewAll": "Lihat Semua Proyek",
+    "project.title": "Detail Proyek",
+    "project.category": "Kategori",
+    "project.overview": "Gambaran Proyek",
+    "project.technical": "Detail Teknis",   
+    "project.results": "Hasil",
+    "project.details": "Detail Proyek",
+    "project.client": "Klien",
+    "project.technologies": "Teknologi",
+    "project.duration": "Durasi",
+    "project.type": "Jenis Proyek",
+    "project.back_button": "Kembali ke Proyek"
 }

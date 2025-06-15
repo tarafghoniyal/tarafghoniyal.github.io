@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
@@ -79,35 +80,71 @@
                 <div class="certificates-grid">
                     <!-- Item 1 -->
                     <div class="certificate-card" data-category="power">
-                        <a href="assets/certificates/cert1.jpg" data-lightbox="certificates" data-title="Advanced Power Systems Certification">
-                            <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Cert">
-                            <div class="certificate-overlay">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </a>
+                        <div class="certificate-image-container">
+                            <a href="assets/certificates/cert1.jpg"
+                                data-lightbox="certificates" 
+                                data-title="Advanced Power Systems Certification"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+
+                                <img src="assets/certificates/cert1-thumb.jpg" alt="Power Systems Cert" class="certificate-img">
+                                <div class="certificate-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        
                         <div class="certificate-info">
                             <h3 data-i18n="certificate1.title">Advanced Power Systems</h3>
                             <p data-i18n="certificate1.issuer">Issued by: IEEE</p>
-                            <span class="certificate-date" data-i18n="certificate1.date">June 2022</span>
-                            <a href="assets/certificates/cert1.pdf" class="btn download-btn" download>
-                                <i class="fas fa-download"></i> <span data-i18n="certificates.download">Download</span>
-                            </a>
+                            <p class="credential-id">Credential ID: EE-2021-005</p>
+                            <div class="certificate-meta">
+                                <span class="certificate-date" data-i18n="certificate1.date">June 2022</span>
+
+                                <a href="path/to/certificate.pdf" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pdf-view-btn"
+                                    title="View PDF in new tab">
+                                    <span class="btn-text">View Certificate</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
                     <div class="certificate-card" data-category="safety">
-                        <a href="assets/certificates/cert2.jpg" data-lightbox="certificates" data-title="Electrical Safety Certification">
-                            <img src="assets/certificates/cert2-thumb.jpg" alt="Safety Cert">
-                            <div class="certificate-overlay">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </a>
+                        <div class="certificate-image-container">
+                            <a href="assets/certificates img/ISO 9001.jpg" 
+                                data-lightbox="certificates" 
+                                data-title="Electrical Safety Certification"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+
+                                <img src="assets/certificates img/ISO 9001.jpg" alt="Safety Cert" class="certificate-img">
+                                <div class="certificate-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        
                         <div class="certificate-info">
                             <h3 data-i18n="certificate2.title">Electrical Safety Standards</h3>
                             <p data-i18n="certificate2.issuer">Issued by: OSHA</p>
-                            <span class="certificate-date" data-i18n="certificate2.date">March 2023</span>
-                            <a href="#" class="btn download-btn" data-i18n="certificates.verify">Verify Online</a>
+                            <p class="credential-id">Credential ID: EE-2021-005</p>
+                            <div class="certificate-meta">
+                                <span class="certificate-date" data-i18n="certificate2.date">March 2023</span>
+                                
+                                <a href="path/to/certificate.pdf" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="pdf-view-btn"
+                                    title="View PDF in new tab">
+                                    <span class="btn-text">View Certificate</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

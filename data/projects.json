@@ -1,0 +1,86 @@
+{
+    "1": {
+        "translations": {
+            "en": {
+                "title": "PLC-Based Automation",
+                "category": "Industrial Automation",
+                "overview": "This project involved designing and implementing...",
+                "technical": "The system uses Siemens S7-1200 PLC...",
+                "results": "The implemented solution reduced processing time...",
+                "client": "ABC Manufacturing Co.",
+                "technologies": "Siemens PLC, WinCC, Ladder Logic, Pneumatics",
+                "duration": "3 months",
+                "type": "Industrial Automation"
+            },
+            "id": {
+                "title": "Otomasi Berbasis PLC",
+                "category": "Otomasi Industri",
+                "overview": "Proyek ini melibatkan perancangan dan implementasi...",
+                "technical": "Sistem menggunakan PLC Siemens S7-1200...",
+                "results": "Solusi yang diimplementasikan mengurangi waktu proses...",
+                "client": "ABC Manufacturing Co.",
+                "technologies": "Siemens PLC, WinCC, Ladder Logic, Pneumatik",
+                "duration": "3 bulan",
+                "type": "Otomasi Industri"
+            },
+            "ja": {
+                "title": "PLCベースの自動化",
+                "category": "産業用オートメーション",
+                "overview": "このプロジェクトでは、PLCベースの制御システムの設計と実装を行いました...",
+                "technical": "システムはシーメンスS7-1200 PLCを使用し...",
+                "results": "実装されたソリューションにより、処理時間が35%短縮されました...",
+                "client": "ABC製造会社",
+                "technologies": "シーメンスPLC, WinCC, ラダーロジック, 空気圧",
+                "duration": "3ヶ月",
+                "type": "産業用オートメーション"
+            }
+        },
+        "mainImage": "assets/projects/automation-main.jpg",
+        "thumbnails": [
+            "assets/projects/automation-thumb1.jpg",
+            "assets/projects/automation-thumb2.jpg",
+            "assets/projects/automation-thumb3.jpg"
+        ],
+        "date": "March 2023"
+    },
+    "2": {
+        "translations": {
+            "en": {
+                "title": "Smart Home System",
+                "category": "Home Automation",
+                "overview": "This project involved creating a smart home system...",
+                "technical": "The system integrates IoT devices with a central hub...",
+                "results": "The system improved energy efficiency by 20%...",
+                "client": "XYZ Smart Homes",
+                "technologies": "IoT, MQTT, Node-RED, Home Assistant",
+                "duration": "4 months",
+                "type": "Home Automation"
+            },
+            "id": {
+                "title": "Sistem Rumah Pintar",
+                "category": "Otomasi Rumah",
+                "overview": "Proyek ini melibatkan pembuatan sistem rumah pintar...",
+                "technical": "Sistem mengintegrasikan perangkat IoT dengan pusat kendali...",
+                "results": "Sistem meningkatkan efisiensi energi sebesar 20%...",
+                "client": "XYZ Smart Homes",
+                "technologies": "IoT, MQTT, Node-RED, Home Assistant",
+                "duration": "4 bulan",
+                "type": "Otomasi Rumah"
+            },
+            "ja": {
+                "title": "スマートホームシステム",
+                "category": "ホームオートメーション",
+                "overview": "このプロジェクトでは、スマートホームシステムの作成を行いました...",
+                "technical": "システムはIoTデバイスを中央ハブと統合し...",
+                "results": "システムによりエネルギー効率が20%向上しました...",
+                "client": "XYZスマートホームズ",
+                "technologies": "IoT, MQTT, Node-RED, Home Assistant",
+                "duration": "4ヶ月",
+                "type": "ホームオートメーション"
+            }
+        },
+        "mainImage": null,
+        "thumbnails": [],
+        "date": "June 6"
+    }
+}

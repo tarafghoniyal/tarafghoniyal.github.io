@@ -69,5 +69,16 @@
     "projects.filter.power": "Power Systems",
     "projects.hero.title": "My Projects",
     "projects.hero.subtitle": "Proof of expertise in electrical engineering",
-    "projects.viewAll": "View All Projects"
+    "projects.viewAll": "View All Projects",
+    "project.title": "Project Details",
+    "project.category": "Category",
+    "project.overview": "Project Overview",
+    "project.technical": "Technical Details",
+    "project.results": "Results Achieved",
+    "project.details": "Project Details",
+    "project.client": "Client",
+    "project.technologies": "Technologies Used",
+    "project.duration": "Project Duration",
+    "project.type": "Project Type",
+    "project.back_button": "Back to Projects"
 }
