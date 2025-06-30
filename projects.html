@@ -71,15 +71,16 @@
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">All</button>
                 <button class="filter-btn" data-filter="automation" data-i18n="projects.filter.automation">Automation</button>
-                <button class="filter-btn" data-filter="power" data-i18n="projects.filter.power">Power Systems</button>
+                <button class="filter-btn" data-filter="IoT" data-i18n="projects.filter.iot">IoT</button>
+                <button class="filter-btn" data-filter="robotics" data-i18n="projects.filter.robotics">Robotics</button>
             </div>
 
             <!-- Reuse the same projects-grid from index.html -->
             <div class="projects-grid">
             <!-- Project 1 -->
-                <div class="project-card" data-category="automation">
+                <div class="project-card" data-category="IoT">
                     <div class="project-img-container">
-                    <img src="assets/projects/automation-thumb.jpg" alt="Industrial Automation">
+                    <img src="data/projects img/Capstone/20221123_160410.jpg" alt="IoT & Machine Learning">
                     <div class="project-overlay">
                         <a href="project-details.html?id=1" class="view-btn">
                         <i class="fas fa-expand"></i>
@@ -87,15 +88,15 @@
                     </div>
                     </div>
                     <div class="project-info">
-                    <h3 data-i18n="project1.title">PLC-Based Automation</h3>
-                    <p data-i18n="project1.desc">Conveyor belt control system</p>
+                    <h3 data-i18n="project1.title">Capstone Project : Pertanian Terpadu Berbasis IOT dan Machine Learning untuk Pengoptimalan Hasil Pertanian</h3>
+                    <p data-i18n="project1.desc">This project developed an IoT- and AI-based system to optimize chili yields by enabling real-time monitoring and intelligent decision-making, addressing climate and pest challenges in Indonesian agriculture.</p>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card" data-category="power">
+            <!-- Project 2 -->
+                <div class="project-card" data-category="robotics">
                     <div class="project-img-container">
-                    <img src="assets/projects/power-thumb.jpg" alt="Power Grid">
+                    <img src="data/projects img/skripsi/IMG20230506171042.jpg" alt="Quadrotor Control">
                     <div class="project-overlay">
                         <a href="project-details.html?id=2" class="view-btn">
                         <i class="fas fa-expand"></i>
@@ -103,10 +104,74 @@
                     </div>
                     </div>
                     <div class="project-info">
-                    <h3 data-i18n="project2.title">Smart Grid Implementation</h3>
-                    <p data-i18n="project2.desc">Voltage monitoring system</p>
+                    <h3 data-i18n="project2.title">Final Project: Perancangan Sistem Kendali Auto-landing Quadrotor Menggunakan PD Controller</h3>
+                    <p data-i18n="project2.desc">This project developed a PD-controlled quadrotor system for safe, precise autonomous landings. Using Teensy, IMU, and LIDAR sensors, it ensured accurate descent through real-time data processing and motor control.</p>
                     </div>
                 </div>
+
+            <!-- Project 3 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-img-container">
+                    <img src="data/projects img/STI/IMG20231004175513.jpg" alt="PLC Control System">
+                    <div class="project-overlay">
+                        <a href="project-details.html?id=3" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="project-info">
+                    <h3 data-i18n="project3.title">Automatic Off Motor Conveyor</h3>
+                    <p data-i18n="project3.desc">This project developed an automated system to reduce energy waste by turning off the conveyor when not transporting material, improving efficiency and minimizing unnecessary power consumption.</p>
+                    </div>
+                </div>
+
+            <!-- Project 4 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-img-container">
+                    <img src="data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.jpg" alt="PLC & HMI System">
+                    <div class="project-overlay">
+                        <a href="project-details.html?id=4" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="project-info">
+                    <h3 data-i18n="project4.title">Project Barcode Correction</h3>
+                    <p data-i18n="project4.desc">This project added a QC barcode input feature to the HMI, preventing mislabeled boxes from passing undetected by enabling cross-verification and correction before delivery.</p>
+                    </div>
+                </div> 
+
+            <!-- Project 5 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-img-container">
+                    <img src="data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.jpg" alt="HMI Dashboard">
+                    <div class="project-overlay">
+                        <a href="project-details.html?id=5" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="project-info">
+                    <h3 data-i18n="project5.title">Project PM Dashboard</h3>
+                    <p data-i18n="project5.desc">This project developed a visual dashboard to monitor preventive maintenance schedules, track execution times, and measure accuracy, enhancing planning, performance, and team accountability.</p>
+                    </div>
+                </div>
+
+            <!-- Project 6 -->
+                <div class="project-card" data-category="IoT">
+                    <div class="project-img-container">
+                    <img src="data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.jpg" alt="Brankas Monitoring">
+                    <div class="project-overlay">
+                        <a href="project-details.html?id=6" class="view-btn">
+                        <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="project-info">
+                    <h3 data-i18n="project6.title">Project Brankas Monitoring</h3>
+                    <p data-i18n="project6.desc">This project developed an IoT system using ESP32, RFID, and a Laravel dashboard to enable real-time tracking of safe access, usage logs, and environmental conditions for enhanced security and remote supervision.</p>
+                    </div>
+                </div>   
             </div>
       </div>
     </section>

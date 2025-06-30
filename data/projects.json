@@ -2,85 +2,294 @@
     "1": {
         "translations": {
             "en": {
-                "title": "PLC-Based Automation",
-                "category": "Industrial Automation",
-                "overview": "This project involved designing and implementing...",
-                "technical": "The system uses Siemens S7-1200 PLC...",
-                "results": "The implemented solution reduced processing time...",
-                "client": "ABC Manufacturing Co.",
-                "technologies": "Siemens PLC, WinCC, Ladder Logic, Pneumatics",
-                "duration": "3 months",
-                "type": "Industrial Automation"
+                "title": "Capstone Project : Pertanian Terpadu Berbasis IOT dan Machine Learning untuk Pengoptimalan Hasil Pertanian",
+                "category": "IoT and Machine Learning",
+                "overview": "This project involved designing and implementing an integrated smart farming system using IoT and AI to optimize chili plant (Capsicum frutescens) yields. It addresses challenges in Indonesian agriculture such as climate variability and plant pest attacks, by providing real-time monitoring and decision-making tools for farmers.",
+                "technical": "The system uses ESP32 microcontrollers, LoRa WAN communication protocol, and MicroPython for embedded programming. Data from environmental sensors is transmitted wirelessly and monitored via a web application. PCB design was carried out using Eagle, and prototyping was supported through Arduino IDE. Collaboration was managed online via Google Meet.",
+                "results": "The implemented solution enabled real-time monitoring of plant conditions, improved early decision-making in crop management, and laid the foundation for scalable precision agriculture in Indonesia. Farmers can now observe environmental metrics remotely and act based on data-driven recommendations.",
+                "client": "DTETI Gadjah Mada University",
+                "technologies": "ESP32, LoRa Wan, MicroPython, Node-RED, Machine Learning",
+                "duration": "9 months",
+                "type": "IoT and Machine Learning",
+                "responsibility": "I was responsible for designing and programming the ESP32-based data acquisition system, creating custom PCBs for sensor and control integration, and implementing LoRa WAN for long-range wireless communication. I also integrated various environmental sensors such as temperature, humidity, and soil moisture into the IoT network. Throughout the project, I conducted testing and validation to ensure system reliability and performance, and collaborated closely with the team to deploy the solution effectively."
             },
             "id": {
-                "title": "Otomasi Berbasis PLC",
-                "category": "Otomasi Industri",
-                "overview": "Proyek ini melibatkan perancangan dan implementasi...",
-                "technical": "Sistem menggunakan PLC Siemens S7-1200...",
-                "results": "Solusi yang diimplementasikan mengurangi waktu proses...",
-                "client": "ABC Manufacturing Co.",
-                "technologies": "Siemens PLC, WinCC, Ladder Logic, Pneumatik",
-                "duration": "3 bulan",
-                "type": "Otomasi Industri"
+                "title": "Capstone Project : Pertanian Terpadu Berbasis IoT dan Machine Learning untuk Pengoptimalan Hasil Pertanian",
+                "category": "IoT dan Machine Learning",
+                "overview": "Proyek ini melibatkan perancangan dan implementasi sistem pertanian cerdas terpadu menggunakan IoT dan kecerdasan buatan (AI) untuk mengoptimalkan hasil tanaman cabai rawit (Capsicum frutescens). Proyek ini menjawab tantangan dalam pertanian Indonesia seperti variabilitas iklim dan serangan organisme pengganggu tanaman, dengan menyediakan alat pemantauan dan pengambilan keputusan secara real-time bagi para petani.",
+                "technical": "Sistem ini menggunakan mikrokontroler ESP32, protokol komunikasi LoRa WAN, dan MicroPython untuk pemrograman perangkat tertanam. Data dari sensor lingkungan dikirim secara nirkabel dan dimonitor melalui aplikasi web. Desain PCB dilakukan menggunakan Eagle, dan prototyping didukung oleh Arduino IDE. Kolaborasi tim dilakukan secara daring melalui Google Meet.",
+                "results": "Solusi yang diimplementasikan memungkinkan pemantauan kondisi tanaman secara real-time, meningkatkan pengambilan keputusan dini dalam manajemen pertanian, dan menjadi dasar untuk penerapan pertanian presisi yang dapat diskalakan di Indonesia. Petani dapat mengamati metrik lingkungan dari jarak jauh dan bertindak berdasarkan rekomendasi berbasis data.",
+                "client": "DTETI Universitas Gadjah Mada",
+                "technologies": "ESP32, LoRa WAN, MicroPython, Node-RED, Machine Learning",
+                "duration": "9 bulan",
+                "type": "IoT dan Machine Learning",
+                "responsibility": "Saya bertanggung jawab untuk merancang dan memprogram sistem akuisisi data berbasis ESP32, membuat desain PCB untuk integrasi sensor dan unit kontrol, serta mengimplementasikan protokol komunikasi LoRa WAN untuk transmisi data jarak jauh. Saya juga mengintegrasikan berbagai sensor lingkungan seperti suhu, kelembaban, dan kelembaban tanah ke dalam jaringan IoT. Selama proyek, saya melakukan pengujian dan validasi untuk memastikan keandalan dan kinerja sistem, serta bekerja sama erat dengan tim untuk menerapkan solusi secara efektif."
             },
             "ja": {
-                "title": "PLCベースの自動化",
-                "category": "産業用オートメーション",
-                "overview": "このプロジェクトでは、PLCベースの制御システムの設計と実装を行いました...",
-                "technical": "システムはシーメンスS7-1200 PLCを使用し...",
-                "results": "実装されたソリューションにより、処理時間が35%短縮されました...",
-                "client": "ABC製造会社",
-                "technologies": "シーメンスPLC, WinCC, ラダーロジック, 空気圧",
-                "duration": "3ヶ月",
-                "type": "産業用オートメーション"
+                "title": "キャップストーンプロジェクト：農業収量の最適化のためのIoTと機械学習に基づく統合型スマート農業システム",
+                "category": "IoTと機械学習",
+                "overview": "このプロジェクトでは、IoTと人工知能（AI）を活用して、トウガラシ（Capsicum frutescens）の収量を最適化するための統合型スマート農業システムの設計および実装を行いました。気候変動や害虫被害といったインドネシア農業の課題に対応し、農家がリアルタイムでモニタリングと意思決定を行えるよう支援します。",
+                "technical": "このシステムでは、ESP32マイクロコントローラ、LoRa WAN通信プロトコル、MicroPythonによる組み込みプログラミングを使用しています。環境センサからのデータは無線で送信され、Webアプリを通じて監視されます。PCB設計はEagleで行い、プロトタイピングはArduino IDEでサポートされました。チーム内のコラボレーションはGoogle Meetを通じてオンラインで実施されました。",
+                "results": "実装されたソリューションにより、植物の状態をリアルタイムで監視できるようになり、農業管理における早期の意思決定が可能となりました。また、この成果はインドネシアにおける拡張可能な精密農業の基盤を築きました。農家は遠隔地から環境データを確認し、データに基づいた行動を取ることができます。",
+                "client": "ガジャマダ大学 DTETI",
+                "technologies": "ESP32, LoRa WAN, MicroPython, Node-RED, 機械学習",
+                "duration": "9ヶ月",
+                "type": "IoTと機械学習",
+                "responsibility": "私は、ESP32をベースにしたデータ収集システムの設計およびプログラミング、センサと制御ユニットの統合のためのPCB設計、そして長距離無線通信のためのLoRa WANプロトコルの実装を担当しました。また、温度、湿度、土壌水分などの各種環境センサをIoTネットワークに統合しました。プロジェクト期間中、システムの信頼性と性能を確保するために試験と検証を行い、チームと密に連携してソリューションを効果的に展開しました。"
             }
         },
-        "mainImage": "assets/projects/automation-main.jpg",
+        "mainImage": "data/projects img/Capstone/20221123_160410.jpg",
         "thumbnails": [
-            "assets/projects/automation-thumb1.jpg",
-            "assets/projects/automation-thumb2.jpg",
-            "assets/projects/automation-thumb3.jpg"
+            "data/projects img/Capstone/20221123_160410.jpg",
+            "data/projects img/Capstone/20221125_093402.jpg",
+            "data/projects img/Capstone/Untitled.png",
+            "data/projects img/Capstone/wiring diagram_bb.png"
         ],
-        "date": "March 2023"
+        "date": "November 2022"
     },
+
     "2": {
         "translations": {
             "en": {
-                "title": "Smart Home System",
-                "category": "Home Automation",
-                "overview": "This project involved creating a smart home system...",
-                "technical": "The system integrates IoT devices with a central hub...",
-                "results": "The system improved energy efficiency by 20%...",
-                "client": "XYZ Smart Homes",
-                "technologies": "IoT, MQTT, Node-RED, Home Assistant",
+                "title": "Final Project: Perancangan Sistem Kendali Auto-landing Quadrotor Menggunakan PD Controller",
+                "category": "Embedded Systems and Control",
+                "overview": "This project involved the development of an automatic quadrotor landing system using a Proportional-Derivative (PD) controller. The system was designed to perform safe and precise autonomous landings, minimizing the risk of human error and increasing control accuracy in the descent phase.",
+                "technical": "The control system was implemented using a Teensy microcontroller with PD control algorithms. The system utilized IMU and LIDAR sensors to obtain real-time altitude and orientation data, which were processed using Matlab and filtered with Madgwick Filter. System design included attitude and altitude control logic, PWM motor control, and real-time thrust balancing among quadrotor motors. Development tools included Eagle for PCB design, Arduino IDE and Putty for firmware development and debugging.",
+                "results": "The final implementation successfully demonstrated stable and smooth autonomous landing in test flights. The PD controller ensured responsive yet stable adjustment to altitude and orientation during descent. Simulation and tuning using MATLAB validated the control parameters before hardware testing.",
+                "client": "Undergraduate Final Project - DTETI UGM",
+                "technologies": "Teensy, PD Control, IMU, Lidar, Eagle, Arduino IDE, Matlab, Putty",
                 "duration": "4 months",
-                "type": "Home Automation"
+                "type": "Embedded Systems and Control",
+                "responsibility": "I was responsible for designing the PD control algorithm for both attitude and altitude control, performing simulations and controller tuning in MATLAB, integrating IMU and LIDAR sensors with the quadrotor system, and testing the auto-landing control performance in real-world conditions using Teensy microcontroller as the embedded platform."
             },
             "id": {
-                "title": "Sistem Rumah Pintar",
-                "category": "Otomasi Rumah",
-                "overview": "Proyek ini melibatkan pembuatan sistem rumah pintar...",
-                "technical": "Sistem mengintegrasikan perangkat IoT dengan pusat kendali...",
-                "results": "Sistem meningkatkan efisiensi energi sebesar 20%...",
-                "client": "XYZ Smart Homes",
-                "technologies": "IoT, MQTT, Node-RED, Home Assistant",
+                "title": "Tugas Akhir: Perancangan Sistem Kendali Auto-landing Quadrotor Menggunakan PD Controller",
+                "category": "Sistem Tertanam dan Kendali",
+                "overview": "Proyek ini bertujuan untuk mengembangkan sistem pendaratan otomatis pada quadrotor menggunakan kendali Proporsional-Derivatif (PD). Sistem ini dirancang agar quadrotor dapat mendarat secara mandiri dengan aman dan presisi tinggi, sehingga mengurangi risiko kesalahan manusia selama proses pendaratan.",
+                "technical": "Sistem kendali diimplementasikan menggunakan mikrokontroler Teensy dengan algoritma PD untuk kendali attitude dan altitude. Data orientasi dan ketinggian dikumpulkan secara real-time menggunakan sensor IMU dan LIDAR, kemudian diproses dengan filter Madgwick dan simulasi MATLAB. Sistem mencakup kendali PWM motor, logika distribusi thrust antar motor quadrotor, serta pengujian berbasis perangkat lunak dan perangkat keras. Tools yang digunakan meliputi Eagle (PCB), Arduino IDE, dan Putty.",
+                "results": "Sistem yang telah diterapkan berhasil menunjukkan performa pendaratan mandiri yang stabil dan halus pada uji coba lapangan. Kendali PD mampu memberikan respon yang cepat sekaligus stabil terhadap perubahan orientasi dan ketinggian. Parameter kontrol disimulasikan dan diuji terlebih dahulu di MATLAB sebelum diterapkan pada sistem aktual.",
+                "client": "Tugas Akhir Sarjana - DTETI UGM",
+                "technologies": "Teensy, Kendali PD, IMU, Lidar, Eagle, Arduino IDE, Matlab, Putty",
                 "duration": "4 bulan",
-                "type": "Otomasi Rumah"
+                "type": "Sistem Tertanam dan Kendali",
+                "responsibility": "Saya bertanggung jawab merancang algoritma kendali PD untuk kendali attitude dan altitude, melakukan simulasi dan tuning parameter di MATLAB, mengintegrasikan sensor IMU dan LIDAR dengan sistem quadrotor, serta menguji performa pendaratan otomatis secara langsung menggunakan mikrokontroler Teensy sebagai platform kendali tertanam."
             },
             "ja": {
-                "title": "スマートホームシステム",
-                "category": "ホームオートメーション",
-                "overview": "このプロジェクトでは、スマートホームシステムの作成を行いました...",
-                "technical": "システムはIoTデバイスを中央ハブと統合し...",
-                "results": "システムによりエネルギー効率が20%向上しました...",
-                "client": "XYZスマートホームズ",
-                "technologies": "IoT, MQTT, Node-RED, Home Assistant",
+                "title": "最終プロジェクト：PDコントローラを用いたクアドロータの自動着陸制御システムの設計",
+                "category": "組み込みシステムと制御",
+                "overview": "本プロジェクトでは、PD（比例-微分）コントローラを用いて、クアドロータの自動着陸制御システムを開発しました。このシステムは、高い精度と安全性を確保しながら自律的に着陸できるように設計されており、着陸時の人的ミスのリスクを低減することを目的としています。",
+                "technical": "制御システムは、PD制御アルゴリズムを実装したTeensyマイコンを用いて構築されました。IMUとLIDARセンサを使って、リアルタイムで姿勢と高度のデータを取得し、Madgwickフィルタで処理後、MATLABでシミュレーションおよびパラメータ調整を行いました。システムにはPWMモータ制御、スラスト配分のロジック、ソフトウェアとハードウェアによる実地検証が含まれます。開発ツールとしてEagle（PCB設計）、Arduino IDE、Puttyを使用しました。",
+                "results": "最終的に実装されたシステムは、テスト飛行において安定した滑らかな自動着陸を実現しました。PDコントローラは、高度と姿勢の変化に迅速かつ安定して対応することができました。MATLABで制御パラメータを検証した後、実機テストに適用されました。",
+                "client": "学士論文プロジェクト - ガジャマダ大学DTETI",
+                "technologies": "Teensy、PDコントロール、IMU、LIDAR、Eagle、Arduino IDE、Matlab、Putty",
                 "duration": "4ヶ月",
-                "type": "ホームオートメーション"
+                "type": "組み込みシステムと制御",
+                "responsibility": "私は、姿勢制御と高度制御のためのPD制御アルゴリズムの設計、MATLABでのシミュレーションとパラメータ調整、IMUおよびLIDARセンサの統合、そしてTeensyマイコンを用いた自動着陸システムの性能検証を担当しました。"
             }
         },
-        "mainImage": null,
-        "thumbnails": [],
-        "date": "June 6"
+        "mainImage": "data/projects img/skripsi/IMG20230506171042.jpg",
+        "thumbnails": [
+            "data/projects img/skripsi/IMG20230506171042.jpg",
+            "data/projects img/skripsi/IMG20230506143449.jpg",
+            "data/projects img/skripsi/IMG20230513065530.jpg",
+            "data/projects img/skripsi/altitude.png",
+            "data/projects img/skripsi/summary.png"
+        ],
+        "date": "May 2023"
+    },
+
+    "3": {
+        "translations": {
+            "en": {
+                "title": "Automatic Off Motor Conveyor",
+                "category": "Industrial Automation",
+                "overview": "This project aimed to automate a conveyor system that was continuously running even when not in use, leading to unnecessary electricity consumption. The goal was to implement a smart system that turns the conveyor off when it is not actively transporting material.",
+                "technical": "The system was developed using a Panasonic PLC and programmed using Structured Text language. It detects the presence of silicon to determine whether the conveyor should be running. The automation logic ensures the conveyor motor is only active when needed, reducing idle time and energy waste.",
+                "results": "The Automatic Off Motor Conveyor System successfully reduced electricity costs by approximately Rp300,000 per month, saving around 270 kWh of energy and reducing carbon emissions by approximately 216 kg CO₂ per month. The system improved operational efficiency by ensuring the conveyor only runs when material is present.",
+                "client": "PT Smoore Technology Indonesia",
+                "technologies": "Panasonic PLC, Structured Text",
+                "duration": "1 month",
+                "type": "Industrial Automation",
+                "responsibility": "I was responsible for designing the automation system using Panasonic PLC, writing control logic in Structured Text, and testing the system to ensure it only activates when silicon material is detected. My role focused on increasing energy efficiency and optimizing machine operation through intelligent control logic."
+            },
+            "id": {
+                "title": "Proyek: Otomatisasi Pemadaman Motor Conveyor",
+                "category": "Otomasi Industri",
+                "overview": "Proyek ini bertujuan untuk mengotomatiskan sistem conveyor yang terus menyala meskipun tidak digunakan, sehingga menyebabkan pemborosan listrik. Tujuannya adalah menerapkan sistem cerdas yang mematikan conveyor secara otomatis ketika tidak sedang mengangkut material.",
+                "technical": "Sistem dikembangkan menggunakan PLC Panasonic dan diprogram menggunakan bahasa Structured Text. Sensor digunakan untuk mendeteksi keberadaan silikon sebagai indikator apakah conveyor perlu berjalan. Logika otomatisasi memastikan motor conveyor hanya aktif saat dibutuhkan, sehingga mengurangi waktu idle dan pemborosan energi.",
+                "results": "Sistem Automatic Off Motor Conveyor berhasil menurunkan biaya listrik sekitar Rp300.000 per bulan, menghemat sekitar 270 kWh energi, dan mengurangi emisi karbon hingga 216 kg CO₂ per bulan. Sistem ini meningkatkan efisiensi operasional dengan memastikan conveyor hanya aktif saat ada material.",
+                "client": "PT Smoore Technology Indonesia",
+                "technologies": "PLC Panasonic, Structured Text",
+                "duration": "1 bulan",
+                "type": "Otomasi Industri",
+                "responsibility": "Saya bertanggung jawab merancang sistem otomatisasi menggunakan PLC Panasonic, menulis logika kendali dalam Structured Text, dan menguji sistem agar hanya aktif saat terdeteksi material silikon. Fokus saya adalah meningkatkan efisiensi energi dan mengoptimalkan operasi mesin melalui kendali logika yang cerdas."
+            },
+            "ja": {
+                "title": "プロジェクト：コンベヤーモーターの自動停止システム",
+                "category": "産業オートメーション",
+                "overview": "本プロジェクトは、使用されていないときでも常に稼働しているコンベヤーシステムを自動化することを目的としています。この無駄な電力消費を削減するために、輸送が必要ないときにはモーターを自動で停止するスマートシステムを導入しました。",
+                "technical": "システムはPanasonic製PLCを使用して開発され、Structured Text言語でプログラミングされました。シリコンの存在を検出して、コンベヤーを稼働させるかどうかを判断します。この自動制御ロジックにより、モーターは必要なときのみ動作し、待機時間とエネルギーの無駄を削減します。",
+                "results": "この自動停止システムは、月額約30万ルピアの電気代を削減し、毎月約270kWhの電力と216kgのCO₂排出量を削減することに成功しました。システムは、必要なときだけコンベヤーが作動するようになり、運用効率を向上させました。",
+                "client": "PT Smoore Technology Indonesia",
+                "technologies": "パナソニックPLC、Structured Text",
+                "duration": "1ヶ月",
+                "type": "産業オートメーション",
+                "responsibility": "私はPanasonic PLCを使用して自動化システムを設計し、Structured Textで制御ロジックを作成し、シリコン素材が検出されたときのみシステムが動作するようにテストを行いました。私の役割は、エネルギー効率を高め、スマート制御ロジックによって機械操作を最適化することでした。"
+            }
+        },
+        "mainImage": "data/projects img/STI/IMG20231004175513.jpg",
+        "thumbnails": [
+            "data/projects img/STI/IMG20231004175513.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.25_a27f27da.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.26_19973296.jpg"
+        ],
+        "date": "October 2023"
+    },
+
+    "4": {
+        "translations": {
+            "en": {
+                "title": "Project Barcode Correction",
+                "category": "Industrial Automation",
+                "overview": "This project solved a critical issue where the barcode input on the HMI allowed incorrectly labeled boxes to pass undetected until delivery. A separate barcode input feature was added for the QC team to verify and correct the input from the production team.",
+                "technical": "The system was built using Panasonic PLC and HMI Designer. The barcode verification logic was implemented with error detection algorithms. Inputs from barcode scanners were validated against predefined codes, and additional controls were added for QC verification.",
+                "results": "The solution eliminated barcode mismatch issues, reduced quality control errors, and ensured all dispatched boxes carried correct identification, improving traceability and product integrity.",
+                "client": "Confidential Manufacturing Company",
+                "technologies": "Panasonic PLC, HMI Designer",
+                "duration": "1 week",
+                "type": "Industrial Automation",
+                "responsibility": "I designed the barcode verification system, implemented error detection algorithms, integrated barcode scanners into the PLC system, and conducted system testing to ensure operational reliability."
+            },
+            "id": {
+                "title": "Proyek Koreksi Barcode",
+                "category": "Otomasi Industri",
+                "overview": "Proyek ini menyelesaikan masalah penting di mana input barcode pada HMI memungkinkan box dengan kode yang salah lolos hingga pengiriman. Fitur input barcode tambahan ditambahkan untuk tim QC agar dapat memverifikasi dan mengoreksi input dari tim produksi.",
+                "technical": "Sistem ini dikembangkan menggunakan Panasonic PLC dan HMI Designer. Logika verifikasi barcode diimplementasikan dengan algoritma deteksi kesalahan. Input dari barcode scanner divalidasi terhadap kode yang telah ditentukan, dan kontrol tambahan ditambahkan untuk verifikasi oleh tim QC.",
+                "results": "Solusi ini menghilangkan masalah ketidaksesuaian barcode, mengurangi kesalahan QC, dan memastikan semua box yang dikirim membawa identifikasi yang benar, sehingga meningkatkan keterlacakan dan integritas produk.",
+                "client": "Perusahaan Manufaktur (Dirahasiakan)",
+                "technologies": "Panasonic PLC, HMI Designer",
+                "duration": "1 minggu",
+                "type": "Otomasi Industri",
+                "responsibility": "Saya merancang sistem verifikasi barcode, mengimplementasikan algoritma deteksi kesalahan, mengintegrasikan barcode scanner ke dalam sistem PLC, dan melakukan pengujian sistem untuk memastikan keandalannya."
+            },
+            "ja": {
+                "title": "バーコード修正プロジェクト",
+                "category": "産業オートメーション",
+                "overview": "このプロジェクトでは、HMI上のバーコード入力にエラーがあり、不正なコードの箱が配送まで検出されない問題を解決しました。QCチームが生産チームの入力を確認・修正できるように、別のバーコード入力機能を追加しました。",
+                "technical": "このシステムは、Panasonic PLCとHMI Designerを使用して構築されました。バーコード確認ロジックはエラー検出アルゴリズムを用いて実装され、スキャナーからの入力は事前定義されたコードと照合され、QC確認用の追加制御が追加されました。",
+                "results": "このソリューションにより、バーコードの不一致問題が解消され、品質管理エラーが削減され、出荷される全ての箱に正しい識別が保証され、トレーサビリティと製品の信頼性が向上しました。",
+                "client": "非公開製造会社",
+                "technologies": "Panasonic PLC、HMI Designer",
+                "duration": "1週間",
+                "type": "産業オートメーション",
+                "responsibility": "バーコード検証システムの設計、エラー検出アルゴリズムの実装、バーコードスキャナーのPLCシステムへの統合、運用信頼性の確保のためのシステムテストを担当しました。"
+            }
+        },
+        "mainImage": "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.jpg",
+        "thumbnails": [
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_c0c08a72.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.24_14663522.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.25_5dc6dd9b.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.23_f97fc86f.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.24_853e608d.jpg"
+        ],
+        "date": "December 2023"
+    },
+
+    "5": {
+        "translations": {
+            "en": {
+                "title": "Project PM Dashboard",
+                "category": "Industrial Automation",
+                "overview": "This project aimed to improve maintenance management by creating a PM Dashboard system. The dashboard provides a visual interface to monitor PM schedules, track durations, and calculate accuracy rates, enabling better planning, execution, and team accountability.",
+                "technical": "The system was developed using Panasonic PLC and HMI Designer. It includes real-time tracking of PM activities with features such as barcode-based start/finish validation, automatic accuracy calculation, and a consolidated display of PM tasks. Users must scan PM cards before and after maintenance.",
+                "results": "The PM Dashboard improved the visibility of maintenance operations, enhanced scheduling precision, and reduced manual recording errors, leading to more reliable equipment upkeep and improved operational efficiency.",
+                "client": "PT Smoore Technology Indonesia",
+                "technologies": "Panasonic PLC, HMI Designer, Barcode Scanner",
+                "duration": "1 week",
+                "type": "Industrial Automation",
+                "responsibility": "I designed and configured the HMI and PLC logic, created the dashboard layout, integrated barcode-based validation for PM events, and tested the system to ensure accurate data logging and usability."
+            },
+            "id": {
+                "title": "Proyek PM Dashboard",
+                "category": "Otomasi Industri",
+                "overview": "Proyek ini bertujuan untuk meningkatkan manajemen pemeliharaan dengan membuat sistem PM Dashboard. Dashboard ini menyediakan antarmuka visual untuk memantau jadwal PM, melacak durasi, dan menghitung tingkat akurasi, sehingga mendukung perencanaan, pelaksanaan, dan akuntabilitas tim yang lebih baik.",
+                "technical": "Sistem ini dikembangkan menggunakan Panasonic PLC dan HMI Designer. Fitur utamanya meliputi pelacakan kegiatan PM secara real-time, validasi barcode untuk memulai/menyelesaikan PM, perhitungan akurasi otomatis, dan tampilan konsolidasi dari tugas PM. Pengguna harus memindai kartu PM sebelum dan sesudah perawatan.",
+                "results": "PM Dashboard meningkatkan visibilitas aktivitas perawatan, memperbaiki ketepatan jadwal, dan mengurangi kesalahan pencatatan manual, sehingga pemeliharaan peralatan menjadi lebih andal dan efisiensi operasional meningkat.",
+                "client": "PT Smoore Technology Indonesia",
+                "technologies": "Panasonic PLC, HMI Designer, Pemindai Barcode",
+                "duration": "1 minggu",
+                "type": "Otomasi Industri",
+                "responsibility": "Saya merancang dan mengkonfigurasi logika PLC dan HMI, membuat tampilan dashboard, mengintegrasikan validasi berbasis barcode untuk aktivitas PM, serta melakukan pengujian sistem untuk memastikan pencatatan data yang akurat dan kemudahan penggunaan."
+            },
+            "ja": {
+                "title": "PMダッシュボードプロジェクト",
+                "category": "産業オートメーション",
+                "overview": "このプロジェクトは、PMダッシュボードシステムを構築することでメンテナンス管理の改善を目的としました。ダッシュボードは、PMスケジュールの可視化、作業時間の追跡、精度の計算を可能にし、より良い計画、実行、チームの責任管理を支援します。",
+                "technical": "このシステムはPanasonic PLCとHMI Designerを使用して開発されました。主な機能として、PM活動のリアルタイム追跡、バーコードによる開始・終了の検証、自動精度計算、PMタスクの統合表示があります。メンテナンス前後にはPMカードのスキャンが必要です。",
+                "results": "PMダッシュボードは、保守作業の可視性を高め、スケジュール精度を向上させ、手動入力ミスを削減し、設備保守の信頼性と運用効率を改善しました。",
+                "client": "PT Smoore Technology Indonesia",
+                "technologies": "Panasonic PLC、HMI Designer、バーコードスキャナー",
+                "duration": "1週間",
+                "type": "産業オートメーション",
+                "responsibility": "私はHMIとPLCのロジックを設計・構成し、ダッシュボードの画面を作成し、PMイベントのバーコード認証を統合し、システムの正確なデータ記録と使いやすさを保証するためのテストを実施しました。"
+            }
+        },
+        "mainImage": "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.jpg",
+        "thumbnails": [
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.21_21648826 - Copy.jpg",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.21_21648826.jpg"
+        ],
+        "date": "January 2024"
+    },
+
+    "6": {
+        "translations": {
+            "en": {
+                "title": "Project Brankas Monitoring",
+                "category": "IoT and Embedded System",
+                "overview": "This project focuses on developing an IoT-based system to monitor the usage and access of secure safes in real-time. By integrating ESP32 microcontroller, RFID for user authentication, and a cloud-based Laravel dashboard, the system enables supervisors to remotely track opening/closing events, access logs, and environmental conditions such as temperature or vibration.",
+                "technical": "The system utilizes ESP32 for data processing and communication. RFID is used to authorize users before safe access. The data is transmitted via Wi-Fi to a Laravel-based web dashboard where events are logged and visualized. The system supports chat alerts, access logs, time-based restrictions, and real-time tracking using photo micro sensors. Development involved Eagle for PCB design, Arduino IDE for firmware, and Corel Draw for mechanical labeling.",
+                "results": "With this system, unauthorized access was significantly reduced, and supervisors gained better control and transparency over safe usage. The solution also supported audit trails and improved accountability for high-value asset storage.",
+                "client": "PT Pasifik Satelit Nusantara",
+                "technologies": "ESP32, RFID, Photo Micro Sensor, Laravel, PHP, Wi-Fi",
+                "duration": "5 months",
+                "type": "IoT Security Monitoring",
+                "responsibility": "I developed the ESP32 firmware, integrated RFID hardware, implemented status detection using photo micro sensors, created the Laravel-based dashboard and API endpoints, added real-time chat notification, and tested the system end-to-end to ensure secure, synchronized operation. Tools used include Eagle, Arduino IDE, Corel Draw, and Zoom for collaboration."
+            },
+            "id": {
+                "title": "Proyek Monitoring Brankas",
+                "category": "IoT dan Sistem Tertanam",
+                "overview": "Proyek ini berfokus pada pengembangan sistem berbasis IoT untuk memantau penggunaan dan akses brankas secara real-time. Dengan mengintegrasikan mikrokontroler ESP32, RFID untuk otentikasi pengguna, dan dashboard Laravel berbasis cloud, sistem ini memungkinkan pengawas memantau aktivitas buka/tutup, log akses, serta kondisi lingkungan seperti suhu atau getaran secara jarak jauh.",
+                "technical": "Sistem ini menggunakan ESP32 untuk pemrosesan dan komunikasi data. RFID digunakan untuk mengotorisasi pengguna sebelum mengakses brankas. Data dikirim melalui Wi-Fi ke dashboard web Laravel di mana semua aktivitas dicatat dan divisualisasikan. Sistem ini mendukung notifikasi chat, pembatasan akses berbasis waktu, serta pelacakan status real-time menggunakan photo micro sensor. Perancangan PCB dilakukan dengan Eagle, pemrograman firmware menggunakan Arduino IDE, dan pelabelan mekanik menggunakan Corel Draw.",
+                "results": "Dengan sistem ini, akses tidak sah berhasil dikurangi secara signifikan dan pengawas memperoleh kontrol serta transparansi yang lebih baik terhadap penggunaan brankas. Solusi ini juga mendukung audit trail dan meningkatkan akuntabilitas dalam penyimpanan aset bernilai tinggi.",
+                "client": "PT Pasifik Satelit Nusantara",
+                "technologies": "ESP32, RFID, Photo Micro Sensor, Laravel, PHP, Wi-Fi",
+                "duration": "5 bulan",
+                "type": "Pemantauan Keamanan IoT",
+                "responsibility": "Saya mengembangkan firmware ESP32, mengintegrasikan perangkat keras RFID, menerapkan deteksi status menggunakan photo micro sensor, membangun dashboard Laravel dan endpoint API, menambahkan sistem notifikasi chat real-time, serta melakukan pengujian menyeluruh untuk memastikan operasi sistem yang aman dan tersinkronisasi. Alat yang digunakan termasuk Eagle, Arduino IDE, Corel Draw, dan Zoom untuk kolaborasi."
+            },
+            "ja": {
+                "title": "金庫監視プロジェクト",
+                "category": "IoTと組み込みシステム",
+                "overview": "このプロジェクトは、金庫の使用とアクセスをリアルタイムで監視するIoTベースのシステムの開発に焦点を当てています。ESP32マイコン、RFID認証、およびクラウドベースのLaravelダッシュボードを統合することで、開閉イベント、アクセスログ、温度や振動などの環境条件を遠隔から監視することができます。",
+                "technical": "本システムは、ESP32を使用してデータ処理と通信を行います。金庫へのアクセス前に、RFIDでユーザーを認証します。データはWi-Fi経由でLaravelベースのWebダッシュボードに送信され、ログとして保存・可視化されます。システムにはチャット通知、時間帯制限、Photo Micro Sensorを用いた状態監視も組み込まれています。PCB設計にはEagle、ファームウェア開発にはArduino IDE、ラベルデザインにはCorel Drawを使用しました。",
+                "results": "このシステムにより、不正アクセスが大幅に削減され、管理者は金庫の使用状況をより明確に把握できるようになりました。また、監査ログの提供により、貴重な資産の管理責任も向上しました。",
+                "client": "PT Pasifik Satelit Nusantara",
+                "technologies": "ESP32、RFID、フォトマイクロセンサー、Laravel、PHP、Wi-Fi",
+                "duration": "5ヶ月",
+                "type": "IoTセキュリティ監視",
+                "responsibility": "ESP32ファームウェアの開発、RFIDハードウェアの統合、フォトマイクロセンサーによる状態検出の実装、LaravelダッシュボードとAPIエンドポイントの構築、リアルタイムチャット通知の追加、そしてシステムの全体的なテストと安定性の確認を担当しました。使用したツールはEagle、Arduino IDE、Corel Draw、Zoomです。"
+            }
+        },
+        "mainImage": "data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.jpg",
+        "thumbnails": [
+            "data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.jpg",
+            "data/projects img/brankas/IMG_20250505_072146.jpg",
+            "data/projects img/brankas/IMG20250207142935.jpg"
+        ],
+        "date": "December 2024"
     }
 }
