@@ -30,6 +30,7 @@
                 <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
                 <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
                 <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </nav>
@@ -54,6 +55,7 @@
         <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
@@ -61,8 +63,8 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 data-i18n="hero.title">Innovative Electrical Solutions</h1>
-                    <p class="subtitle" data-i18n="hero.subtitle">Powering the future with cutting-edge electrical engineering</p>
+                    <h1 data-i18n="hero.title">Embedded & IoT Engineer</h1>
+                    <p class="subtitle" data-i18n="hero.subtitle">ESP32 | STM32 | PCB Design | Industrial Automation | Control Systems</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn primary" data-i18n="hero.viewProjects">View Projects</a>
                         <a href="#contact" class="btn secondary" data-i18n="hero.contactMe">Contact Me</a>
@@ -80,53 +82,68 @@
                 <h2 data-i18n="about.title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p data-i18n="about.text1">I am a passionate electrical engineer with over 10 years of experience in designing, implementing, and maintaining electrical systems across various industries.</p>
-                        <p data-i18n="about.text2">My expertise spans power systems, control engineering, renewable energy integration, and industrial automation. I am committed to delivering efficient, sustainable, and innovative electrical solutions.</p>
+                        <p data-i18n="about.text1">I'm an electrical engineer passionate about designing systems that connect technology with purpose—whether through satellite control, industrial automation, or IoT innovation. This portfolio reflects my dedication to building reliable, thoughtful solutions that not only function well but also contribute meaningfully to the future.</p>
+                        <p data-i18n="about.text2">My expertise includes real-time satellite control systems, industrial automation using PLC and HMI, IoT system development, and sensor–microcontroller integration. I am committed to delivering engineering solutions that are responsive, efficient, and aligned with the demands of modern systems.</p>
                         <div class="skills">
-                            <div class="skill" data-percent="90">
-                                <div class="skill-info">
-                                    <span data-i18n="skill1">Satellite & Control Systems</span>
-                                    <span class="percent">90%</span>
+                            <div class="skill" data-percent="90" style="margin-bottom: 25px;">
+                                <div class="skill-info" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px;">
+                                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                                        <strong data-i18n="skill1" style="font-size: 1.2em; letter-spacing: 0.5px;">Embedded Systems</strong>
+                                        <span data-i18n="skill1.description" style="font-size: 0.95em; opacity: 1.0; font-weight: 400;">STM32 &bull; ESP32 &bull; C/C++ &bull; FreeRTOS &bull; UART &bull; CAN &bull; I2C &bull; SPI &bull; MQTT</span>
+                                    </div>
+                                    <!-- <span class="percent" style="font-weight: bold; font-size: 1.1em;">90%</span> -->
                                 </div>
-                                <div class="skill-bar">
+                                <!-- <div class="skill-bar">
                                     <div class="skill-progress"></div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="skill" data-percent="90">
-                                <div class="skill-info">
-                                    <span data-i18n="skill2">Industrial Automation (PLC/HMI)</span>
-                                    <span class="percent">90%</span>
+                                <div class="skill-info" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px;">
+                                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                                        <strong data-i18n="skill2" style="font-size: 1.2em; letter-spacing: 0.5px;">Industrial Automation  (PLC/HMI)</strong>
+                                        <span data-i18n="skill2.description" style="font-size: 0.95em; opacity: 1.0; font-weight: 400;">PLC &bull; HMI &bull; SCADA &bull; Siemens &bull; Panasonic &bull; Mitsubishi &bull; Schneider</span>
+                                    </div>
+                                    <!-- <span class="percent" style="font-weight: bold; font-size: 1.1em;">90%</span> -->
                                 </div>
-                                <div class="skill-bar">
+                                <!-- <div class="skill-bar">
                                     <div class="skill-progress"></div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="skill" data-percent="85">
-                                <div class="skill-info">
-                                    <span data-i18n="skill3">IoT & Embedded Systems</span>
-                                    <span class="percent">85%</span>
+                                <div class="skill-info" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px;">
+                                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                                        <strong data-i18n="skill3" style="font-size: 1.2em; letter-spacing: 0.5px;">PCB & Electronics Design</strong>
+                                        <span data-i18n="skill3.description" style="font-size: 0.95em; opacity: 1.0; font-weight: 400;">Eagle &bull; KiCad &bull; Schematic &bull; PCB Layout &bull; Sensor Interface</span>
+                                    </div>
+                                    <!-- <span class="percent" style="font-weight: bold; font-size: 1.1em;">85%</span> -->
                                 </div>
-                                <div class="skill-bar">
+                                <!-- <div class="skill-bar">
                                     <div class="skill-progress"></div>
-                                </div>
-                            </div>
-                            <div class="skill" data-percent="75">
-                                <div class="skill-info">
-                                    <span data-i18n="skill4">Technical Programming (Python/C/C++)</span>
-                                    <span class="percent">75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress"></div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="skill" data-percent="80">
-                                <div class="skill-info">
-                                    <span data-i18n="skill5">System Integration & Troubleshooting</span>
-                                    <span class="percent">80%</span>
+                                <div class="skill-info" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px;">
+                                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                                        <strong data-i18n="skill4" style="font-size: 1.2em; letter-spacing: 0.5px;">Control Systems</strong>
+                                        <span data-i18n="skill4.description" style="font-size: 0.95em; opacity: 1.0; font-weight: 400;">PID &bull; Instrumentation &bull; Technical Programming (Python/C/C++)</span>
+                                    </div>
+                                    <!-- <span class="percent" style="font-weight: bold; font-size: 1.1em;">80%</span> -->
                                 </div>
-                                <div class="skill-bar">
+                                <!-- <div class="skill-bar">
                                     <div class="skill-progress"></div>
+                                </div> -->
+                            </div>
+                            <div class="skill" data-percent="80">
+                                <div class="skill-info" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px;">
+                                    <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+                                        <strong data-i18n="skill5" style="font-size: 1.2em; letter-spacing: 0.5px;">Satellite Systems & Telemetry</strong>
+                                        <span data-i18n="skill5.description" style="font-size: 0.95em; opacity: 1.0; font-weight: 400;">CCSDS &bull; CSP &bull; FDCAN &bull; Telemetry &bull; Bus Analytics</span>
+                                    </div>
+                                    <!-- <span class="percent" style="font-weight: bold; font-size: 1.1em;">80%</span> -->
                                 </div>
+                                <!-- <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -309,6 +326,159 @@
             </div>
         </section>
 
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services" style="padding: 60px 0;">
+            <div class="container">
+                
+                <!-- Judul Bagian -->
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 data-i18n="services.title" style="font-size: 2.2em; margin-bottom: 10px;">Services</h2>
+                    <p data-i18n="services.subtitle" style="opacity: 0.7; font-size: 1.1em;">What can I do for you?</p>
+                </div>
+
+                <!-- Grid Layanan -->
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px;">
+
+                    <!-- Card 1: Embedded Firmware -->
+                    <div class="service-card" style="background: rgba(255, 255, 255, 0.03); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                        <!-- Tambahkan min-height: 3em disini -->
+                        <h3 data-i18n="services.firmware.title" style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.3em; min-height: 3em; display: flex; align-items: center; justify-content: center; text-align: center;">Embedded Firmware</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0; opacity: 0.8; line-height: 2;">
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.firmware1">ESP32 firmware</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.firmware2">STM32 firmware</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.firmware3">Sensor integration</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.firmware4">UART/I2C/SPI/CAN</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.firmware5">FreeRTOS</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.firmware6">Debugging</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: IoT Development -->
+                    <div class="service-card" style="background: rgba(255, 255, 255, 0.03); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                        <!-- Tambahkan min-height: 3em disini -->
+                        <h3 data-i18n="services.iot.title" style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.3em; min-height: 3em; display: flex; align-items: center; justify-content: center; text-align: center;">IoT Development</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0; opacity: 0.8; line-height: 2;">
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.iot1">Sensor monitoring</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.iot2">ESP32 IoT</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.iot3">MQTT protocol</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.iot4">Dashboard</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.iot5">Database integration</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.iot6">Remote monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: PCB Design -->
+                    <div class="service-card" style="background: rgba(255, 255, 255, 0.03); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                        <!-- Tambahkan min-height: 3em disini -->
+                        <h3 data-i18n="services.pcb.title" style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.3em; min-height: 3em; display: flex; align-items: center; justify-content: center; text-align: center;">PCB Design</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0; opacity: 0.8; line-height: 2;">
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.pcb1">Schematic design</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.pcb2">PCB layout</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.pcb3">Component selection</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.pcb4">BOM (Bill of Materials)</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.pcb5">Gerber generation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4: Industrial Automation -->
+                    <div class="service-card" style="background: rgba(255, 255, 255, 0.03); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                        <!-- Tambahkan min-height: 3em disini -->
+                        <h3 data-i18n="services.automation.title" style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.3em; min-height: 3em; display: flex; align-items: center; justify-content: center; text-align: center;">Industrial Automation</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0; opacity: 0.8; line-height: 2;">
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.automation1">PLC programming</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.automation2">HMI design</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.automation3">Sensor integration</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.automation4">Machine monitoring</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.automation5">Troubleshooting</span>
+                            </li>
+                            <li>
+                                <span style="color: var(--primary-color); margin-right: 10px;">✓</span>
+                                <span data-i18n="services.automation6">Energy efficiency</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Call To Action (Available for Freelance) -->
+                <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); padding: 40px 30px; border-radius: 15px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                    <h3 data-i18n="services.cta.title" style="font-size: 1.8em; margin-bottom: 15px; color: #ffffff;">Available for freelance projects</h3>
+                    <p data-i18n="services.cta.subtitle" style="font-size: 1.1em; color: #e2e8f0; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Need help bringing your engineering ideas to life? Let's discuss your requirements and build something great together.
+                    </p>
+                    <a href="#contact" class="btn primary" data-i18n="services.cta.button" style="background: #ffffff; color: #2b6cb0; padding: 12px 35px; border-radius: 30px; font-weight: bold; text-decoration: none; display: inline-block; transition: all 0.3s ease;">
+                        Hire Me / Let's Talk
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
         <section id="contact" class="contact">
             <div class="container">
                 <h2 data-i18n="contact.title">Get In Touch</h2>
@@ -368,6 +538,17 @@
         </div>
     </footer>
 
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Panah atas pertama -->
+            <polyline points="17 11 12 6 7 11"></polyline>
+            <!-- Panah atas kedua -->
+            <polyline points="17 18 12 13 7 18"></polyline>
+        </svg>
+    </button>
+
     <script src="js/script.js"></script>
+
 </body>
 </html>

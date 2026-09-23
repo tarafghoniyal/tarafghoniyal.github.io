@@ -118,8 +118,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const percent = skill.getAttribute('data-percent');
         const progressBar = skill.querySelector('.skill-progress');
         const percentText = skill.querySelector('.percent');
-        progressBar.style.width = percent + '%';
-        percentText.textContent = percent + '%';
+        
+        // TAMBAHKAN PENGECEKAN INI
+        if (progressBar && percentText) {
+          progressBar.style.width = percent + '%';
+          percentText.textContent = percent + '%';
+        } else {
+          console.warn("Elemen .skill-progress atau .percent tidak ditemukan!");
+        }
       }
     });
   }
@@ -194,6 +200,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('navMenu');
     nav.classList.toggle('show');
   };
+
+  // Ambil elemen tombol
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  // Tampilkan/sembunyikan tombol saat user scroll
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {  // Muncul setelah scroll 300px
+          scrollTopBtn.classList.add('show');
+      } else {
+          scrollTopBtn.classList.remove('show');
+      }
+  });
+
+  // Smooth scroll ke atas saat tombol diklik
+  scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
 
   // Initialize theme from localStorage or system preference
   const savedTheme = localStorage.getItem('theme') || 'light';
