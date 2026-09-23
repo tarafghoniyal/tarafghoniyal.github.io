@@ -423,7 +423,7 @@ nav a:hover::after {
     justify-content: center;
 }
 
-.circuit-animation {
+/* .circuit-animation {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -432,6 +432,41 @@ nav a:hover::after {
     animation: rotate 20s linear infinite;
     opacity: 0.3;
     z-index: -1;
+} */
+
+.circuit-animation {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    
+    /* WARNA LIGHT MODE: Ubah di sini (Hitam atau #4a6fa5) */
+    background-color: #4a6fa5; 
+    
+    /* SVG dijadikan Mask (Cetakan) */
+    /* Catatan: Kode %234a6fa5 di dalam SVG diubah menjadi %23000 (Hitam solid) agar mask bekerja maksimal */
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="%23000" stroke-width="0.5"/><path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="%23000" stroke-width="0.5"/><path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="%23000" stroke-width="0.5"/><circle cx="50" cy="50" r="5" fill="%23000"/><line x1="50" y1="0" x2="50" y2="20" stroke="%23000" stroke-width="0.5"/><line x1="50" y1="80" x2="50" y2="100" stroke="%23000" stroke-width="0.5"/><line x1="0" y1="50" x2="20" y2="50" stroke="%23000" stroke-width="0.5"/><line x1="80" y1="50" x2="100" y2="50" stroke="%23000" stroke-width="0.5"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="%23000" stroke-width="0.5"/><path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="%23000" stroke-width="0.5"/><path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="%23000" stroke-width="0.5"/><circle cx="50" cy="50" r="5" fill="%23000"/><line x1="50" y1="0" x2="50" y2="20" stroke="%23000" stroke-width="0.5"/><line x1="50" y1="80" x2="50" y2="100" stroke="%23000" stroke-width="0.5"/><line x1="0" y1="50" x2="20" y2="50" stroke="%23000" stroke-width="0.5"/><line x1="80" y1="50" x2="100" y2="50" stroke="%23000" stroke-width="0.5"/></svg>');
+    
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    
+    /* Hapus background-image aslinya */
+    /* background-image: ... ; */
+    /* background-size: cover; */
+    
+    animation: rotate 20s linear infinite;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Mengatur warna SVG saat mode terang (light mode) */
+/* [data-theme="light"] .circuit-animation {
+    background-color: #4a6fa5; Warna biru asli Anda */
+/* } */
+
+/* Mengatur warna SVG saat mode gelap (dark mode) */
+[data-theme="dark"] .circuit-animation {
+    background-color: #ffffff; /* Berubah menjadi putih */
 }
 
 .profile-img {
