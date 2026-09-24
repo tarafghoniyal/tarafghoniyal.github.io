@@ -202,12 +202,16 @@
                 flex-direction: row;
             }
             
+            /* Bagian Gambar (Kiri): Perkecil angkanya, misalnya dari 70% menjadi 60% */
             .project-main {
-                flex: 1 1 70%;
+                flex: 1 1 70%; 
+                max-width: 70%; /* Tambahkan max-width agar lebih stabil */
             }
             
+            /* Bagian Detail (Kanan): Perbesar angkanya, misalnya dari 25% menjadi 35% */
             .project-sidebar {
-                flex: 1 1 25%;
+                flex: 1 1 25%; 
+                max-width: 25%; /* Tambahkan max-width agar lebih stabil */
                 position: sticky;
                 top: calc(var(--header-height) + 1rem);
                 align-self: flex-start;
@@ -224,7 +228,8 @@
         
         .main-image-container {
             width: 100%;
-            max-height: 70vh;
+            height: 450px; /* Tetapkan tinggi tetap untuk gambar utama */
+            /* max-height: 70vh; */
             overflow: hidden;
             border-radius: 8px;
             box-shadow: var(--card-shadow);
@@ -236,8 +241,8 @@
         
         .main-image {
             width: 100%;
-            height: auto;
-            max-height: 70vh;
+            height: 100%;
+            /* max-height: 70vh; */
             object-fit: contain;
             transition: opacity 0.3s ease;
         }
@@ -314,6 +319,108 @@
             color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
+
+        /* Pastikan galeri memiliki batas lebar agar tidak mendesak teks di sebelahnya */
+        .project-gallery {
+            width: 100%;
+            /* Atur min-width agar gambar utama tidak terlalu melar */
+            min-width: 0; 
+        }
+
+        .thumbnail-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            position: relative;
+            width: 100%;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 10px;
+            flex-grow: 1;
+            
+            /* Menyembunyikan scrollbar bawaan agar terlihat rapi */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Menyembunyikan scrollbar di Chrome, Safari, dan Opera */
+        .thumbnail-container::-webkit-scrollbar {
+            display: none; 
+        }
+
+        /* Styling untuk gambar thumbnail agar seragam dan tidak mengecil */
+        .thumbnail-container img {
+            flex: 0 0 auto; /* Mencegah gambar menyusut */
+            width: 80px; 
+            height: 60px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .thumbnail-container img.active,
+        .thumbnail-container img:hover {
+            opacity: 1;
+            border: 2px solid #63b3ed; /* Ganti dengan variabel warna Anda */
+        }
+
+        /* Styling untuk tombol geser */
+        .thumb-nav {
+            border: none;
+            border-radius: 5px;
+            padding: 15px 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        /* Aturan Warna untuk Light Mode */
+        [data-theme="light"] .thumb-nav {
+            background-color: rgba(0, 0, 0, 0.05); /* Latar belakang abu-abu terang */
+            color: #333; /* Warna ikon gelap */
+        }
+
+        [data-theme="light"] .thumb-nav:hover {
+            background-color: rgba(0, 0, 0, 0.15); /* Lebih gelap sedikit saat di-hover */
+        }
+
+        /* Border untuk gambar yang aktif di Light Mode */
+        [data-theme="light"] .thumbnail-container img.active,
+        [data-theme="light"] .thumbnail-container img:hover {
+            opacity: 1;
+            border: 2px solid #2b6cb0; /* Warna biru lebih gelap agar kontras di latar putih */
+        }
+
+        /* Aturan Warna untuk Dark Mode */
+        [data-theme="dark"] .thumb-nav {
+            background-color: rgba(255, 255, 255, 0.1); /* Latar belakang agak putih transparan */
+            color: #fff; /* Warna ikon putih */
+        }
+
+        [data-theme="dark"] .thumb-nav:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Border untuk gambar yang aktif di Dark Mode */
+        [data-theme="dark"] .thumbnail-container img.active,
+        [data-theme="dark"] .thumbnail-container img:hover {
+            opacity: 1;
+            border: 2px solid #63b3ed; /* Warna biru terang */
+        }
+
+        .thumb-nav:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
         
         .back-button {
             display: inline-flex;
@@ -363,6 +470,32 @@
                 width: 80px;
                 height: 60px;
             }
+        }
+
+        .output-text {
+            white-space: pre-line;
+        }
+
+        #project-overview {
+            white-space: pre-line;
+        }
+
+        /* Atau jika ingin diterapkan ke semua paragraf di dalam deskripsi proyek */
+        .project-description p {
+            white-space: pre-line;
+        }
+
+        /* Mengatur jarak list di dalam deskripsi proyek */
+        .project-description ul, 
+        .project-description ol {
+            margin-left: 20px; /* Memberikan indentasi/jarak dari batas kiri */
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-description li {
+            margin-bottom: 8px; /* Memberikan jarak antar poin agar lebih mudah dibaca */
+            line-height: 1.6;
         }
 
         /* Footer Styles */
@@ -443,23 +576,38 @@
                         <div class="main-image-container">
                             <img id="main-image" src="" alt="Main Project Image" class="main-image">
                         </div>
-                        <div class="thumbnail-container" id="thumbnail-container">
-                            <!-- Thumbnails will be added dynamically -->
+                        
+                        <!-- Bungkus bagian thumbnail dengan wrapper dan tombol -->
+                        <div class="thumbnail-wrapper">
+                            <button class="thumb-nav prev-btn" aria-label="Previous image">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            
+                            <div class="thumbnail-container" id="thumbnail-container">
+                                <!-- Thumbnails will be added dynamically -->
+                            </div>
+                            
+                            <button class="thumb-nav next-btn" aria-label="Next image">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
                     </section>
                     
                     <section class="project-description">
                         <h2 data-i18n="project.overview">Project Overview</h2>
                         <p id="project-overview" data-i18n="project.overview_text">Loading project details...</p>
-                        
-                        <h2 data-i18n="project.technical">Technical Details</h2>
-                        <p id="technical-details" data-i18n="project.technical_text">Loading technical details...</p>
 
-                        <h2 data-i18n="project.responsibility">Responsibility</h2>
+                        <h2 data-i18n="project.architecture">System Architecture</h2>
+                        <p id="project-architecture" data-i18n="project.architecture_text">Loading architecture details...</p>
+
+                        <h2 data-i18n="project.responsibility">My Responsibilities</h2>
                         <p id="project-responsibility" data-i18n="project.responsibility_text">Loading responsibility details...</p>
                         
-                        <h2 data-i18n="project.results">Results</h2>
-                        <p id="project-results" data-i18n="project.results_text">Loading results...</p>
+                        <h2 data-i18n="project.technical">Technical Implementation</h2>
+                        <p id="technical-details" data-i18n="project.technical_text">Loading technical details...</p>
+                        
+                        <h2 data-i18n="project.results">Project Outcome</h2>
+                        <p id="project-results" data-i18n="project.results_text">Loading outcome...</p>
                     </section>
                     
                     <!-- <a href="projects.html" class="back-button desktop-back-button" data-i18n="project.back_button">
@@ -490,6 +638,11 @@
                             <h3 data-i18n="project.type">Project Type</h3>
                             <p id="project-type" data-i18n="project.type_text">N/A</p>
                         </div>
+
+                        <div class="detail-item">
+                            <h3 data-i18n="project.role">My Role</h3>
+                            <p id="project-role" data-i18n="project.role_text">N/A</p>
+                        </div>
                     </div>
 
                     <a href="projects.html" class="back-button mobile-back-button" data-i18n="project.back_button">
@@ -510,6 +663,24 @@
         // Get project ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const projectId = urlParams.get('id');
+
+        // Mengatur fungsionalitas scroll pada thumbnail
+        const thumbnailContainer = document.getElementById('thumbnail-container');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        if (prevBtn && nextBtn && thumbnailContainer) {
+            // Jarak geser setiap kali tombol diklik (misal 150px)
+            const scrollAmount = 150; 
+
+            prevBtn.addEventListener('click', () => {
+                thumbnailContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                thumbnailContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
 
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize theme
@@ -614,17 +785,24 @@
                 const projectData = project.translations?.[currentLang] || project.translations?.en || project;
                 
                 // Update project content
+                // Update project content
                 document.getElementById('project-title').textContent = projectData.title;
                 document.getElementById('project-category').textContent = projectData.category;
                 document.getElementById('project-date').textContent = project.date;
-                document.getElementById('project-overview').textContent = projectData.overview;
-                document.getElementById('technical-details').textContent = projectData.technical;
-                document.getElementById('project-responsibility').textContent = projectData.responsibility;
-                document.getElementById('project-results').textContent = projectData.results;
+                
+                // Gunakan innerHTML untuk area teks panjang agar tag <b> dan <br> berfungsi
+                document.getElementById('project-overview').innerHTML = projectData.overview;
+                document.getElementById('project-architecture').innerHTML = projectData.architecture;
+                document.getElementById('technical-details').innerHTML = projectData.technical;
+                document.getElementById('project-responsibility').innerHTML = projectData.responsibility;
+                document.getElementById('project-results').innerHTML = projectData.results;
+                
+                // Kembalikan ke textContent untuk detail singkat di sidebar (opsional, tapi lebih aman)
                 document.getElementById('project-client').textContent = projectData.client;
-                document.getElementById('project-technologies').textContent = projectData.technologies;
+                document.getElementById('project-technologies').innerHTML = projectData.technologies; // Gunakan innerHTML jika ada <b> di sini
                 document.getElementById('project-duration').textContent = projectData.duration;
                 document.getElementById('project-type').textContent = projectData.type;
+                document.getElementById('project-role').textContent = projectData.role;
                 
                 // Update images
                 const mainImg = document.getElementById('main-image');

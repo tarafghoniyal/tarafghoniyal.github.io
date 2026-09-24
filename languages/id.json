@@ -208,12 +208,15 @@
     "project.title": "Detail Proyek",
     "project.category": "Kategori",
     "project.overview": "Gambaran Proyek",
-    "project.technical": "Detail Teknis",   
-    "project.results": "Hasil",
+    "project.architecture": "Arsitektur Sistem",
+    "project.responsibility": "Tanggung Jawab Saya",
+    "project.technical": "Implementasi Teknis",
+    "project.results": "Hasil Proyek",
     "project.details": "Detail Proyek",
     "project.client": "Klien",
     "project.technologies": "Teknologi",
     "project.duration": "Durasi",
     "project.type": "Jenis Proyek",
+    "project.role": "Peran Saya",
     "project.back_button": "Kembali ke Proyek"
 }

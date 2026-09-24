@@ -208,12 +208,15 @@
     "project.title": "プロジェクト詳細",
     "project.category": "カテゴリー",
     "project.overview": "プロジェクト概要",
-    "project.technical": "技術的詳細",
-    "project.results": "結果",
+    "project.architecture": "システムアーキテクチャ",
+    "project.responsibility": "私の責任",
+    "project.technical": "技術的実装",
+    "project.results": "プロジェクトの成果",
     "project.details": "プロジェクト詳細",
     "project.client": "クライアント",
     "project.technologies": "技術",
     "project.duration": "期間",
     "project.type": "プロジェクトタイプ",
+    "project.role": "私の役割",
     "project.back_button": "プロジェクトに戻る"
 }
