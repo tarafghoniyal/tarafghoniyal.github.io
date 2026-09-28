@@ -498,6 +498,44 @@
             line-height: 1.6;
         }
 
+        /* Tombol Scroll to Top */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3498db; /* Warna biru */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+            
+            /* Sembunyikan tombol secara default */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        /* Class ini akan ditambahkan oleh JavaScript saat di-scroll */
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #2980b9; /* Biru lebih gelap saat di-hover */
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 8px 25px rgba(41, 128, 185, 0.6);
+        }
+
         /* Footer Styles */
         .main-footer {
             background-color: var(--card-bg);
@@ -566,7 +604,7 @@
                 <h1 id="project-title" data-i18n="project.title">Project Title</h1>
                 <div class="project-meta">
                     <span id="project-category" data-i18n="project.category">Category</span>
-                    <span id="project-date">June 2023</span>
+                    <span id="project-date" data data-i18n="project.date">Date</span>
                 </div>
             </div>
             
@@ -574,7 +612,7 @@
                 <article class="project-main">
                     <section class="project-gallery">
                         <div class="main-image-container">
-                            <img id="main-image" src="" alt="Main Project Image" class="main-image">
+                            <img id="main-image" src="" alt="Main Project Image" class="main-image" loading="lazy">
                         </div>
                         
                         <!-- Bungkus bagian thumbnail dengan wrapper dan tombol -->
@@ -659,73 +697,215 @@
         </div>
     </footer>
 
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Panah atas pertama -->
+            <polyline points="17 11 12 6 7 11"></polyline>
+            <!-- Panah atas kedua -->
+            <polyline points="17 18 12 13 7 18"></polyline>
+        </svg>
+    </button>
+
     <script>
-        // Get project ID from URL
+        // =========================================================================
+        // 1. INJEKSI INSTAN TEMA (Mencegah Kedipan Layar / Flash of Unstyled Theme)
+        // =========================================================================
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+
+        // Ambil parameter URL secara global
         const urlParams = new URLSearchParams(window.location.search);
         const projectId = urlParams.get('id');
 
-        // Mengatur fungsionalitas scroll pada thumbnail
+        // Fungsionalitas scroll thumbnail (bisa langsung berjalan tanpa menunggu DOM)
         const thumbnailContainer = document.getElementById('thumbnail-container');
         const prevBtn = document.querySelector('.prev-btn');
         const nextBtn = document.querySelector('.next-btn');
 
         if (prevBtn && nextBtn && thumbnailContainer) {
-            // Jarak geser setiap kali tombol diklik (misal 150px)
             const scrollAmount = 150; 
-
             prevBtn.addEventListener('click', () => {
                 thumbnailContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             });
-
             nextBtn.addEventListener('click', () => {
                 thumbnailContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize theme
+            // Terapkan icon tema yang sesuai dengan tema terinjeksi
             const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
             updateThemeIcon(savedTheme);
             
-            // Initialize language
-            const urlParams = new URLSearchParams(window.location.search);
+            // Inisialisasi Bahasa
             let currentLang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
             
-            // Set dropdown value
             const languageSelect = document.getElementById('language-select');
             if (languageSelect) {
                 languageSelect.value = currentLang;
-                
                 languageSelect.addEventListener('change', function() {
-                    const newLang = this.value;
-                    updateLanguage(newLang);
+                    updateLanguage(this.value);
                 });
             }
             
-            // Load language and project
-            updateLanguage(currentLang);
+            // OPTIMASI UTAMA: Load bahasa dan detail proyek secara paralel
+            initPageData(currentLang);
             
             // Mobile menu toggle
             document.querySelector('.mobile-menu-btn')?.addEventListener('click', function() {
                 document.querySelector('.mobile-nav').classList.toggle('active');
             });
+
+            // =========================================================================
+            // LOGIKA TOMBOL SCROLL TO TOP (Dengan Throttling requestAnimationFrame)
+            // =========================================================================
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            let isScrolling = false;
+
+            if (scrollTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (!isScrolling) {
+                        window.requestAnimationFrame(() => {
+                            if (window.scrollY > 300) {
+                                scrollTopBtn.classList.add('show');
+                            } else {
+                                scrollTopBtn.classList.remove('show');
+                            }
+                            isScrolling = false;
+                        });
+                        isScrolling = true;
+                    }
+                });
+
+                scrollTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
         });
 
-        // Function to update language
-        async function updateLanguage(lang) {
-            localStorage.setItem('selectedLanguage', lang);
+        // OPTIMASI: Fungsi inisialisasi paralel menggunakan Promise.all dan Cache Cepat
+        async function initPageData(lang) {
+            const cacheLangKey = `lang_cache_${lang}`;
+            const cacheProjectKey = `project_cache_data`;
+
+            // 1. Ambil data dari localStorage untuk rendering instan (jika ada)
+            const cachedLang = localStorage.getItem(cacheLangKey);
+            const cachedProjects = localStorage.getItem(cacheProjectKey);
+
+            if (cachedLang && cachedProjects) {
+                applyTranslations(JSON.parse(cachedLang), lang);
+                renderProjectDetails(JSON.parse(cachedProjects), lang);
+            }
+
+            // 2. Fetch data terbaru secara paralel di latar belakang (Stale-While-Revalidate)
+            try {
+                const [langResponse, projectResponse] = await Promise.all([
+                    fetch(`languages/${lang}.json`),
+                    fetch('data/projects.json')
+                ]);
+
+                if (!langResponse.ok) throw new Error('Language file error');
+                if (!projectResponse.ok) throw new Error('Project file error');
+
+                const translations = await langResponse.json();
+                const projects = await projectResponse.json();
+
+                // Simpan data terbaru ke cache
+                localStorage.setItem(cacheLangKey, JSON.stringify(translations));
+                localStorage.setItem(cacheProjectKey, JSON.stringify(projects));
+
+                // Render ulang dengan data segar dari server github.io
+                applyTranslations(translations, lang);
+                renderProjectDetails(projects, lang);
+
+            } catch (error) {
+                console.error('Error fetching data secara paralel:', error);
+                // Fallback ke bahasa inggris jika gagal memuat bahasa non-en
+                if (lang !== 'en') initPageData('en');
+            }
+        }
+
+        function applyTranslations(translations, lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.setAttribute('placeholder', translations[key]);
+                    } else {
+                        element.textContent = translations[key];
+                    }
+                }
+            });
+            document.documentElement.lang = lang;
+        }
+
+        function renderProjectDetails(projects, currentLang) {
+            const project = projects[projectId];
+            if (!project) {
+                document.getElementById('project-title').textContent = "Project Not Found";
+                return;
+            }
             
+            const projectData = project.translations?.[currentLang] || project.translations?.en || project;
+            
+            // Update konten tekstual (innerHTML & textContent)
+            document.getElementById('project-title').textContent = projectData.title;
+            document.getElementById('project-category').textContent = projectData.category;
+            document.getElementById('project-date').textContent = projectData.date;
+            
+            document.getElementById('project-overview').innerHTML = projectData.overview;
+            document.getElementById('project-architecture').innerHTML = projectData.architecture;
+            document.getElementById('technical-details').innerHTML = projectData.technical;
+            document.getElementById('project-responsibility').innerHTML = projectData.responsibility;
+            document.getElementById('project-results').innerHTML = projectData.results;
+            
+            document.getElementById('project-client').textContent = projectData.client;
+            document.getElementById('project-technologies').innerHTML = projectData.technologies; 
+            document.getElementById('project-duration').textContent = projectData.duration;
+            document.getElementById('project-type').textContent = projectData.type;
+            document.getElementById('project-role').textContent = projectData.role;
+            
+            // Update Media Gambar Utama
+            const mainImg = document.getElementById('main-image');
+            if (project.mainImage && mainImg) {
+                mainImg.src = project.mainImage;
+                mainImg.alt = projectData.title;
+            }
+
+            // Render Thumbnails
+            const thumbnailContainer = document.getElementById('thumbnail-container');
+            if (thumbnailContainer && project.thumbnails) {
+                thumbnailContainer.innerHTML = '';
+                project.thumbnails.forEach((thumb, index) => {
+                    const img = document.createElement('img');
+                    img.src = thumb;
+                    img.alt = projectData.title + " thumbnail";
+                    img.className = "thumbnail" + (index === 0 ? " active" : "");
+                    img.onclick = function() {
+                        if (mainImg) mainImg.src = thumb;
+                        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+                    };
+                    thumbnailContainer.appendChild(img);
+                });
+            }
+        }
+
+        // Fungsi update bahasa dari dropdown/URL parameter
+        function updateLanguage(lang) {
+            localStorage.setItem('selectedLanguage', lang);
             const url = new URL(window.location);
             url.searchParams.set('lang', lang);
             window.history.pushState({}, '', url);
             
-            await loadLanguage(lang);
-            await loadProjectDetails(lang);
+            initPageData(lang);
         }
 
-        // Theme management
-        document.getElementById('theme-toggle').addEventListener('click', function() {
+        // Manajemen Aksi Tema (Dark/Light)
+        document.getElementById('theme-toggle')?.addEventListener('click', function() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', newTheme);
@@ -734,103 +914,10 @@
         });
 
         function updateThemeIcon(theme) {
-            const icon = document.getElementById('theme-toggle').querySelector('i');
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            icon.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
-        }
-
-        // Language loading function
-        async function loadLanguage(lang) {
-            try {
-                const response = await fetch(`languages/${lang}.json`);
-                if (!response.ok) throw new Error('Language file not found');
-                
-                const translations = await response.json();
-                
-                document.querySelectorAll('[data-i18n]').forEach(element => {
-                    const key = element.getAttribute('data-i18n');
-                    if (translations[key]) {
-                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                            element.setAttribute('placeholder', translations[key]);
-                        } else {
-                            element.textContent = translations[key];
-                        }
-                    }
-                });
-                
-                document.documentElement.lang = lang;
-                return true;
-            } catch (error) {
-                console.error(`Failed to load language ${lang}:`, error);
-                if (lang !== 'en') return loadLanguage('en');
-                return false;
-            }
-        }
-
-        // Project data loading
-        async function loadProjectDetails(lang = null) {
-            const projectId = new URLSearchParams(window.location.search).get('id');
-            const currentLang = lang || localStorage.getItem('selectedLanguage') || 'en';
-            
-            try {
-                const response = await fetch('data/projects.json');
-                const projects = await response.json();
-                const project = projects[projectId];
-                
-                if (!project) {
-                    document.getElementById('project-title').textContent = "Project Not Found";
-                    return;
-                }
-                
-                const projectData = project.translations?.[currentLang] || project.translations?.en || project;
-                
-                // Update project content
-                // Update project content
-                document.getElementById('project-title').textContent = projectData.title;
-                document.getElementById('project-category').textContent = projectData.category;
-                document.getElementById('project-date').textContent = project.date;
-                
-                // Gunakan innerHTML untuk area teks panjang agar tag <b> dan <br> berfungsi
-                document.getElementById('project-overview').innerHTML = projectData.overview;
-                document.getElementById('project-architecture').innerHTML = projectData.architecture;
-                document.getElementById('technical-details').innerHTML = projectData.technical;
-                document.getElementById('project-responsibility').innerHTML = projectData.responsibility;
-                document.getElementById('project-results').innerHTML = projectData.results;
-                
-                // Kembalikan ke textContent untuk detail singkat di sidebar (opsional, tapi lebih aman)
-                document.getElementById('project-client').textContent = projectData.client;
-                document.getElementById('project-technologies').innerHTML = projectData.technologies; // Gunakan innerHTML jika ada <b> di sini
-                document.getElementById('project-duration').textContent = projectData.duration;
-                document.getElementById('project-type').textContent = projectData.type;
-                document.getElementById('project-role').textContent = projectData.role;
-                
-                // Update images
-                const mainImg = document.getElementById('main-image');
-                if (project.mainImage) {
-                    mainImg.src = project.mainImage;
-                    mainImg.alt = projectData.title;
-                }
-
-                const thumbnailContainer = document.getElementById('thumbnail-container');
-                thumbnailContainer.innerHTML = '';
-                if (project.thumbnails) {
-                    project.thumbnails.forEach((thumb, index) => {
-                        const img = document.createElement('img');
-                        img.src = thumb;
-                        img.alt = projectData.title + " thumbnail";
-                        img.className = "thumbnail" + (index === 0 ? " active" : "");
-                        img.onclick = function() {
-                            mainImg.src = thumb;
-                            // Update active thumbnail
-                            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
-                            this.classList.add('active');
-                        };
-                        thumbnailContainer.appendChild(img);
-                    });
-                }
-            } catch (error) {
-                console.error('Error loading project:', error);
-                document.getElementById('project-title').textContent = "Error Loading Project";
+            const icon = document.getElementById('theme-toggle')?.querySelector('i');
+            if (icon) {
+                icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+                icon.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
             }
         }
     </script>

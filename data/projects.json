@@ -4,6 +4,7 @@
             "en": {
                 "title": "Integrated IoT-Based Smart Farming System for Chili Cultivation",
                 "category": "IoT & Embedded Systems",
+                "date": "November 2022",
                 "overview": "Developed an IoT-based smart farming system for monitoring environmental conditions in chili cultivation (Capsicum frutescens). The system collects field data from multiple environmental sensors and transmits the measurements wirelessly through a LoRaWAN-based communication network for remote monitoring and analysis.\n\nThe project was developed as part of an integrated smart agriculture initiative combining IoT-based monitoring with data analysis and machine learning to support data-driven agricultural management.",
                 "architecture": "The system consists of distributed sensor nodes deployed in the agricultural environment. Each node uses an ESP32 to collect measurements from environmental sensors and transmit the data through a long-range wireless communication network.\n\n <b>System flow:</b> \n\n Environmental Sensors → ESP32 → LoRaWAN → Data Processing → Web Monitoring \n\n The system was designed to provide continuous environmental data that could be used for monitoring plant conditions and supporting subsequent analysis.",
                 "technical": "<b>Embedded System</b> <ul><li>ESP32</li><li>MicroPython</li><li>Environmental sensor integration</li></ul> <b>Communication</b> <ul><li>LoRaWAN</li><li>Long-range wireless data transmission</li><li>SPI</li><li>I2C</li><li>MQTT</li></ul> <b>Hardware</b> <ul><li>Custom PCB</li><li>Sensor interface and integration</li><li>Autodesk EAGLE</li></ul><b>IoT Platform</b> <ul><li>Node-RED</li><li>Web-based monitoring</li><li>thingspeak</li></ul><b>Data & Analysis</b> <ul><li>Environmental data acquisition</li><li>Data monitoring</li><li>Machine learning component developed as part of the overall project</li></ul>",
@@ -18,6 +19,7 @@
             "id": {
                 "title": "Sistem Pertanian Cerdas Terintegrasi Berbasis IoT untuk Budidaya Cabai",
                 "category": "IoT dan Sistem Tertanam",
+                "date":"November 2022",
                 "overview": "Proyek ini mengembangkan sistem pertanian cerdas berbasis IoT untuk memantau kondisi lingkungan dalam budidaya cabai (Capsicum frutescens). Sistem ini mengumpulkan data lapangan dari beberapa sensor lingkungan dan mentransmisikan pengukuran secara nirkabel melalui jaringan komunikasi berbasis LoRaWAN untuk pemantauan dan analisis jarak jauh.\n\nProyek ini dikembangkan sebagai bagian dari inisiatif pertanian cerdas terintegrasi yang menggabungkan pemantauan berbasis IoT dengan analisis data dan pembelajaran mesin untuk mendukung manajemen pertanian berbasis data.",
                 "architecture": "Sistem ini terdiri dari node sensor terdistribusi yang ditempatkan di lingkungan pertanian. Setiap node menggunakan ESP32 untuk mengumpulkan pengukuran dari sensor lingkungan dan mentransmisikan data melalui jaringan komunikasi nirkabel jarak jauh.\n\n <b>Alur sistem:</b> \n\n Sensor Lingkungan → ESP32 → LoRaWAN → Pemrosesan Data → Pemantauan Web \n\n Sistem ini dirancang untuk menyediakan data lingkungan secara terus-menerus yang dapat digunakan untuk memantau kondisi tanaman dan mendukung analisis selanjutnya.",
                 "technical": "<b>Sistem Tertanam</b> <ul><li>ESP32</li><li>MicroPython</li><li>Integrasi sensor lingkungan</li></ul> <b>Komunikasi</b> <ul><li>LoRaWAN</li><li>Transmisi data nirkabel jarak jauh</li><li>SPI</li><li>I2C</li><li>MQTT</li></ul> <b>Perangkat Keras</b> <ul><li>PCB khusus</li><li>Antarmuka dan integrasi sensor</li><li>Autodesk EAGLE</li></ul><b>Platform IoT</b> <ul><li>Node-RED</li><li>Pemantauan berbasis web</li><li>thingspeak</li></ul><b>Data & Analisis</b> <ul><li>Akuisisi data lingkungan</li><li>Pemantauan data</li><li>Komponen pembelajaran mesin dikembangkan sebagai bagian dari proyek secara keseluruhan</li></ul>",
@@ -32,6 +34,7 @@
             "ja": {
                 "title": "唐辛子栽培のためのIoTを活用した統合型スマート農業システム",
                 "category": "IoTおよび組み込みシステム",
+                "date":"2022年11月",
                 "overview": "本プロジェクトでは、唐辛子（Capsicum frutescens）の栽培環境を監視するためのIoTベースのスマート農業システムを開発しました。このシステムは、複数の環境センサーからフィールドデータを収集し、LoRaWANベースの通信ネットワークを介して測定値を無線で送信し、遠隔監視と分析を可能にします。\n\nこのプロジェクトは、IoTベースの監視とデータ分析および機械学習を組み合わせた統合型スマート農業イニシアチブの一環として開発され、データ駆動型の農業管理をサポートします。",
                 "architecture": "システムは、農業環境に配置された分散型センサーノードで構成されています。各ノードはESP32を使用して環境センサーから測定値を収集し、長距離無線通信ネットワークを介してデータを送信します。\n\n <b>システムフロー:</b> \n\n 環境センサー → ESP32 → LoRaWAN → データ処理 → Web監視 \n\n このシステムは、植物の状態を監視し、後続の分析をサポートするために使用できる継続的な環境データを提供するように設計されています。",
                 "technical": "<b>組み込みシステム</b> <ul><li>ESP32</li><li>MicroPython</li><li>環境センサーとの統合</li></ul> <b>通信</b> <ul><li>LoRaWAN</li><li>長距離無線通信</li><li>SPI</li><li>I2C</li><li>MQTT</li></ul> <b>ハードウェア</b> <ul><li>専用PCB</li><li>センサーと制御ユニットのインターフェース</li><li>Autodesk EAGLE</li></ul><b>IoTプラットフォーム</b> <ul><li>Node-RED</li><li>ウェブベースの監視</li><li>thingspeak</li></ul><b>データと分析</b> <ul><li>環境データの取得</li><li>データ監視</li><li>機械学習コンポーネントはプロジェクト全体の一部として開発されました</li></ul>",
@@ -44,19 +47,18 @@
                 "responsibility": "私の主な責任は、組み込みデータ取得およびセンサー統合システムの開発でした。私の作業には以下が含まれます：<ul><li>MicroPythonを使用したESP32ファームウェアの開発。</li><li>温度、湿度、土壌水分センサーの統合。</li><li>Autodesk EAGLEを使用したセンサーおよび制御統合用のカスタムPCB設計。</li><li>長距離データ伝送のためのLoRaWANベースの無線通信の実装。</li><li>データ取得システムの開発とテスト。</li><li>測定および通信の信頼性を検証するためのハードウェアおよびセンサーの検証。</li><li>プロジェクト全体のIoTプラットフォームとの組み込みシステムの統合。</li></ul>"
             }
         },
-        "mainImage": "data/projects img/Capstone/20221123_160410.jpg",
+        "mainImage": "data/projects img/Capstone/20221123_160410.webp",
         "thumbnails": [
-            "data/projects img/Capstone/20221123_160410.jpg",
-            "data/projects img/Capstone/20221125_093402.jpg",
-            "data/projects img/Capstone/Untitled.png",
-            "data/projects img/Capstone/wiring diagram_bb.png",
-            "data/projects img/Capstone/pcb.png",
-            "data/projects img/Capstone/pcb bottom.png",
-            "data/projects img/Capstone/pcb receiver.png",
-            "data/projects img/Capstone/pcb receiver bottom.png",
-            "data/projects img/Capstone/nodered.jpg"
-        ],
-        "date": "November 2022"
+            "data/projects img/Capstone/20221123_160410.webp",
+            "data/projects img/Capstone/20221125_093402.webp",
+            "data/projects img/Capstone/Untitled.webp",
+            "data/projects img/Capstone/wiring diagram_bb.webp",
+            "data/projects img/Capstone/pcb.webp",
+            "data/projects img/Capstone/pcb bottom.webp",
+            "data/projects img/Capstone/pcb receiver.webp",
+            "data/projects img/Capstone/pcb receiver bottom.webp",
+            "data/projects img/Capstone/nodered.webp"
+        ]
     },
 
     "2": {
@@ -64,6 +66,7 @@
             "en": {
                 "title": "Auto-Landing Control System for a Quadrotor Using PD Controller",
                 "category": "Embedded Systems · Control Systems · UAV",
+                "date": "May 2023",
                 "overview": "Developed an autonomous landing control system for a quadrotor using a Proportional-Derivative (PD) controller. The system was designed to control the quadrotor's altitude and attitude during the landing phase using real-time measurements from an IMU and LiDAR sensor.\n\nThe project combined control-system design, sensor fusion, embedded programming, and real-world flight testing to develop and validate an autonomous landing mechanism.",
                 "architecture": "The system uses an IMU to estimate the quadrotor's attitude and a LiDAR sensor to measure altitude during the landing process. Sensor data is processed by the onboard Teensy microcontroller, which executes the control algorithms and generates PWM signals for the four motors.\n\n <b>System flow:</b> \n\n IMU + LiDAR → Sensor Processing → State Estimation → PD Controller → Motor Control → Quadrotor \n\n The control system consists of two main control loops:<ul><li>Attitude Control Loop: Uses IMU data to maintain stable orientation during descent.</li><li>Altitude Control Loop: Uses LiDAR data to control the descent rate and ensure a smooth landing.</li></ul>MATLAB was used for controller simulation and parameter tuning before deployment to the embedded platform. The system was designed to operate in real-time, with the Teensy microcontroller handling sensor input, control calculations, and motor output within each control loop.",
                 "technical": "<b>Embedded System</b> <ul><li>Teensy 4.1 Microcontroller</li><li>Arduino IDE</li><li>Real-time sensor processing</li><li>PWM motor control</li></ul> <b>Control System</b> <ul><li>Proportional-Derivative (PD) Controller</li><li>Attitude & altitude control</li><li>State estimation using Madgwick Filter</li><li>Thrust balancing</li></ul> <b>Sensors & State Estimation</b> <ul><li>IMU</li><li>LiDAR</li><li>Madgwick Filter</li><li>Real-time attitude estimation</li></ul><b>Simulation & Analysis</b> <ul><li>MATLAB for controller simulation and parameter tuning</li><li>Controller simulation</li><li>Parameter tuning</li><li>Flight test data analysis and system tuning</li></ul> <b>Hardware</b> <ul><li>Custom PCB design using Autodesk EAGLE</li><li>Quadrotor sensor and actuator system</li></ul> <b>Debugging</b> <ul><li>PuTTY</li><li>Serial monitoring</li><li>Embedded system troubleshooting</li></ul>",
@@ -78,6 +81,7 @@
             "id": {
                 "title": "Sistem Kontrol Pendaratan Otomatis untuk Quadrotor Menggunakan Pengendali PD",
                 "category": "Sistem Tertanam · Sistem Kontrol · UAV",
+                "date": "Mei 2023",
                 "overview": "Proyek ini mengembangkan sistem kontrol pendaratan otonom untuk quadrotor menggunakan pengendali Proportional-Derivative (PD). Sistem ini dirancang untuk mengontrol ketinggian dan sikap quadrotor selama fase pendaratan menggunakan pengukuran waktu nyata dari sensor IMU dan LiDAR.\n\nProyek ini menggabungkan desain sistem kontrol, fusi sensor, pemrograman tertanam, dan pengujian penerbangan dunia nyata untuk mengembangkan dan memvalidasi mekanisme pendaratan otonom.",
                 "architecture": "Sistem ini menggunakan IMU untuk memperkirakan sikap quadrotor dan sensor LiDAR untuk mengukur ketinggian selama proses pendaratan. Data sensor diproses oleh mikrokontroler Teensy di atas kapal, yang mengeksekusi algoritma kontrol dan menghasilkan sinyal PWM untuk keempat motor.\n\n <b>Alur sistem:</b> \n\n IMU + LiDAR → Pemrosesan Sensor → Estimasi Status → Pengendali PD → Kontrol Motor → Quadrotor \n\n Sistem kontrol terdiri dari dua loop kontrol utama:<ul><li>Loop Kontrol Sikap: Menggunakan data IMU untuk mempertahankan orientasi yang stabil selama penurunan.</li><li>Loop Kontrol Ketinggian: Menggunakan data LiDAR untuk mengontrol laju penurunan dan memastikan pendaratan yang mulus.</li></ul>MATLAB digunakan untuk simulasi pengendali dan penyetelan parameter sebelum diterapkan pada platform tertanam. Sistem ini dirancang untuk beroperasi secara waktu nyata, dengan mikrokontroler Teensy menangani input sensor, perhitungan kontrol, dan output motor dalam setiap loop kontrol.",
                 "technical": "<b>Sistem Tertanam</b> <ul><li>Mikrokontroler Teensy 4.1</li><li>Arduino IDE</li><li>Pemrosesan sensor waktu nyata</li><li>Kontrol motor PWM</li></ul> <b>Sistem Kontrol</b> <ul><li>Pengendali Proportional-Derivative (PD)</li><li>Kontrol sikap & ketinggian</li><li>Estimasi status menggunakan Filter Madgwick</li><li>Penyetelan thrust</li></ul> <b>Sensor & Estimasi Status</b> <ul><li>IMU</li><li>LiDAR</li><li>Filter Madgwick</li><li>Estimasi sikap waktu nyata</li></ul><b>Simulasi & Analisis</b> <ul><li>MATLAB untuk simulasi pengendali dan penyetelan parameter</li><li>Simulasi pengendali</li><li>Penyetelan parameter</li><li>Analisis data uji penerbangan dan penyetelan sistem</li></ul> <b>Perangkat Keras</b> <ul><li>Desain PCB khusus menggunakan Autodesk EAGLE</li><li>Sistem sensor dan aktuator quadrotor</li></ul> <b>Pemecahan Masalah</b> <ul><li>PuTTY</li><li>Pemantauan serial</li><li>Pemecahan masalah sistem tertanam</li></ul>",
@@ -85,12 +89,14 @@
                 "client": "Proyek Akhir Sarjana - DTETI Universitas Gadjah Mada",
                 "technologies": "Teensy, Pengendali PD, IMU, LiDAR, Filter Madgwick, MATLAB, Arduino IDE, Autodesk EAGLE, PuTTY",
                 "duration": "4 bulan",
+                "role": "Insinyur Sistem Kontrol & Embedded",
                 "type": "Sistem Tertanam · Sistem Kontrol · UAV",
                 "responsibility": "Tanggung jawab utama saya adalah pengembangan sistem akuisisi data tertanam dan integrasi sensor. Pekerjaan saya meliputi:<ul><li>Mengembangkan firmware ESP32 menggunakan MicroPython.</li><li>Integrasi sensor suhu, kelembaban, dan kelembaban tanah.</li><li>Merancang PCB khusus untuk integrasi sensor dan kontrol menggunakan Autodesk EAGLE.</li><li>Mengimplementasikan komunikasi nirkabel berbasis LoRaWAN untuk transmisi data jarak jauh.</li><li>Mengembangkan dan menguji sistem akuisisi data.</li><li>Melakukan validasi perangkat keras dan sensor untuk memverifikasi keandalan pengukuran dan komunikasi.</li><li>Mengintegrasikan sistem tertanam dengan platform IoT proyek secara keseluruhan.</li></ul>"
             },
             "ja": {
                 "title": "PDコントローラを用いたクアドロータの自動着陸制御システム",
                 "category": "組み込みシステム・制御システム・UAV",
+                "date": "2023年5月",
                 "overview": "本プロジェクトでは、比例微分（PD）コントローラを使用してクアドロータの自律着陸制御システムを開発しました。このシステムは、着陸フェーズ中にIMUおよびLiDARセンサーからのリアルタイム測定値を使用して、クアドロータの高度と姿勢を制御するように設計されました。\n\nこのプロジェクトは、制御システムの設計、センサーフュージョン、組み込みプログラミング、および実際の飛行テストを組み合わせて、自律着陸メカニズムを開発および検証しました。",
                 "architecture": "システムは、IMUを使用してクアドロータの姿勢を推定し、LiDARセンサーを使用して着陸プロセス中の高度を測定します。センサーデータは、オンボードのTeensyマイコンによって処理され、制御アルゴリズムを実行し、4つのモーターに対してPWM信号を生成します。\n\n <b>システムフロー:</b> \n\n IMU + LiDAR → センサ処理 → 状態推定 → PDコントローラ → モーター制御 → クアドロータ \n\n 制御システムは、2つの主要な制御ループで構成されています：<ul><li>姿勢制御ループ：IMUデータを使用して降下中の安定した姿勢を維持します。</li><li>高度制御ループ：LiDARデータを使用して降下速度を制御し、滑らかな着陸を確保します。</li></ul>MATLABは、組み込みプラットフォームへの展開前にコントローラのシミュレーションとパラメータ調整に使用されました。システムはリアルタイムで動作するように設計されており、Teensyマイコンが各制御ループ内でセンサー入力、制御計算、およびモーター出力を処理します。",
                 "technical": "<b>組み込みシステム</b> <ul><li>Teensy 4.1マイコン</li><li>Arduino IDE</li><li>リアルタイムセンサ処理</li><li>PWMモーター制御</li></ul> <b>制御システム</b> <ul><li>比例微分（PD）コントローラ</li><li>姿勢および高度制御</li><li>Madgwickフィルタを使用した状態推定</li><li>推力バランス調整</li></ul> <b>センサーと状態推定</b> <ul><li>IMU</li><li>LiDAR</li><li>Madgwickフィルタ</li><li>リアルタイム姿勢推定</li></ul><b>シミュレーションと分析</b> <ul><li>MATLABを使用したコントローラのシミュレーションとパラメータ調整</li><li>コントローラのシミュレーション</li><li>パラメータ調整</li><li>飛行テストデータの分析とシステム調整</li></ul> <b>ハードウェア</b> <ul><li>Autodesk EAGLEを使用したカスタムPCB設計</li><li>クアドロータのセンサーおよびアクチュエータシステム</li></ul> <b>デバッグ</b> <ul><li>PuTTY</li><li>シリアルモニタリング</li><li>組み込みシステムのトラブルシューティング</li></ul>",
@@ -98,215 +104,249 @@
                 "client": "学部最終プロジェクト - ガジャマダ大学 DTETI",
                 "technologies": "Teensy、PDコントローラ、IMU、LiDAR、Madgwickフィルタ、MATLAB、Arduino IDE、Autodesk EAGLE、PuTTY",
                 "duration": "4ヶ月",
+                "role": "制御システム・組込みエンジニア",
                 "type": "組み込みシステム・制御システム・UAV",
                 "responsibility": "私の主な責任は、自律着陸制御システムの開発と統合でした。私の作業には以下が含まれます：<ul><li>姿勢および高度制御のためのPD制御アルゴリズムの設計と実装。</li><li>コントローラ分析およびパラメータ調整のためのMATLABシミュレーションの開発。</li><li>IMUおよびLiDARセンサーを組み込みフライトコントロールシステムに統合。</li><li>姿勢推定のためのMadgwickフィルタを使用したセンサーフュージョンの実装。</li><li>クアドロータ用のPWMベースのモーター制御および推力バランス調整の開発。</li><li>Teensyマイコンとの制御アルゴリズムの統合。</li><li>Autodesk EAGLEを使用したサポートPCBの設計。</li><li>自動着陸制御性能を評価するための飛行テストの実施。</li><li>実際の飛行テスト結果に基づくシステムのデバッグと調整。</li></ul>"
             }
         },
-        "mainImage": "data/projects img/skripsi/IMG20230506171042.jpg",
+        "mainImage": "data/projects img/skripsi/IMG20230506171042.webp",
         "thumbnails": [
-            "data/projects img/skripsi/IMG20230506171042.jpg",
-            "data/projects img/skripsi/IMG20230506143449.jpg",
-            "data/projects img/skripsi/IMG20230513065530.jpg",
-            "data/projects img/skripsi/blok diagram altitude.png",
-            "data/projects img/skripsi/blok diagram kendali attitude.png",
-            "data/projects img/skripsi/altitude.png",
-            "data/projects img/skripsi/summary.png"
-        ],
-        "date": "May 2023"
+            "data/projects img/skripsi/IMG20230506171042.webp",
+            "data/projects img/skripsi/IMG20230506143449.webp",
+            "data/projects img/skripsi/IMG20230513065530.webp",
+            "data/projects img/skripsi/blok diagram altitude.webp",
+            "data/projects img/skripsi/blok diagram kendali attitude.webp",
+            "data/projects img/skripsi/altitude.webp",
+            "data/projects img/skripsi/summary.webp"
+        ]
     },
 
     "3": {
         "translations": {
             "en": {
                 "title": "Automatic Off Motor Conveyor",
-                "category": "Industrial Automation",
-                "overview": "This project aimed to automate a conveyor system that was continuously running even when not in use, leading to unnecessary electricity consumption. The goal was to implement a smart system that turns the conveyor off when it is not actively transporting material.",
-                "technical": "The system was developed using a Panasonic PLC and programmed using Structured Text language. It detects the presence of silicon to determine whether the conveyor should be running. The automation logic ensures the conveyor motor is only active when needed, reducing idle time and energy waste.",
-                "results": "The Automatic Off Motor Conveyor System successfully reduced electricity costs by approximately Rp300,000 per month, saving around 270 kWh of energy and reducing carbon emissions by approximately 216 kg CO₂ per month. The system improved operational efficiency by ensuring the conveyor only runs when material is present.",
-                "client": "PT Smoore Technology Indonesia",
-                "technologies": "Panasonic PLC, Structured Text",
+                "category": "Industrial Automation · PLC Control · Energy Optimization",
+                "date": "October 2023",
+                "overview": "Developed an automated conveyor control system to reduce unnecessary motor operation when the conveyor was not actively transporting silicon material.\n\nThe existing conveyor operated continuously regardless of material availability, resulting in unnecessary energy consumption during idle periods. The project introduced sensor-based PLC control to automatically operate the conveyor based on material presence.",
+                "architecture": "The system uses a material detection sensor as the input to a Panasonic PLC. The PLC processes the sensor condition using Structured Text control logic and determines whether the conveyor motor should remain active or be switched off.\n\n <b>System flow:</b>\n\nMaterial Detection Sensor → Panasonic PLC → Control Logic → Conveyor Motor\n\nThe control logic enables the conveyor to operate when silicon material is detected and stops the motor when the conveyor is no longer required to transport material.",
+                "technical": "<b>PLC & Programming</b><ul><li>Panasonic PLC</li><li>Structured Text</li><li>Digital input/output control</li><li>Automatic motor control logic</li></ul> <b>Material Detection</b><ul><li>Silicon material detection sensor</li><li>Sensor-based conveyor control</li><li>Real-time input monitoring</li></ul> <b>Control Logic</b><ul><li>Material presence detection</li><li>Automatic conveyor activation</li><li>Automatic motor shutdown during idle conditions</li><li>PLC-based interlocking and control sequence</li></ul> <b>Energy Optimization</b><ul><li>Reduction of unnecessary conveyor idle operation</li><li>Automatic shutdown based on production conditions</li><li>Energy consumption reduction through operational optimization</li></ul>",
+                "results": "The implemented automation system reduced unnecessary conveyor operation by automatically switching off the motor when silicon material was not being transported.\n\nBased on the project's operational evaluation, the system achieved an estimated energy saving of approximately 270 kWh per month, corresponding to an estimated electricity cost reduction of approximately Rp300,000 per month. The project also estimated a reduction of approximately 216 kg CO₂ per month associated with the reduced electricity consumption.\n\nBeyond the energy savings, the system improved conveyor operation by allowing the motor to respond automatically to material availability rather than remaining continuously active during idle periods.",
+                "client": "Confidential Manufacturing Company",
+                "technologies": "Panasonic PLC, Structured Text, Material Detection Sensor, Motor Control",
                 "duration": "1 month",
+                "role": "PLC & Automation Engineer",
                 "type": "Industrial Automation",
-                "responsibility": "I was responsible for designing the automation system using Panasonic PLC, writing control logic in Structured Text, and testing the system to ensure it only activates when silicon material is detected. My role focused on increasing energy efficiency and optimizing machine operation through intelligent control logic."
+                "responsibility": "My primary responsibility was the development and implementation of the PLC-based conveyor automation system. My work included:<ul><li>Designing the conveyor control logic using Panasonic PLC.</li><li>Developing the control program using Structured Text.</li><li>Integrating the material detection sensor with the PLC control system.</li><li>Implementing automatic motor start/stop logic based on material presence.</li><li>Testing and validating the control sequence under operating conditions.</li><li>Troubleshooting the control logic and refining the system behavior.</li><li>Evaluating the operational and energy-saving impact of the automation system.</li?</ul>"
             },
             "id": {
-                "title": "Proyek: Otomatisasi Pemadaman Motor Conveyor",
-                "category": "Otomasi Industri",
-                "overview": "Proyek ini bertujuan untuk mengotomatiskan sistem conveyor yang terus menyala meskipun tidak digunakan, sehingga menyebabkan pemborosan listrik. Tujuannya adalah menerapkan sistem cerdas yang mematikan conveyor secara otomatis ketika tidak sedang mengangkut material.",
-                "technical": "Sistem dikembangkan menggunakan PLC Panasonic dan diprogram menggunakan bahasa Structured Text. Sensor digunakan untuk mendeteksi keberadaan silikon sebagai indikator apakah conveyor perlu berjalan. Logika otomatisasi memastikan motor conveyor hanya aktif saat dibutuhkan, sehingga mengurangi waktu idle dan pemborosan energi.",
-                "results": "Sistem Automatic Off Motor Conveyor berhasil menurunkan biaya listrik sekitar Rp300.000 per bulan, menghemat sekitar 270 kWh energi, dan mengurangi emisi karbon hingga 216 kg CO₂ per bulan. Sistem ini meningkatkan efisiensi operasional dengan memastikan conveyor hanya aktif saat ada material.",
-                "client": "PT Smoore Technology Indonesia",
-                "technologies": "PLC Panasonic, Structured Text",
+                "title": "Sistem Mati Otomatis Motor Konveyor",
+                "category": "Otomasi Industri · Kontrol PLC · Optimasi Energi",
+                "date": "Oktober 2023",
+                "overview": "Mengembangkan sistem kontrol konveyor otomatis untuk mengurangi pengoperasian motor yang tidak perlu saat konveyor tidak sedang memindahkan material silikon secara aktif.\n\nKonveyor yang ada sebelumnya beroperasi terus-menerus tanpa memperhatikan ketersediaan material, menyebabkan konsumsi energi yang tidak perlu selama periode idle (kosong). Proyek ini menerapkan kontrol PLC berbasis sensor untuk mengoperasikan konveyor secara otomatis berdasarkan keberadaan material.",
+                "architecture": "Sistem ini menggunakan sensor pendeteksi material sebagai input ke Panasonic PLC. PLC memproses kondisi sensor menggunakan logika kontrol Structured Text dan menentukan apakah motor konveyor harus tetap aktif atau dimatikan.\n\n <b>Alur sistem:</b>\n\nSensor Pendeteksi Material → Panasonic PLC → Logika Kontrol → Motor Konveyor\n\nLogika kontrol memungkinkan konveyor beroperasi ketika material silikon terdeteksi dan menghentikan motor saat konveyor tidak lagi diperlukan untuk memindahkan material.",
+                "technical": "<b>PLC & Pemrograman</b><ul><li>Panasonic PLC</li><li>Structured Text</li><li>Kontrol digital input/output</li><li>Logika kontrol motor otomatis</li></ul> <b>Deteksi Material</b><ul><li>Sensor pendeteksi material silikon</li><li>Kontrol konveyor berbasis sensor</li><li>Pemantauan input secara real-time</li></ul> <b>Logika Kontrol</b><ul><li>Deteksi keberadaan material</li><li>Aktivasi konveyor otomatis</li><li>Penghentian motor otomatis saat kondisi idle</li><li>Interlock dan sekuens kontrol berbasis PLC</li></ul> <b>Optimasi Energi</b><ul><li>Pengurangan pengoperasian konveyor idle yang tidak perlu</li><li>Penghentian otomatis berdasarkan kondisi produksi</li><li>Pengurangan konsumsi energi melalui optimasi operasional</li></ul>",
+                "results": "Sistem otomasi yang diterapkan berhasil mengurangi pengoperasian konveyor yang tidak perlu dengan mematikan motor secara otomatis saat material silikon tidak sedang dipindahkan.\n\nBerdasarkan evaluasi operasional proyek, sistem ini diperkirakan menghasilkan penghematan energi sekitar 270 kWh per bulan, setara dengan perkiraan penurunan biaya listrik sekitar Rp300.000 per bulan. Proyek ini juga diperkirakan memangkas emisi sekitar 216 kg CO₂ per bulan yang berkaitan dengan penurunan konsumsi listrik tersebut.\n\nSelain penghematan energi, sistem ini meningkatkan operasional konveyor dengan memungkinkan motor merespons ketersediaan material secara otomatis alih-alih beroperasi terus-menerus selama periode idle.",
+                "client": "Perusahaan Manufaktur Rahasia",
+                "technologies": "Panasonic PLC, Structured Text, Sensor Pendeteksi Material, Kontrol Motor",
                 "duration": "1 bulan",
+                "role": "Insinyur PLC & Otomasi",
                 "type": "Otomasi Industri",
-                "responsibility": "Saya bertanggung jawab merancang sistem otomatisasi menggunakan PLC Panasonic, menulis logika kendali dalam Structured Text, dan menguji sistem agar hanya aktif saat terdeteksi material silikon. Fokus saya adalah meningkatkan efisiensi energi dan mengoptimalkan operasi mesin melalui kendali logika yang cerdas."
-            },
+                "responsibility": "Tanggung jawab utama saya adalah pengembangan dan implementasi sistem otomasi konveyor berbasis PLC. Pekerjaan saya meliputi:<ul><li>Merancang logika kontrol konveyor menggunakan Panasonic PLC.</li><li>Mengembangkan program kontrol menggunakan Structured Text.</li><li>Mengintegrasikan sensor pendeteksi material dengan sistem kontrol PLC.</li><li>Menerapkan logika start/stop motor otomatis berdasarkan keberadaan material.</li><li>Menguji dan memvalidasi sekuens kontrol di bawah kondisi operasional.</li><li>Melakukan troubleshooting logika kontrol dan menyempurnakan perilaku sistem.</li><li>Mengevaluasi dampak operasional dan penghematan energi dari sistem otomasi.</li></ul>"
+                },
             "ja": {
-                "title": "プロジェクト：コンベヤーモーターの自動停止システム",
-                "category": "産業オートメーション",
-                "overview": "本プロジェクトは、使用されていないときでも常に稼働しているコンベヤーシステムを自動化することを目的としています。この無駄な電力消費を削減するために、輸送が必要ないときにはモーターを自動で停止するスマートシステムを導入しました。",
-                "technical": "システムはPanasonic製PLCを使用して開発され、Structured Text言語でプログラミングされました。シリコンの存在を検出して、コンベヤーを稼働させるかどうかを判断します。この自動制御ロジックにより、モーターは必要なときのみ動作し、待機時間とエネルギーの無駄を削減します。",
-                "results": "この自動停止システムは、月額約30万ルピアの電気代を削減し、毎月約270kWhの電力と216kgのCO₂排出量を削減することに成功しました。システムは、必要なときだけコンベヤーが作動するようになり、運用効率を向上させました。",
-                "client": "PT Smoore Technology Indonesia",
-                "technologies": "パナソニックPLC、Structured Text",
+                "title": "コンベアモーター自動停止システム",
+                "category": "産業自動化・PLC制御・エネルギー最適化",
+                "date": "2023年10月",
+                "overview": "シリコン材料の搬送が行われていないアイドル状態において、コンベアモーターの不要な稼働を削減するための自動制御システムを開発しました。\n\n既存のコンベアは材料の有無に関わらず常時稼働しており、待機時間の不要な電力消費が発生していました。本プロジェクトでは、センサーベースのPLC制御を導入し、材料の有無に応じてコンベアを自動稼働させるシステムを構築しました。",
+                "architecture": "本システムは、材料検出センサーを入力信号としてパナソニック製PLCに取り込みます。PLCはストラクチャードテキスト（ST言語）による制御ロジックを用いてセンサーの状態を処理し、コンベアモーターの稼働継続または停止を判断します。\n\n <b>システムフロー:</b>\n\n材料検出センサー → パナソニックPLC → 制御ロジック → コンベアモーター\n\n制御ロジックにより、シリコン材料を検出した際にコンベアを稼働させ、搬送の必要がなくなった際にはモーターを自動停止させます。",
+                "technical": "<b>PLC・プログラミング</b><ul><li>パナソニック製PLC</li><li>ストラクチャードテキスト（ST言語）</li><li>デジタル入出力制御</li><li>自動モーター制御ロジック</li></ul> <b>材料検出</b><ul><li>シリコン材料検出センサー</li><li>センサーベースのコンベア制御</li><li>リアルタイム入力監視</li></ul> <b>制御ロジック</b><ul><li>材料検出機能</li><li>コンベア自動起動</li><li>アイドル時のモーター自動停止</li><li>PLCベースのインターロックおよびシーケンス制御</li></ul> <b>エネルギー最適化</b><ul><li>不要なコンベア空運転の削減</li><li>生産状況に応じた自動シャットダウン</li><li>運用最適化による消費電力の削減</li></ul>",
+                "results": "導入した自動化システムにより、シリコン材料が搬送されていない時間帯にモーターを自動停止させ、不要なコンベア稼働を削減しました。\n\nプロジェクトの運用評価に基づくと、月間約270 kWhの省エネ効果を達成し、月額約Rp300,000の電気代削減に相当します。また、電力消費量の削減に伴い、月間約216 kgのCO₂排出量削減を実現したと推定されています。\n\n省エネ効果に加え、アイドル時に常時稼働させることなく、材料の有無に応じてモーターが自律的に応答するようになり、コンベアの運用効率が大幅に向上しました。",
+                "client": "機密保持対象の製造企業",
+                "technologies": "Panasonic PLC, Structured Text, 材料検出センサー, モーター制御",
                 "duration": "1ヶ月",
-                "type": "産業オートメーション",
-                "responsibility": "私はPanasonic PLCを使用して自動化システムを設計し、Structured Textで制御ロジックを作成し、シリコン素材が検出されたときのみシステムが動作するようにテストを行いました。私の役割は、エネルギー効率を高め、スマート制御ロジックによって機械操作を最適化することでした。"
-            }
+                "role": "PLC・自動化エンジニア",
+                "type": "産業自動化",
+                "responsibility": "主な担当業務は、PLCベースのコンベア自動化システムの開発および導入でした。具体的には以下の業務を担当しました:<ul><li>パナソニック製PLCを用いたコンベア制御ロジックの設計</li><li>ストラクチャードテキスト（ST言語）による制御プログラムの開発</li><li>材料検出センサーとPLC制御システムの統合</li><li>材料の有無に基づくモーターの自動始動・停止ロジックの実装</li><li>実運用条件下での制御シーケンスのテストおよび検証</li><li>制御ロジックのトラブルシューティングおよびシステム動作の最適化</li><li>自動化システムによる運用面および省エネ効果の評価</li></ul>"
+                }
         },
-        "mainImage": "data/projects img/STI/IMG20231004175513.jpg",
+        "mainImage": "data/projects img/STI/IMG20231004175513.webp",
         "thumbnails": [
-            "data/projects img/STI/IMG20231004175513.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.25_a27f27da.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.26_19973296.jpg"
-        ],
-        "date": "October 2023"
+            "data/projects img/STI/IMG20231004175513.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.25_a27f27da.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.26_19973296.webp"
+        ]
     },
 
     "4": {
         "translations": {
             "en": {
-                "title": "Project Barcode Correction",
-                "category": "Industrial Automation",
-                "overview": "This project solved a critical issue where the barcode input on the HMI allowed incorrectly labeled boxes to pass undetected until delivery. A separate barcode input feature was added for the QC team to verify and correct the input from the production team.",
-                "technical": "The system was built using Panasonic PLC and HMI Designer. The barcode verification logic was implemented with error detection algorithms. Inputs from barcode scanners were validated against predefined codes, and additional controls were added for QC verification.",
-                "results": "The solution eliminated barcode mismatch issues, reduced quality control errors, and ensured all dispatched boxes carried correct identification, improving traceability and product integrity.",
+                "title": "Barcode Verification and Correction System",
+                "category": "Industrial Automation · PLC · HMI · Quality Control",
+                "date": "December 2023",
+                "overview": "Developed a PLC-based barcode verification system to prevent incorrect box identification from proceeding through the production process.\n\nThe existing production system already received barcode data from a barcode scanner through the PLC. However, the barcode entered by the Production team was not independently cross-checked against the barcode specified by the Quality Control (QC) team.\n\nThe developed solution introduced a comparison logic between the Production and QC barcode inputs. If the two barcode values did not match, the system identified the box as invalid and triggered the existing rejection process to prevent incorrectly identified boxes from continuing through the production line.",
+                "architecture": "The system uses the existing barcode scanner and PLC infrastructure to compare barcode inputs from Production and QC.\n\n<b>System flow:</b>\n\nProduction Barcode Input → PLC → Production Barcode Data\n\nQC Barcode Input → PLC → QC Barcode Data\n\nProduction Barcode = QC Barcode → PASS → Box Barcode Check\n\nProduction Barcode ≠ QC Barcode → MISMATCH → All Box Rejected\n\nThe PLC acts as the verification layer by comparing the two barcode values and generating the corresponding pass/reject condition for the production process.",
+                "technical": "<b>PLC & Control</b><ul><li>Panasonic PLC</li><li>PLC-based barcode comparison</li><li>Barcode data handling</li><li>Pass/fail decision logic</li><li>Reject control integration</li></ul> <b>Barcode Verification</b><ul><li>Existing barcode scanner</li><li>Production barcode input</li><li>QC barcode input</li><li>Barcode-to-barcode comparison</li><li>Mismatch detection</li></ul> <b>HMI</b><ul><li>PM Designer for HMI Designer</li><li>QC barcode input interface</li><li>Verification status display</li><li>Operator feedback</li></ul> <b>Quality Control Logic</b><ul><li>Matching barcode → accepted condition</li><li>Mismatching barcode → reject condition</li><li>Production/QC data cross-check</li><li>Box identification validation</li></ul> <b>Testing & Validation</b><ul><li>Matching barcode test</li><li>Mismatching barcode test</li><li>Reject sequence validation</li><li>PLC/HMI functional testing</li></ul>",
+                "results": "The implemented system added an additional verification layer to the existing production process by independently comparing the barcode information provided by Production and QC.\n\nWhen the two barcode inputs matched, the box was allowed to proceed. When a mismatch was detected, the PLC generated the corresponding reject condition, preventing the incorrectly identified box from continuing through the production process.\n\nThe solution strengthened the barcode verification process and reduced the risk of incorrect box identification reaching subsequent production or delivery stages.",
                 "client": "Confidential Manufacturing Company",
-                "technologies": "Panasonic PLC, HMI Designer",
+                "technologies": "Panasonic PLC, PM Designer, Barcode Scanner, PLC Control Logic",
                 "duration": "1 week",
+                "role": "PLC & Automation Engineer",
                 "type": "Industrial Automation",
-                "responsibility": "I designed the barcode verification system, implemented error detection algorithms, integrated barcode scanners into the PLC system, and conducted system testing to ensure operational reliability."
+                "responsibility": "My primary responsibility was the development of the barcode comparison and verification logic within the existing PLC system. My work included:<ul><li>Analyzing the existing barcode data flow already available in the PLC.</li><li>Designing the comparison logic between Production and QC barcode inputs.</li><li>Implementing PLC logic to detect barcode mismatches.</li><li>Integrating the verification result with the existing production reject logic.</li><li>Developing the HMI interface required for QC barcode input and verification.</li><li>Testing the system with matching and mismatching barcode conditions.</li><li>Debugging the PLC logic and validating the rejection sequence.</li><li>Verifying the system behavior with the production and QC workflow.</li></ul>"
             },
             "id": {
-                "title": "Proyek Koreksi Barcode",
-                "category": "Otomasi Industri",
-                "overview": "Proyek ini menyelesaikan masalah penting di mana input barcode pada HMI memungkinkan box dengan kode yang salah lolos hingga pengiriman. Fitur input barcode tambahan ditambahkan untuk tim QC agar dapat memverifikasi dan mengoreksi input dari tim produksi.",
-                "technical": "Sistem ini dikembangkan menggunakan Panasonic PLC dan HMI Designer. Logika verifikasi barcode diimplementasikan dengan algoritma deteksi kesalahan. Input dari barcode scanner divalidasi terhadap kode yang telah ditentukan, dan kontrol tambahan ditambahkan untuk verifikasi oleh tim QC.",
-                "results": "Solusi ini menghilangkan masalah ketidaksesuaian barcode, mengurangi kesalahan QC, dan memastikan semua box yang dikirim membawa identifikasi yang benar, sehingga meningkatkan keterlacakan dan integritas produk.",
-                "client": "Perusahaan Manufaktur (Dirahasiakan)",
-                "technologies": "Panasonic PLC, HMI Designer",
+                "title": "Sistem Verifikasi dan Koreksi Barcode",
+                "category": "Otomasi Industri · PLC · HMI · Kendali Mutu (Quality Control)",
+                "date": "Desember 2023",
+                "overview": "Mengembangkan sistem verifikasi barcode berbasis PLC untuk mencegah identifikasi kotak yang salah lolos ke proses produksi berikutnya.\n\nSistem produksi yang ada sebelumnya sudah menerima data barcode dari barcode scanner melalui PLC. Namun, barcode yang dimasukkan oleh tim Produksi tidak dicocokkan secara independen dengan barcode yang ditentukan oleh tim Quality Control (QC).\n\nSolusi yang dikembangkan memperkenalkan logika perbandingan antara input barcode Produksi dan QC. Jika kedua nilai barcode tidak cocok, sistem mengidentifikasi kotak tersebut tidak valid dan memicu proses penolakan (reject) yang ada untuk mencegah kotak yang salah teridentifikasi melanjutkan perjalanan di lini produksi.",
+                "architecture": "Sistem ini memanfaatkan infrastruktur barcode scanner dan PLC yang sudah ada untuk membandingkan input barcode dari Produksi dan QC.\n\n<b>Alur sistem:</b>\n\nInput Barcode Produksi → PLC → Data Barcode Produksi\n\nInput Barcode QC → PLC → Data Barcode QC\n\nBarcode Produksi = Barcode QC → LULUS (PASS) → Pemeriksaan Barcode Kotak\n\nBarcode Produksi ≠ Barcode QC → TIDAK COCOK (MISMATCH) → Semua Kotak Ditolak (Rejected)\n\nPLC bertindak sebagai lapisan verifikasi dengan membandingkan kedua nilai barcode dan menghasilkan kondisi lolos/tolak (pass/reject) yang sesuai untuk proses produksi.",
+                "technical": "<b>PLC & Kontrol</b><ul><li>Panasonic PLC</li><li>Perbandingan barcode berbasis PLC</li><li>Pengelolaan data barcode</li><li>Logika keputusan lulus/gagal (pass/fail)</li><li>Integrasi kontrol penolakan (reject)</li></ul> <b>Verifikasi Barcode</b><ul><li>Barcode scanner yang ada</li><li>Input barcode Produksi</li><li>Input barcode QC</li><li>Perbandingan barcode-ke-barcode</li><li>Deteksi ketidakcocokan (mismatch)</li></ul> <b>HMI</b><ul><li>PM Designer untuk HMI Designer</li><li>Antarmuka input barcode QC</li><li>Tampilan status verifikasi</li><li>Umpan balik operator</li></ul> <b>Logika Kendali Mutu (QC)</b><ul><li>Barcode cocok → kondisi diterima</li><li>Barcode tidak cocok → kondisi tolak</li><li>Pencocokan silang (cross-check) data Produksi/QC</li><li>Validasi identifikasi kotak</li></ul> <b>Pengujian & Validasi</b><ul><li>Uji barcode cocok</li><li>Uji barcode tidak cocok</li><li>Validasi sekuens penolakan (reject)</li><li>Pengujian fungsional PLC/HMI</li></ul>",
+                "results": "Sistem yang diimplementasikan menambahkan lapisan verifikasi ekstra pada proses produksi yang ada dengan membandingkan informasi barcode secara independen antara Produksi dan QC.\n\nKetika kedua input barcode cocok, kotak diizinkan untuk melanjutkan proses. Ketika ketidakcocokan terdeteksi, PLC memicu kondisi reject yang sesuai, mencegah kotak yang salah identifikasi melanjutkan ke tahap produksi selanjutnya.\n\nSolusi ini memperkuat proses verifikasi barcode dan mengurangi risiko kesalahan identifikasi kotak yang sampai ke tahap produksi berikutnya atau tahap pengiriman.",
+                "client": "Perusahaan Manufaktur Rahasia",
+                "technologies": "Panasonic PLC, PM Designer, Barcode Scanner, Logika Kontrol PLC",
                 "duration": "1 minggu",
+                "role": "Insinyur PLC & Otomasi",
                 "type": "Otomasi Industri",
-                "responsibility": "Saya merancang sistem verifikasi barcode, mengimplementasikan algoritma deteksi kesalahan, mengintegrasikan barcode scanner ke dalam sistem PLC, dan melakukan pengujian sistem untuk memastikan keandalannya."
-            },
+                "responsibility": "Tanggung jawab utama saya adalah pengembangan logika perbandingan dan verifikasi barcode di dalam sistem PLC yang ada. Pekerjaan saya meliputi:<ul><li>Menganalisis aliran data barcode yang sudah ada di dalam PLC.</li><li>Merancang logika perbandingan antara input barcode Produksi dan QC.</li><li>Mengimplementasikan logika PLC untuk mendeteksi ketidakcocokan barcode.</li><li>Mengintegrasikan hasil verifikasi dengan logika penolakan (reject) produksi yang sudah ada.</li><li>Mengembangkan antarmuka HMI yang diperlukan untuk input barcode QC dan verifikasi.</li><li>Menguji sistem dengan kondisi barcode yang cocok dan tidak cocok.</li><li>Melakukan debugging logika PLC dan memvalidasi sekuens penolakan (reject).</li><li>Memverifikasi perilaku sistem dengan alur kerja Produksi dan QC.</li></ul>"
+                },
             "ja": {
-                "title": "バーコード修正プロジェクト",
-                "category": "産業オートメーション",
-                "overview": "このプロジェクトでは、HMI上のバーコード入力にエラーがあり、不正なコードの箱が配送まで検出されない問題を解決しました。QCチームが生産チームの入力を確認・修正できるように、別のバーコード入力機能を追加しました。",
-                "technical": "このシステムは、Panasonic PLCとHMI Designerを使用して構築されました。バーコード確認ロジックはエラー検出アルゴリズムを用いて実装され、スキャナーからの入力は事前定義されたコードと照合され、QC確認用の追加制御が追加されました。",
-                "results": "このソリューションにより、バーコードの不一致問題が解消され、品質管理エラーが削減され、出荷される全ての箱に正しい識別が保証され、トレーサビリティと製品の信頼性が向上しました。",
-                "client": "非公開製造会社",
-                "technologies": "Panasonic PLC、HMI Designer",
+                "title": "バーコード照合・補正システム",
+                "category": "産業自動化・PLC・HMI・品質管理",
+                "date": "2023年12月",
+                "overview": "製造工程における箱の識別ミスによる次工程への流出を防ぐため、PLCベースのバーコード照合システムを開発しました。\n\n既存の製造ラインでは、すでにバーコードリーダーからのデータをPLC経由で取得していました。しかし、製造チームが入力したバーコードと品質管理（QC）チームが指定したバーコードが独立してクロスチェック（突き合わせ照合）されていませんでした。\n\n本ソリューションでは、製造側とQC側のバーコード入力値を比較する照合ロジックを導入しました。2つのバーコード値が不一致の場合、システムはその箱を無効と判定し、既存の排出（リジェクト）シーケンスを作動させることで、識別誤りのある製品が後工程へ流動するのを未然に防止します。",
+                "architecture": "既存のバーコードリーダーおよびPLCインフラを活用し、製造とQCのバーコード入力データを比較・照合するシステムです。\n\n<b>システムフロー:</b>\n\n製造バーコード入力 → PLC → 製造バーコードデータ\n\nQCバーコード入力 → PLC → QCバーコードデータ\n\n製造バーコード ＝ QCバーコード → 合格（PASS） → 個体バーコード検査\n\n製造バーコード ≠ QCバーコード → 不一致（MISMATCH） → 対象ロット／箱を全数排出（REJECT）\n\nPLCが検証層として機能し、2つのバーコード値を比較して製造工程に対する適切な合否（Pass/Reject）判定信号を出力します。",
+                "technical": "<b>PLC・制御</b><ul><li>パナソニック製PLC</li><li>PLCベースのバーコード比較処理</li><li>バーコードデータハンドリング</li><li>合否（Pass/Fail）判定ロジック</li><li>排出制御（リジェクト）統合</li></ul> <b>バーコード照合</b><ul><li>既存バーコードリーダー</li><li>製造側バーコード入力</li><li>QC側バーコード入力</li><li>バーコード間データ突き合わせ比較</li><li>データ不一致検出</li></ul> <b>HMI</b><ul><li>HMI Designer用PM Designer</li><li>QC用バーコード入力画面</li><li>照合ステータス表示</li><li>オペレーター向けフィードバック表示</li></ul> <b>品質管理ロジック</b><ul><li>バーコード一致 → 受入（Pass）条件</li><li>バーコード不一致 → 排出（Reject）条件</li><li>製造／QCデータのクロスチェック</li><li>箱識別データの正当性検証</li></ul> <b>テスト・検証</b><ul><li>バーコード一致テスト</li><li>バーコード不一致テスト</li><li>リジェクトシーケンスの動作検証</li><li>PLC／HMI機能テスト</li></ul>",
+                "results": "導入したシステムにより、製造とQCが指定したバーコード情報を独立して突合することで、既存の製造プロセスに強固な検証レイヤーを追加しました。\n\n2つのバーコード入力が一致した場合のみ次工程への搬送が許可されます。不一致が検出された際はPLCが直ちに排出信号を発行し、識別誤りのある箱がラインを流動することを防止します。\n\n本ソリューションによりバーコード照合工程が大幅に強化され、誤識別された製品が後工程や出荷段階へ流出するリスクを最小限に抑えることができました。",
+                "client": "機密保持対象の製造企業",
+                "technologies": "Panasonic PLC, PM Designer, バーコードリーダー, PLC制御ロジック",
                 "duration": "1週間",
-                "type": "産業オートメーション",
-                "responsibility": "バーコード検証システムの設計、エラー検出アルゴリズムの実装、バーコードスキャナーのPLCシステムへの統合、運用信頼性の確保のためのシステムテストを担当しました。"
-            }
+                "role": "PLC・自動化エンジニア",
+                "type": "産業自動化",
+                "responsibility": "主な担当業務は、既存のPLCシステム内におけるバーコード比較・照合ロジックの開発でした。具体的には以下の業務を担当しました:<ul><li>PLC内で処理されていた既存のバーコードデータフローの分析</li><li>製造側とQC側のバーコード入力値における比較・照合ロジックの設計</li><li>バーコード不一致を検出するPLCロジックの実装</li><li>検証結果と既存のライン排出（リジェクト）ロジックの統合</li><li>QCバーコード入力およびステータス検証に必要なHMI画面の開発</li><li>バーコード一致および不一致条件下でのシステム動作テストの実施</li><li>PLCロジックのデバッグおよびリジェクトシーケンスの動作検証</li><li>製造およびQCの実運用ワークフローに合わせたシステム挙動の最終確認</li></ul>"
+                }
         },
-        "mainImage": "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.jpg",
+        "mainImage": "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.webp",
         "thumbnails": [
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_c0c08a72.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.24_14663522.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.25_5dc6dd9b.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.23_f97fc86f.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.24_853e608d.jpg"
-        ],
-        "date": "December 2023"
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_8d649bbc.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.22_c0c08a72.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.24_14663522.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.25_5dc6dd9b.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.23_f97fc86f.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.24_853e608d.webp"
+        ]
     },
 
     "5": {
         "translations": {
             "en": {
-                "title": "Project PM Dashboard",
-                "category": "Industrial Automation",
-                "overview": "This project aimed to improve maintenance management by creating a PM Dashboard system. The dashboard provides a visual interface to monitor PM schedules, track durations, and calculate accuracy rates, enabling better planning, execution, and team accountability.",
-                "technical": "The system was developed using Panasonic PLC and HMI Designer. It includes real-time tracking of PM activities with features such as barcode-based start/finish validation, automatic accuracy calculation, and a consolidated display of PM tasks. Users must scan PM cards before and after maintenance.",
-                "results": "The PM Dashboard improved the visibility of maintenance operations, enhanced scheduling precision, and reduced manual recording errors, leading to more reliable equipment upkeep and improved operational efficiency.",
+                "title": "Preventive Maintenance Dashboard",
+                "category": "Industrial Automation · PLC · HMI · Maintenance Monitoring",
+                "date": "January 2024",
+                "overview": "Developed a Preventive Maintenance (PM) Dashboard to improve the monitoring and execution of scheduled maintenance activities on production equipment.\n\nThe system provides a centralized HMI interface for monitoring PM schedules, recording maintenance activities, tracking maintenance duration, and evaluating PM execution accuracy. A barcode-based validation mechanism was also implemented to ensure that maintenance activities were properly recorded at the start and completion of each PM task.",
+                "architecture": "The system integrates barcode scanning, Panasonic PLC control logic, and an HMI dashboard to manage and monitor preventive maintenance activities.\n\n <b>System flow:</b>\n\n PM Schedule → PM Card / Barcode → Barcode Scanner → Panasonic PLC → HMI Dashboard → PM Status & Performance Data\n\n The operator or maintenance technician scans the assigned PM card before starting the maintenance activity. A second scan is performed after the maintenance is completed. The PLC processes the barcode events and associated timing information, while the HMI displays the PM status and calculates maintenance execution metrics.",
+                "technical": "<b>PLC & Control</b><ul><li>Panasonic PLC</li><li>PLC-based PM event management</li><li>PM status control logic</li><li>Timing and duration tracking</li></ul> <b>HMI</b><ul><li>HMI Designer</li><li>PM dashboard interface</li><li>PM schedule visualization</li><li>Maintenance status display</li><li>PM performance monitoring</li></ul> <b>Barcode System</b><ul><li>Barcode scanner integration</li><li>PM card identification</li><li>Start/finish validation</li><li>Maintenance activity verification</li></ul> <b>PM Monitoring</b><ul><li>PM schedule tracking</li><li>Maintenance duration calculation</li><li>PM execution accuracy</li><li>Maintenance activity logging</li></ul>",
+                "results": "The implemented PM Dashboard provided a centralized interface for monitoring scheduled maintenance activities and tracking their execution status.\n\nThe barcode-based start and finish validation reduced reliance on manual PM recording and provided a more structured method for capturing maintenance activity and duration. The dashboard also improved visibility of PM execution and enabled maintenance performance to be monitored through automatically calculated accuracy metrics.\n\nThe system demonstrated how PLC and HMI-based automation can be extended beyond machine control to support maintenance monitoring and operational data management.",
                 "client": "PT Smoore Technology Indonesia",
-                "technologies": "Panasonic PLC, HMI Designer, Barcode Scanner",
+                "technologies": "Panasonic PLC, HMI Designer, Barcode Scanner, PM Monitoring, PLC Control Logic",
                 "duration": "1 week",
+                "role":"PLC & Automation Engineer",
                 "type": "Industrial Automation",
-                "responsibility": "I designed and configured the HMI and PLC logic, created the dashboard layout, integrated barcode-based validation for PM events, and tested the system to ensure accurate data logging and usability."
+                "responsibility": "My primary responsibility was the development and integration of the PLC and HMI-based PM monitoring system. My work included: <ul><li>Designing the PM monitoring workflow and dashboard interface.</li><li>Developing Panasonic PLC logic for PM event management.</li><li>Designing the HMI dashboard using HMI Designer.</li><li>Integrating barcode scanners for PM activity validation.</li><li>Implementing barcode-based start and finish verification.</li><li>Developing logic to record PM activity duration.</li><li>Implementing automatic PM accuracy calculation.</li><li>Testing the system using different PM execution scenarios.</li><li>Debugging PLC and HMI interactions to ensure reliable data recording and operation.</li></ul>"
             },
             "id": {
-                "title": "Proyek PM Dashboard",
-                "category": "Otomasi Industri",
-                "overview": "Proyek ini bertujuan untuk meningkatkan manajemen pemeliharaan dengan membuat sistem PM Dashboard. Dashboard ini menyediakan antarmuka visual untuk memantau jadwal PM, melacak durasi, dan menghitung tingkat akurasi, sehingga mendukung perencanaan, pelaksanaan, dan akuntabilitas tim yang lebih baik.",
-                "technical": "Sistem ini dikembangkan menggunakan Panasonic PLC dan HMI Designer. Fitur utamanya meliputi pelacakan kegiatan PM secara real-time, validasi barcode untuk memulai/menyelesaikan PM, perhitungan akurasi otomatis, dan tampilan konsolidasi dari tugas PM. Pengguna harus memindai kartu PM sebelum dan sesudah perawatan.",
-                "results": "PM Dashboard meningkatkan visibilitas aktivitas perawatan, memperbaiki ketepatan jadwal, dan mengurangi kesalahan pencatatan manual, sehingga pemeliharaan peralatan menjadi lebih andal dan efisiensi operasional meningkat.",
+                "title": "Dashboard Pemeliharaan Preventif (Preventive Maintenance)",
+                "category": "Otomasi Industri · PLC · HMI · Pemantauan Pemeliharaan",
+                "date": "Januari 2024",
+                "overview": "Mengembangkan Dashboard Preventive Maintenance (PM) untuk meningkatkan pemantauan dan pelaksanaan aktivitas perawatan berkala pada peralatan produksi.\n\nSistem ini menyediakan antarmuka HMI terpusat untuk memantau jadwal PM, mencatat aktivitas pemeliharaan, melacak durasi perawatan, serta mengevaluasi akurasi pelaksanaan PM. Mekanisme validasi berbasis barcode juga diterapkan untuk memastikan aktivitas perawatan tercatat dengan benar pada awal dan akhir setiap tugas PM.",
+                "architecture": "Sistem ini mengintegrasikan pemindaian barcode, logika kontrol Panasonic PLC, dan dashboard HMI untuk mengelola serta memantau aktivitas pemeliharaan preventif.\n\n <b>Alur sistem:</b>\n\n Jadwal PM → Kartu PM / Barcode → Barcode Scanner → Panasonic PLC → Dashboard HMI → Data Status & Performa PM\n\n Operator atau teknisi pemeliharaan memindai kartu PM yang ditentukan sebelum memulai aktivitas perawatan. Pemindaian kedua dilakukan setelah pekerjaan perawatan selesai. PLC memproses input barcode dan informasi waktu terkait, sementara HMI menampilkan status PM serta menghitung metrik pelaksanaan pemeliharaan.",
+                "technical": "<b>PLC & Kontrol</b><ul><li>Panasonic PLC</li><li>Manajemen aktivitas PM berbasis PLC</li><li>Logika kontrol status PM</li><li>Pelacakan waktu dan durasi</li></ul> <b>HMI</b><ul><li>HMI Designer</li><li>Antarmuka dashboard PM</li><li>Visualisasi jadwal PM</li><li>Tampilan status pemeliharaan</li><li>Pemantauan performa PM</li></ul> <b>Sistem Barcode</b><ul><li>Integrasi barcode scanner</li><li>Identifikasi kartu PM</li><li>Validasi mulai/selesai (start/finish)</li><li>Verifikasi aktivitas pemeliharaan</li></ul> <b>Pemantauan PM</b><ul><li>Pelacakan jadwal PM</li><li>Perhitungan durasi pemeliharaan</li><li>Akurasi pelaksanaan PM</li><li>Pencatatan riwayat (logging) aktivitas pemeliharaan</li></ul>",
+                "results": "Dashboard PM yang diimplementasikan menyediakan antarmuka terpusat untuk memantau aktivitas perawatan terjadwal dan melacak status pelaksanaannya.\n\nValidasi awal dan akhir berbasis barcode mengurangi ketergantungan pada pencatatan PM manual serta memberikan metode yang lebih terstruktur untuk merekam aktivitas dan durasi perawatan. Dashboard ini juga meningkatkan visibilitas pelaksanaan PM dan memungkinkan performa pemeliharaan dipantau melalui metrik akurasi yang dihitung secara otomatis.\n\nSistem ini mendemonstrasikan bagaimana otomasi berbasis PLC dan HMI dapat diperluas melampaui kontrol mesin untuk mendukung pemantauan pemeliharaan serta pengelolaan data operasional.",
                 "client": "PT Smoore Technology Indonesia",
-                "technologies": "Panasonic PLC, HMI Designer, Pemindai Barcode",
+                "technologies": "Panasonic PLC, HMI Designer, Barcode Scanner, PM Monitoring, PLC Control Logic",
                 "duration": "1 minggu",
+                "role": "Insinyur PLC & Otomasi",
                 "type": "Otomasi Industri",
-                "responsibility": "Saya merancang dan mengkonfigurasi logika PLC dan HMI, membuat tampilan dashboard, mengintegrasikan validasi berbasis barcode untuk aktivitas PM, serta melakukan pengujian sistem untuk memastikan pencatatan data yang akurat dan kemudahan penggunaan."
-            },
+                "responsibility": "Tanggung jawab utama saya adalah pengembangan dan integrasi sistem pemantauan PM berbasis PLC dan HMI. Pekerjaan saya meliputi: <ul><li>Merancang alur kerja pemantauan PM dan antarmuka dashboard.</li><li>Mengembangkan logika Panasonic PLC untuk manajemen aktivitas PM.</li><li>Mendesain dashboard HMI menggunakan HMI Designer.</li><li>Mengintegrasikan barcode scanner untuk validasi aktivitas PM.</li><li>Menerapkan verifikasi mulai dan selesai berbasis barcode.</li><li>Mengembangkan logika untuk mencatat durasi aktivitas PM.</li><li>Mengimplementasikan perhitungan akurasi PM secara otomatis.</li><li>Menguji sistem menggunakan berbagai skenario pelaksanaan PM.</li><li>Melakukan debugging interaksi antara PLC dan HMI guna memastikan pencatatan data dan operasi berjalan andal.</li></ul>"
+                },
             "ja": {
-                "title": "PMダッシュボードプロジェクト",
-                "category": "産業オートメーション",
-                "overview": "このプロジェクトは、PMダッシュボードシステムを構築することでメンテナンス管理の改善を目的としました。ダッシュボードは、PMスケジュールの可視化、作業時間の追跡、精度の計算を可能にし、より良い計画、実行、チームの責任管理を支援します。",
-                "technical": "このシステムはPanasonic PLCとHMI Designerを使用して開発されました。主な機能として、PM活動のリアルタイム追跡、バーコードによる開始・終了の検証、自動精度計算、PMタスクの統合表示があります。メンテナンス前後にはPMカードのスキャンが必要です。",
-                "results": "PMダッシュボードは、保守作業の可視性を高め、スケジュール精度を向上させ、手動入力ミスを削減し、設備保守の信頼性と運用効率を改善しました。",
+                "title": "予防保全ダッシュボード",
+                "category": "産業自動化・PLC・HMI・保全監視",
+                "date": "2024年1月",
+                "overview": "生産設備における定期保全活動の監視および実行精度を向上させるため、予防保全（PM）ダッシュボードを開発しました。\n\n本システムは、PMスケジュールの監視、保全作業の記録、作業時間のトラッキング、およびPM実施精度の評価を一元管理するHMIインターフェースを提供します。また、各PMタスクの開始時と完了時に作業が確実に記録されるよう、バーコードによる検証メカニズムも導入しました。",
+                "architecture": "バーコードスキャン、パナソニック製PLCの制御ロジック、およびHMIダッシュボードを統合し、予防保全活動を管理・監視するシステムです。\n\n <b>システムフロー:</b>\n\n PMスケジュール → PMカード / バーコード → バーコードリーダー → パナソニックPLC → HMIダッシュボード → PMステータスおよびパフォーマンスデータ\n\n オペレーターまたは保全技術者は、保全作業を開始する前に指定のPMカードをスキャンします。作業完了後に2回目のスキャンを実施します。PLCはバーコードイベントと関連するタイミング情報を処理し、HMIがPMステータスを表示して保全実行指標を算出します。",
+                "technical": "<b>PLC・制御</b><ul><li>パナソニック製PLC</li><li>PLCベースのPMイベント管理</li><li>PMステータス制御ロジック</li><li>時間および作業時間のトラッキング</li></ul> <b>HMI</b><ul><li>HMI Designer</li><li>PMダッシュボードインターフェース</li><li>PMスケジュール視覚化</li><li>保全ステータス表示</li><li>PMパフォーマンス監視</li></ul> <b>バーコードシステム</b><ul><li>バーコードリーダー統合</li><li>PMカード識別</li><li>開始／完了の検証</li><li>保全作業の照合</li></ul> <b>PM監視</b><ul><li>PMスケジュールの追跡</li><li>保全作業時間の算出</li><li>PM実施精度評価</li><li>保全活動ログ記録</li></ul>",
+                "results": "導入されたPMダッシュボードにより、定期保全活動の監視と進捗状況の追跡を行う一元化されたインターフェースが実現しました。\n\nバーコードによる作業開始・完了の検証を導入したことで、手動記録への依存を減らし、保全活動内容や所要時間をより体系的に収集できるようになりました。また、PMの実施状況の可視性が向上し、自動算出される精度指標を通じて保全パフォーマンスを評価することが可能になりました。\n\n本システムは、PLCおよびHMIベースの自動化技術が機械制御にとどまらず、保全監視や運用データ管理へも効果的に応用できることを実証しました。",
                 "client": "PT Smoore Technology Indonesia",
-                "technologies": "Panasonic PLC、HMI Designer、バーコードスキャナー",
+                "technologies": "パナソニックのPLC、HMIデザイナー、バーコードスキャナー、PMモニタリング、PLC制御ロジック",
                 "duration": "1週間",
-                "type": "産業オートメーション",
-                "responsibility": "私はHMIとPLCのロジックを設計・構成し、ダッシュボードの画面を作成し、PMイベントのバーコード認証を統合し、システムの正確なデータ記録と使いやすさを保証するためのテストを実施しました。"
-            }
+                "role": "PLC・自動化エンジニア",
+                "type": "産業自動化",
+                "responsibility": "主な担当業務は、PLCおよびHMIをベースとしたPM監視システムの開発および統合でした。具体的には以下の業務を担当しました: <ul><li>PM監視ワークフローおよびダッシュボードインターフェースの設計</li><li>PMイベント管理のためのパナソニック製PLCロジックの開発</li><li>HMI Designerを用いたHMIダッシュボードの画面設計</li><li>PM作業検証用バーコードリーダーの統合</li><li>バーコードによる作業開始・完了検証ロジックの実装</li><li>PM作業時間の記録ロジック開発</li><li>PM実施精度の自動算出ロジックの実装</li><li>多様なPM実施シナリオを用いたシステムテストの実施</li><li>信頼性の高いデータ記録と安定稼働を確保するためのPLCおよびHMI間の通信・動作デバッグ</li></ul>"
+                }
         },
-        "mainImage": "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.jpg",
+        "mainImage": "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.webp",
         "thumbnails": [
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.21_21648826 - Copy.jpg",
-            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.21_21648826.jpg"
-        ],
-        "date": "January 2024"
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.17_ac7c9a21.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.21_21648826 - Copy.webp",
+            "data/projects img/STI/WhatsApp Image 2024-05-18 at 16.57.21_21648826.webp"
+        ]
     },
 
     "6": {
         "translations": {
             "en": {
-                "title": "Project Brankas Monitoring",
-                "category": "IoT and Embedded System",
-                "overview": "This project focuses on developing an IoT-based system to monitor the usage and access of secure safes in real-time. By integrating ESP32 microcontroller, RFID for user authentication, and a cloud-based Laravel dashboard, the system enables supervisors to remotely track opening/closing events, access logs, and environmental conditions such as temperature or vibration.",
-                "technical": "The system utilizes ESP32 for data processing and communication. RFID is used to authorize users before safe access. The data is transmitted via Wi-Fi to a Laravel-based web dashboard where events are logged and visualized. The system supports chat alerts, access logs, time-based restrictions, and real-time tracking using photo micro sensors. Development involved Eagle for PCB design, Arduino IDE for firmware, and Corel Draw for mechanical labeling.",
-                "results": "With this system, unauthorized access was significantly reduced, and supervisors gained better control and transparency over safe usage. The solution also supported audit trails and improved accountability for high-value asset storage.",
-                "client": "PT Pasifik Satelit Nusantara",
-                "technologies": "ESP32, RFID, Photo Micro Sensor, Laravel, PHP, Wi-Fi",
+                "title": "ESP32-Based Smart Safe Monitoring Device",
+                "category": "IoT · Embedded Systems · Hardware Integration",
+                "date": "December 2024",
+                "overview": "Developed an ESP32-based monitoring device for a secure safe to monitor user access and physical safe status in real time.\n\nThe device integrates RFID authentication and photoelectric sensors to identify users and detect safe opening and closing conditions. The ESP32 processes the sensor inputs, manages the monitoring logic, and transmits event data through Wi-Fi to an external monitoring platform.\n\nMy contribution focused on the hardware development, ESP32 firmware, sensor integration, and device-to-server communication. The external monitoring and notification platform was developed separately by another team member.",
+                "architecture": "The system uses an ESP32 as the main controller for processing RFID and safe-status sensor inputs.\n\nRFID is used to identify the user accessing the safe, while photoelectric sensors detect the physical opening and closing state. The ESP32 processes these inputs according to the programmed monitoring logic and sends relevant event data to an external server through Wi-Fi.\n\n <b>System flow:</b>\n\nRFID + Photoelectric Sensors → ESP32 → Wi-Fi / HTTP → External Monitoring Platform\n\nThe embedded system handles:<ul><li>User identification through RFID.</li><li>Safe opening and closing detection.</li><li>Access state monitoring.</li><li>Access-duration monitoring.</li><li>Abnormal or unauthorized opening detection.</li><li>Event timestamping.</li><li>Event transmission to the external monitoring platform.</li></ul>",
+                "technical": "<b>Embedded System</b><ul><li>ESP32</li><li>C/C++ firmware</li><li>Arduino IDE</li><li>Real-time event processing</li><li>State-based monitoring logic</li></ul> <b>Access Monitoring</b><ul><li>RFID reader</li><li>RFID-based user identification</li><li>User access monitoring</li><li>Safe open/close detection</li><li>Photoelectric sensors</li><li>Unauthorized opening detection</li><li>Access-duration monitoring</li></ul> <b>Communication</b><ul><li>Wi-Fi</li><li>HTTP communication</li><li>JSON-based event data</li><li>Device-to-server integration</li></ul> <b>Time Management</b><ul><li>NTP time synchronization</li><li>Event timestamping</li><li>Access-duration calculation</li></ul> <b>Hardware</b><ul><li>Custom PCB</li><li>RFID interface</li><li>Photoelectric sensor interface</li><li>ESP32 controller</li><li>Autodesk EAGLE</li></ul>",
+                "results": "The developed embedded device enabled the secure safe to provide real-time access and physical status information to an external monitoring platform.\n\nThe ESP32-based system was able to identify users, detect safe opening and closing events, monitor access duration, and transmit relevant events to the external server.\n\nThe project demonstrated practical integration of embedded firmware, RFID authentication, sensor interfacing, PCB design, Wi-Fi communication, and IoT device integration.",
+                "client": "Confidential Manufacturing Company",
+                "technologies": "ESP32, C/C++, RFID, Photoelectric Sensors, Wi-Fi, HTTP, JSON, NTP, Autodesk EAGLE",
                 "duration": "5 months",
-                "type": "IoT Security Monitoring",
-                "responsibility": "I developed the ESP32 firmware, integrated RFID hardware, implemented status detection using photo micro sensors, created the Laravel-based dashboard and API endpoints, added real-time chat notification, and tested the system end-to-end to ensure secure, synchronized operation. Tools used include Eagle, Arduino IDE, Corel Draw, and Zoom for collaboration."
+                "role": "Embedded Systems & Hardware Engineer",
+                "type": "IoT & Embedded Systems",
+                "responsibility": "My primary responsibility was the development of the embedded device and its hardware integration. My work included:<ul><li>Developing ESP32 firmware for safe monitoring.</li><li>Integrating the RFID reader for user identification.</li><li>Implementing RFID-based user identification logic.</li><li>Integrating photoelectric sensors for safe open/close detection.</li><li>Developing safe access state-monitoring logic.</li><li>Implementing access-duration monitoring.</li><li>Implementing abnormal and unauthorized opening detection.</li><li>Implementing time synchronization for event timestamping.</li><li>Developing Wi-Fi communication between the ESP32 and the external server.</li><li>Implementing HTTP-based event transmission.</li><li>Designing and developing the supporting PCB.</li><li>Testing and debugging the hardware and firmware.</li><li>Integrating and validating the embedded device with the external monitoring platform.</li></ul>"
             },
             "id": {
-                "title": "Proyek Monitoring Brankas",
-                "category": "IoT dan Sistem Tertanam",
-                "overview": "Proyek ini berfokus pada pengembangan sistem berbasis IoT untuk memantau penggunaan dan akses brankas secara real-time. Dengan mengintegrasikan mikrokontroler ESP32, RFID untuk otentikasi pengguna, dan dashboard Laravel berbasis cloud, sistem ini memungkinkan pengawas memantau aktivitas buka/tutup, log akses, serta kondisi lingkungan seperti suhu atau getaran secara jarak jauh.",
-                "technical": "Sistem ini menggunakan ESP32 untuk pemrosesan dan komunikasi data. RFID digunakan untuk mengotorisasi pengguna sebelum mengakses brankas. Data dikirim melalui Wi-Fi ke dashboard web Laravel di mana semua aktivitas dicatat dan divisualisasikan. Sistem ini mendukung notifikasi chat, pembatasan akses berbasis waktu, serta pelacakan status real-time menggunakan photo micro sensor. Perancangan PCB dilakukan dengan Eagle, pemrograman firmware menggunakan Arduino IDE, dan pelabelan mekanik menggunakan Corel Draw.",
-                "results": "Dengan sistem ini, akses tidak sah berhasil dikurangi secara signifikan dan pengawas memperoleh kontrol serta transparansi yang lebih baik terhadap penggunaan brankas. Solusi ini juga mendukung audit trail dan meningkatkan akuntabilitas dalam penyimpanan aset bernilai tinggi.",
-                "client": "PT Pasifik Satelit Nusantara",
-                "technologies": "ESP32, RFID, Photo Micro Sensor, Laravel, PHP, Wi-Fi",
+                "title": "Perangkat Pemantau Brankas Pintar Berbasis ESP32",
+                "category": "IoT · Sistem Tertanam (Embedded Systems) · Integrasi Perangkat Keras",
+                "date": "Desember 2024",
+                "overview": "Mengembangkan perangkat pemantau berbasis ESP32 untuk brankas pengaman guna memantau akses pengguna dan status fisik brankas secara real-time.\n\nPerangkat ini mengintegrasikan autentikasi RFID dan sensor fotolistrik (photoelectric) untuk mengidentifikasi pengguna serta mendeteksi kondisi buka-tutup brankas. ESP32 memproses input sensor, mengelola logika pemantauan, dan mengirimkan data peristiwa (event data) melalui Wi-Fi ke platform pemantauan eksternal.\n\nKontribusi saya berfokus pada pengembangan perangkat keras, firmware ESP32, integrasi sensor, serta komunikasi perangkat-ke-server. Platform pemantauan dan notifikasi eksternal dikembangkan secara terpisah oleh anggota tim lain.",
+                "architecture": "Sistem ini menggunakan ESP32 sebagai pengontrol utama untuk memproses input RFID dan sensor status brankas.\n\nRFID digunakan untuk mengidentifikasi pengguna yang mengakses brankas, sementara sensor fotolistrik mendeteksi status buka dan tutup secara fisik. ESP32 memproses input ini berdasarkan logika pemantauan yang diprogram dan mengirimkan data peristiwa terkait ke server eksternal melalui Wi-Fi.\n\n <b>Alur sistem:</b>\n\nRFID + Sensor Fotolistrik → ESP32 → Wi-Fi / HTTP → Platform Pemantauan Eksternal\n\nSistem tertanam menangani:<ul><li>Identifikasi pengguna melalui RFID.</li><li>Deteksi buka dan tutup brankas.</li><li>Pemantauan status akses.</li><li>Pemantauan durasi akses.</li><li>Deteksi pembukaan tidak normal atau tanpa izin (unauthorized).</li><li>Pemberian stempel waktu peristiwa (event timestamping).</li><li>Transmisi peristiwa ke platform pemantauan eksternal.</li></ul>",
+                "technical": "<b>Sistem Tertanam</b><ul><li>ESP32</li><li>Firmware C/C++</li><li>Arduino IDE</li><li>Pemrosesan peristiwa real-time</li><li>Logika pemantauan berbasis status (state-based)</li></ul> <b>Pemantauan Akses</b><ul><li>Pembaca RFID (RFID reader)</li><li>Identifikasi pengguna berbasis RFID</li><li>Pemantauan akses pengguna</li><li>Deteksi buka/tutup brankas</li><li>Sensor fotolistrik</li><li>Deteksi pembukaan tanpa izin</li><li>Pemantauan durasi akses</li></ul> <b>Komunikasi</b><ul><li>Wi-Fi</li><li>Komunikasi HTTP</li><li>Data peristiwa berbasis JSON</li><li>Integrasi perangkat-ke-server</li></ul> <b>Manajemen Waktu</b><ul><li>Sinkronisasi waktu NTP</li><li>Pemberian stempel waktu peristiwa</li><li>Perhitungan durasi akses</li></ul> <b>Perangkat Keras</b><ul><li>Kustom PCB</li><li>Antarmuka RFID</li><li>Antarmuka sensor fotolistrik</li><li>Mikrokontroler ESP32</li><li>Autodesk EAGLE</li></ul>",
+                "results": "Perangkat tertanam yang dikembangkan memungkinkan brankas pengaman menyediakan informasi akses dan status fisik secara real-time ke platform pemantauan eksternal.\n\nSistem berbasis ESP32 ini mampu mengidentifikasi pengguna, mendeteksi peristiwa pembukaan dan penutupan brankas, memantau durasi akses, serta mengirimkan data peristiwa terkait ke server eksternal.\n\nProyek ini mendemonstrasikan integrasi praktis antara firmware tertanam, autentikasi RFID, antarmuka sensor, desain PCB, komunikasi Wi-Fi, dan integrasi perangkat IoT.",
+                "client": "Perusahaan Manufaktur Rahasia",
+                "technologies": "ESP32, C/C++, RFID, Sensor Fotolistrik, Wi-Fi, HTTP, JSON, NTP, Autodesk EAGLE",
                 "duration": "5 bulan",
-                "type": "Pemantauan Keamanan IoT",
-                "responsibility": "Saya mengembangkan firmware ESP32, mengintegrasikan perangkat keras RFID, menerapkan deteksi status menggunakan photo micro sensor, membangun dashboard Laravel dan endpoint API, menambahkan sistem notifikasi chat real-time, serta melakukan pengujian menyeluruh untuk memastikan operasi sistem yang aman dan tersinkronisasi. Alat yang digunakan termasuk Eagle, Arduino IDE, Corel Draw, dan Zoom untuk kolaborasi."
-            },
+                "role": "Insinyur Sistem Tertanam & Perangkat Keras",
+                "type": "IoT & Sistem Tertanam",
+                "responsibility": "Tanggung jawab utama saya adalah pengembangan perangkat tertanam dan integrasi perangkat kerasnya. Pekerjaan saya meliputi:<ul><li>Mengembangkan firmware ESP32 untuk pemantauan brankas.</li><li>Mengintegrasikan pembaca RFID untuk identifikasi pengguna.</li><li>Menerapkan logika identifikasi pengguna berbasis RFID.</li><li>Mengintegrasikan sensor fotolistrik untuk deteksi buka/tutup brankas.</li><li>Mengembangkan logika pemantauan status akses brankas.</li><li>Menerapkan pemantauan durasi akses.</li><li>Menerapkan deteksi pembukaan tidak normal dan tanpa izin.</li><li>Menerapkan sinkronisasi waktu untuk stempel waktu peristiwa.</li><li>Mengembangkan komunikasi Wi-Fi antara ESP32 dan server eksternal.</li><li>Menerapkan transmisi data peristiwa berbasis HTTP.</li><li>Merancang dan mengembangkan PCB pendukung.</li><li>Melakukan pengujian serta debugging perangkat keras dan firmware.</li><li>Mengintegrasikan dan memvalidasi perangkat tertanam dengan platform pemantauan eksternal.</li></ul>"
+                },
             "ja": {
-                "title": "金庫監視プロジェクト",
-                "category": "IoTと組み込みシステム",
-                "overview": "このプロジェクトは、金庫の使用とアクセスをリアルタイムで監視するIoTベースのシステムの開発に焦点を当てています。ESP32マイコン、RFID認証、およびクラウドベースのLaravelダッシュボードを統合することで、開閉イベント、アクセスログ、温度や振動などの環境条件を遠隔から監視することができます。",
-                "technical": "本システムは、ESP32を使用してデータ処理と通信を行います。金庫へのアクセス前に、RFIDでユーザーを認証します。データはWi-Fi経由でLaravelベースのWebダッシュボードに送信され、ログとして保存・可視化されます。システムにはチャット通知、時間帯制限、Photo Micro Sensorを用いた状態監視も組み込まれています。PCB設計にはEagle、ファームウェア開発にはArduino IDE、ラベルデザインにはCorel Drawを使用しました。",
-                "results": "このシステムにより、不正アクセスが大幅に削減され、管理者は金庫の使用状況をより明確に把握できるようになりました。また、監査ログの提供により、貴重な資産の管理責任も向上しました。",
-                "client": "PT Pasifik Satelit Nusantara",
-                "technologies": "ESP32、RFID、フォトマイクロセンサー、Laravel、PHP、Wi-Fi",
+                "title": "ESP32ベースのスマート金庫監視デバイス",
+                "category": "IoT・組込みシステム・ハードウェア統合",
+                "date": "2024年12月",
+                "overview": "セキュリティ金庫におけるユーザーのアクセス状況および物理的な状態をリアルタイムで監視するため、ESP32ベースの監視デバイスを開発しました。\n\n本デバイスはRFID認証と光電センサーを統合し、ユーザーの識別および金庫の開閉状態の検出を行います。ESP32がセンサー入力を処理し、監視ロジックを実行した上で、Wi-Fiを介して外部監視プラットフォームへイベントデータを送信します。\n\n私の主な貢献は、ハードウェア開発、ESP32ファームウェア開発、センサー統合、およびデバイス・サーバー間通信の構築でした。なお、外部の監視・通知プラットフォームは別のチームメンバーが開発を担当しました。",
+                "architecture": "本システムは、RFIDおよび金庫状態センサーの入力を処理するメインコントローラーとしてESP32を採用しています。\n\nRFIDを用いて金庫にアクセスするユーザーを識別し、光電センサーで物理的な開閉状態を検出します。ESP32はプログラムされた監視ロジックに従ってこれらの入力を処理し、Wi-Fi経由で外部サーバーに関連イベントデータを送信します。\n\n <b>システムフロー:</b>\n\nRFID ＋ 光電センサー → ESP32 → Wi-Fi / HTTP → 外部監視プラットフォーム\n\n組込みシステムが処理する機能:<ul><li>RFIDによるユーザー識別</li><li>金庫の開閉検出</li><li>アクセス状態の監視</li><li>アクセス滞在・開放時間の監視</li><li>異常開放または不正開放（未認証アクセス）の検出</li><li>イベントのタイムスタンプ記録</li><li>外部監視プラットフォームへのイベント送信</li></ul>",
+                "technical": "<b>組込みシステム</b><ul><li>ESP32</li><li>C/C++ ファームウェア</li><li>Arduino IDE</li><li>リアルタイムイベント処理</li><li>ステートマシンベースの監視ロジック</li></ul> <b>アクセス監視</b><ul><li>RFIDリーダー</li><li>RFIDベースのユーザー識別</li><li>ユーザーアクセス監視</li><li>金庫開閉検出</li><li>光電センサー</li><li>不正開放検出</li><li>アクセス時間監視</li></ul> <b>通信技術</b><ul><li>Wi-Fi</li><li>HTTP通信</li><li>JSON形式のイベントデータ</li><li>デバイス・サーバー間統合</li></ul> <b>時間管理</b><ul><li>NTP時刻同期</li><li>イベントタイムスタンプ付与</li><li>アクセス時間算出</li></ul> <b>ハードウェア</b><ul><li>カスタムPCB設計</li><li>RFIDインターフェース</li><li>光電センサーインターフェース</li><li>ESP32コントローラー</li><li>Autodesk EAGLE</li></ul>",
+                "results": "開発した組込みデバイスにより、セキュリティ金庫のリアルタイムなアクセス状況および物理状態を外部監視プラットフォームへ正確に提供できるようになりました。\n\nESP32ベースのシステムにより、ユーザーの識別、金庫の開閉イベントの検出、アクセス時間の監視、および外部サーバーへのイベントデータ送信が安定して動作することを確認しました。\n\n本プロジェクトを通じて、組込みファームウェア、RFID認証、センサーインターフェース、PCB設計、Wi-Fi通信、そしてIoTデバイス統合の実用的な開発実績を実証しました。",
+                "client": "機密保持対象の製造企業",
+                "technologies": "ESP32, C/C++, RFID, 光電センサー, Wi-Fi, HTTP, JSON, NTP, Autodesk EAGLE",
                 "duration": "5ヶ月",
-                "type": "IoTセキュリティ監視",
-                "responsibility": "ESP32ファームウェアの開発、RFIDハードウェアの統合、フォトマイクロセンサーによる状態検出の実装、LaravelダッシュボードとAPIエンドポイントの構築、リアルタイムチャット通知の追加、そしてシステムの全体的なテストと安定性の確認を担当しました。使用したツールはEagle、Arduino IDE、Corel Draw、Zoomです。"
-            }
+                "role": "組込みシステム・ハードウェアエンジニア",
+                "type": "IoT・組込みシステム",
+                "responsibility": "主な担当業務は、組込みデバイスの開発およびハードウェアの統合でした。具体的には以下の業務を担当しました:<ul><li>金庫監視用ESP32ファームウェアの開発</li><li>ユーザー識別用RFIDリーダーの統合</li><li>RFIDベースのユーザー識別ロジックの実装</li><li>金庫開閉検出用光電センサーの統合</li><li>金庫アクセス状態監視ロジックの開発</li><li>アクセス所要時間の監視機能の実装</li><li>異常開放および不正開放検出ロジックの実装</li><li>イベントタイムスタンプ記録のための時刻同期機能の実装</li><li>ESP32と外部サーバー間のWi-Fi通信機能の開発</li><li>HTTPベースのイベント送信処理の実装</li><li>専用カスタムPCBの回路・パターン設計および製作</li><li>ハードウェアとファームウェアの動作テストおよびデバッグ</li><li>組込みデバイスと外部監視プラットフォームの連携および動作検証</li></ul>"
+                }
         },
-        "mainImage": "data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.jpg",
+        "mainImage": "data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.webp",
         "thumbnails": [
-            "data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.jpg",
-            "data/projects img/brankas/IMG_20250505_072146.jpg",
-            "data/projects img/brankas/IMG20250207142935.jpg"
-        ],
-        "date": "December 2024"
+            "data/projects img/brankas/WhatsApp Image 2025-06-30 at 19.55.58_c1f282ba.webp",
+            "data/projects img/brankas/IMG_20250505_072146.webp",
+            "data/projects img/brankas/IMG20250207142935.webp",
+            "data/projects img/brankas/brankas monitoring.webp",
+            "data/projects img/brankas/brankas monitoring bottom.webp"
+        ]
     }
 }

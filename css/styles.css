@@ -95,18 +95,6 @@ body {
   gap: 25px;
 }
 
-.project-card {
-  background: var(--card-bg);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
 .project-img-container {
   position: relative;
   height: 200px;
@@ -145,32 +133,6 @@ body {
 .view-btn {
   color: white;
   font-size: 1.5rem;
-}
-
-/* View All Card */
-.view-all-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  cursor: pointer;
-}
-
-.view-all-content {
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.view-all-content i {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.view-all-content .btn {
-  background: white;
-  color: var(--primary-color);
-  margin-top: 15px;
 }
 
 /* Di dark mode selector */
@@ -832,8 +794,21 @@ nav a:hover::after {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-info h3 {
+    height: 85px; /* Ubah min-height menjadi height agar tingginya mutlak */
+    margin-bottom: 15px;
+    
+    /* Perintah untuk menengahkan posisi teks secara vertikal (atas-bawah) */
+    display: flex;
+    /* align-items: center;  */
+    
+    /* Jika Anda JUGA ingin teksnya rata tengah secara horizontal (kiri-kanan), aktifkan 2 baris di bawah ini: */
+    justify-content: center;
+    text-align: center;
 }
 
 .project-image {
@@ -1097,12 +1072,21 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .view-all-content {
   text-align: center;
   color: white;
   padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .view-all-content i {
@@ -1117,6 +1101,17 @@ footer {
 .view-all-content .btn {
   background: white;
   color: var(--primary-color);
+  margin-top: 15px;
+}
+
+.view-all-card .btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /* CSS Mobile Menu */

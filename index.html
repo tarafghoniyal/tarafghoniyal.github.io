@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.webp" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.webp" />
     <link rel="manifest" href="assets/site.webmanifest" />
 </head>
 <body>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="circuit-animation"></div>
-                    <img src="images/engineer.png" alt="Electrical Engineer" class="profile-img">
+                    <img src="images/engineer.webp" alt="Electrical Engineer" class="profile-img" loading="lazy">
                 </div>
             </div>
         </section>
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <img src="images/hero-engineer.png" alt="About Me">
+                        <img src="images/hero-engineer.webp" alt="About Me" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                 <!-- Project 1 -->
                 <div class="project-card" data-category="IoT">
                     <div class="project-img-container">
-                    <img src="data/projects img/Capstone/20221123_160410.jpg" alt="IoT & Machine Learning">
+                    <img src="data/projects img/Capstone/20221123_160410.webp" alt="IoT & Machine Learning" loading="lazy">
                     <div class="project-overlay">
                         <a href="project-details.html?id=1" class="view-btn">
                         <i class="fas fa-expand"></i>
@@ -215,7 +215,7 @@
                 <!-- Project 2 -->
                 <div class="project-card" data-category="robotics">
                     <div class="project-img-container">
-                    <img src="data/projects img/skripsi/IMG20230506171042.jpg" alt="Quadrotor Control">
+                    <img src="data/projects img/skripsi/IMG20230506171042.webp" alt="Quadrotor Control" loading="lazy">
                     <div class="project-overlay">
                         <a href="project-details.html?id=2" class="view-btn">
                         <i class="fas fa-expand"></i>
@@ -229,13 +229,22 @@
                 </div>
 
                 <!-- View All Card -->
-                <div class="project-card view-all-card">
+                <!-- <div class="project-card view-all-card">
                     <div class="view-all-content">
                     <i class="fas fa-folder-open"></i>
                     <h3 data-i18n="projects.viewAll">View All Projects</h3>
                     <a href="projects.html" class="btn">Explore</a>
                     </div>
-                </div>
+                </div> -->
+
+                <!-- Jadikan seluruh kartu sebagai tag <a> -->
+                <a href="projects.html" class="project-card view-all-card">
+                    <div class="view-all-content">
+                        <i class="fas fa-folder-open"></i>
+                        <h3 data-i18n="projects.viewAll">View All Projects</h3>
+                        <!-- Tombol explore sudah dihapus -->
+                    </div>
+                </a>
                 </div>
             </div>
         </section>
@@ -248,13 +257,13 @@
                     <!-- Item 1 -->
                     <div class="certificate-card" data-category="PLC & SCADA">
                         <div class="certificate-image-container">
-                            <a href="assets/certificates img/PLC Siemens Advance.jpg"
+                            <a href="assets/certificates img/PLC Siemens Advance.webp"
                                 data-lightbox="certificates" 
                                 data-title="Advanced PLC Siemens Certification"
                                 target="_blank" 
                                 rel="noopener noreferrer">
 
-                                <img src="assets/certificates img/PLC Siemens Advance.jpg" alt="PLC & SCADA Cert" class="certificate-img">
+                                <img src="assets/certificates img/PLC Siemens Advance.webp" alt="PLC & SCADA Cert" class="certificate-img" loading="lazy">
                                 <div class="certificate-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
@@ -283,13 +292,13 @@
                     <!-- Item 2 -->
                     <div class="certificate-card" data-category="IoT">
                         <div class="certificate-image-container">
-                            <a href="assets/certificates img/IIoT.jpg" 
+                            <a href="assets/certificates img/IIoT.webp" 
                                 data-lightbox="certificates" 
                                 data-title="IIoT Certification"
                                 target="_blank" 
                                 rel="noopener noreferrer">
 
-                                <img src="assets/certificates img/IIoT.jpg" alt="IIoT Cert" class="certificate-img">
+                                <img src="assets/certificates img/IIoT.webp" alt="IIoT Cert" class="certificate-img" loading="lazy">
                                 <div class="certificate-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
@@ -315,13 +324,22 @@
                         </div>
                     </div>
 
-                    <div class="project-card view-all-card">
+                    <!-- <div class="project-card view-all-card">
                         <div class="view-all-content">
                         <i class="fas fa-folder-open"></i>
                         <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
                         <a href="certificates.html" class="btn">Explore</a>
                         </div>
-                    </div>
+                    </div> -->
+
+                    <!-- Jadikan seluruh kartu sebagai tag <a> -->
+                    <a href="certificates.html" class="project-card view-all-card">
+                        <div class="view-all-content">
+                            <i class="fas fa-folder-open"></i>
+                            <h3 data-i18n="certificates.viewAll">View All Certificates</h3>
+                            <!-- Tombol explore sudah dihapus -->
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -548,7 +566,7 @@
         </svg>
     </button>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
 </body>
 </html>
