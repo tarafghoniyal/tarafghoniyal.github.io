@@ -51,6 +51,8 @@
     "project5.desc": "Developed a PLC-HMI-based dashboard for monitoring PM activities using barcode validation, maintenance duration tracking, and automated execution accuracy calculation.",
     "project6.title": "ESP32-Based Smart Safe Monitoring Device",
     "project6.desc": "Developed an ESP32-based monitoring device integrating RFID and photoelectric sensors to track safe access, detect abnormal opening, and transmit events remotely.",
+    "project7.title": "CCSDS-Based LEO Satellite Data Handling Software Prototype",
+    "project7.desc": "Developed a software prototype for LEO satellite data handling using CCSDS protocols, enabling efficient telemetry and command processing for satellite operations.",
     "services.title": "Services",
     "services.subtitle": "What can I do for you?",
     "services.firmware.title": "Embedded Firmware",

@@ -51,6 +51,8 @@
     "project5.desc": "Mengembangkan dasbor berbasis PLC-HMI untuk memantau kegiatan pemeliharaan preventif (PM) dengan memanfaatkan validasi kode batang, pelacakan durasi pemeliharaan, dan perhitungan akurasi pelaksanaan secara otomatis.",
     "project6.title": "Perangkat Pemantau Brankas Pintar Berbasis ESP32",
     "project6.desc": "Mengembangkan perangkat pemantauan berbasis ESP32 yang mengintegrasikan sensor RFID dan sensor fotoelektrik untuk memantau akses yang aman, mendeteksi pembukaan yang tidak wajar, dan mengirimkan laporan kejadian secara jarak jauh.",
+    "project7.title": "Prototipe Perangkat Penanganan Data Satelit LEO Berbasis CCSDS",
+    "project7.desc": "Mengembangkan prototipe perangkat penanganan data untuk satelit Low Earth Orbit (LEO) menggunakan protokol CCSDS, yang memungkinkan pemrosesan telemetry dan perintah yang efisien untuk operasi satelit.",
     "services.title": "Layanan",
     "services.subtitle": "Apa yang bisa saya bantu?",
     "services.firmware.title": "Firmware Tertanam",

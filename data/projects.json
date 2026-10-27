@@ -348,5 +348,61 @@
             "data/projects img/brankas/brankas monitoring.webp",
             "data/projects img/brankas/brankas monitoring bottom.webp"
         ]
+    },
+
+    "7": {
+        "translations": {
+            "en": {
+                "title": "CCSDS-Based Satellite Data Handling Software Prototype",
+                "category": "Embedded Systems · Satellite Software · Data Communication",
+                "date": "June 2025",
+                "overview": "Developed an embedded software prototype for a satellite Data Handling System (DHS), focusing on CCSDS-based data processing, telemetry and telecommand management, maneuver scheduling, and spacecraft operational state management.\n\nThe system is designed to organize satellite data and command handling while coordinating scheduled maneuver activities and managing spacecraft state transitions based on operational conditions.\n\nThe project explores the implementation of embedded software functions required to support spacecraft housekeeping, command handling, and operational control.",
+                "architecture": "The system organizes satellite data handling and operational logic into interconnected functional components.\n\nThe software prototype implements CCSDS-based data structures and protocols for telemetry and telecommand management. It also includes modules for maneuver scheduling, spacecraft state management, and housekeeping data processing.\n\n <b>System flow:</b>\n\nTM Data → Telemetry Processing → Housekeeping / State Monitoring\n\nTC Data → Command Processing → Command Handling\n\nManeuver Schedule → Schedule Management → Condition Evaluation → Spacecraft State Transition\n\nThe embedded software handles:<ul><li>CCSDS-compliant telemetry and telecommand data structures.</li><li>Scheduling of spacecraft maneuvers based on operational requirements.</li><li>Management of spacecraft state transitions (e.g., safe mode, operational mode).</li><li>Processing of housekeeping data for system health monitoring.</li><li>Integration with satellite communication protocols for command execution.</li></ul>",
+                "technical": "<b>Satellite Data Handling</b><ul><li>CCSDS-based data structures and protocols</li><li>Telemetry (TM) data management</li><li>Telecommand (TC) data management</li><li>Packet handling and processing</li><li>Spacecraft state transition management</li></ul><b>Maneuver Management</b><ul><li>Maneuver schedule management</li><li>Scheduled event handling</li><li>Maneuver-related operational logic</li></ul><b>Spacecraft State Management</b><ul><li>Operational condition evaluation</li><li>State transition logic</li><li>Condition-based spacecraft state management</li></ul><b>Embedded Software Development</b><ul><li>C/C++ programming</li><li>Real-time data processing</li><li>State machine implementation for spacecraft operations</li><li>Modular software implementation</li><li>Integration with satellite communication protocols</li></ul>",
+                "results": "The prototype brings together satellite data handling, TM/TC management, maneuver scheduling, and condition-based spacecraft state management within a common software development effort.\n\nThe project demonstrates my work in embedded software development for spacecraft applications, with an emphasis on structured data processing, operational logic, and integration between satellite management functions.",
+                "client": "Confidential Manufacturing Company",
+                "technologies": "STM32, CCSDS, C/C++, Embedded Systems, Telemetry (TM), Telecommand (TC), Maneuver Scheduling, Spacecraft State Management",
+                "duration": "5 months",
+                "role": "Embedded Systems & Spacecraft Engineer",
+                "type": "Satellite Software & Embedded Systems",
+                "responsibility": "My primary responsibility was the development of the embedded device and its hardware integration. My work included:<ul><li>Developing embedded software for the satellite Data Handling System.</li><li>Implementing CCSDS-based data handling and packet processing.</li><li>Developing telemetry (TM) data management functionality.</li><li>Developing telecommand (TC) data management functionality.</li><li>Implementing maneuver schedule management.</li><li>Developing logic for spacecraft state transitions based on operational conditions.</li><li>Integrating data handling and operational management components.</li><li>Testing and debugging software functionality.</li></ul>"
+            },
+            "id": {
+                "title": "Prototipe Perangkat Lunak Penanganan Data Satelit Berbasis CCSDS",
+                "category": "Sistem Tertanam · Perangkat Lunak Satelit · Komunikasi Data",
+                "date": "Juni 2025",
+                "overview": "Mengembangkan prototipe perangkat lunak tertanam untuk Data Handling System (DHS) satelit, dengan fokus pada pemrosesan data berbasis CCSDS, manajemen telemetri dan telekomando, penjadwalan manuver, serta manajemen status operasional wahana antariksa.\n\nSistem ini dirancang untuk mengatur penanganan data dan komando satelit sambil mengoordinasikan aktivitas manuver yang dijadwalkan dan mengelola transisi status wahana antariksa berdasarkan kondisi operasional.\n\nProyek ini mengeksplorasi implementasi fungsi-fungsi perangkat lunak tertanam yang diperlukan untuk mendukung housekeeping wahana antariksa, penanganan komando, dan kontrol operasional.",
+                "architecture": "Sistem ini mengatur penanganan data satelit dan logika operasional ke dalam komponen-komponen fungsional yang saling terhubung.\n\nPrototipe perangkat lunak ini mengimplementasikan struktur data dan protokol berbasis CCSDS untuk manajemen telemetri dan telekomando. Sistem ini juga mencakup modul untuk penjadwalan manuver, manajemen status wahana antariksa, dan pemrosesan data housekeeping.\n\n <b>Alur sistem:</b>\n\nData TM → Pemrosesan Telemetri → Housekeeping / Pemantauan Status\n\nData TC → Pemrosesan Komando → Penanganan Komando\n\nJadwal Manuver → Manajemen Jadwal → Evaluasi Kondisi → Transisi Status Wahana Antariksa\n\nPerangkat lunak tertanam ini menangani:<ul><li>Struktur data telemetri dan telekomando yang sesuai dengan standar CCSDS.</li><li>Penjadwalan manuver wahana antariksa berdasarkan kebutuhan operasional.</li><li>Manajemen transisi status wahana antariksa (misalnya, safe mode, operational mode).</li><li>Pemrosesan data housekeeping untuk pemantauan kesehatan sistem.</li><li>Integrasi dengan protokol komunikasi satelit untuk eksekusi komando.</li></ul>",
+                "technical": "<b>Penanganan Data Satelit</b><ul><li>Struktur data dan protokol berbasis CCSDS</li><li>Manajemen data Telemetri (TM)</li><li>Manajemen data Telekomando (TC)</li><li>Penanganan dan pemrosesan paket</li><li>Manajemen transisi status wahana antariksa</li></ul><b>Manajemen Manuver</b><ul><li>Manajemen jadwal manuver</li><li>Penanganan acara/kegiatan yang dijadwalkan</li><li>Logika operasional terkait manuver</li></ul><b>Manajemen Status Wahana Antariksa</b><ul><li>Evaluasi kondisi operasional</li><li>Logika transisi status</li><li>Manajemen status wahana antariksa berbasis kondisi</li></ul><b>Pengembangan Perangkat Lunak Tertanam</b><ul><li>Pemrograman C/C++</li><li>Pemrosesan data waktu-nyata (real-time)</li><li>Implementasi state machine untuk operasi wahana antariksa</li><li>Implementasi perangkat lunak modular</li><li>Integrasi dengan protokol komunikasi satelit</li></ul>",
+                "results": "Prototipe ini menyatukan penanganan data satelit, manajemen TM/TC, penjadwalan manuver, dan manajemen status wahana antariksa berbasis kondisi dalam satu upaya pengembangan perangkat lunak bersama.\n\nProyek ini mendemonstrasikan hasil kerja saya dalam pengembangan perangkat lunak tertanam untuk aplikasi wahana antariksa, dengan penekanan pada pemrosesan data terstruktur, logika operasional, dan integrasi antar fungsi-fungsi manajemen satelit.",
+                "client": "Perusahaan Manufaktur (Rahasia)",
+                "technologies": "STM32, CCSDS, C/C++, Sistem Tertanam, Telemetri (TM), Telekomando (TC), Penjadwalan Manuver, Manajemen Status Wahana Antariksa",
+                "duration": "5 bulan",
+                "role": "Insinyur Sistem Tertanam & Wahana Antariksa",
+                "type": "Perangkat Lunak Satelit & Sistem Tertanam",
+                "responsibility": "Tanggung jawab utama saya adalah pengembangan perangkat tertanam dan integrasi perangkat kerasnya. Pekerjaan saya meliputi:<ul><li>Mengembangkan perangkat lunak tertanam untuk Data Handling System satelit.</li><li>Mengimplementasikan penanganan data dan pemrosesan paket berbasis CCSDS.</li><li>Mengembangkan fungsionalitas manajemen data telemetri (TM).</li><li>Mengembangkan fungsionalitas manajemen data telekomando (TC).</li><li>Mengimplementasikan manajemen jadwal manuver.</li><li>Mengembangkan logika untuk transisi status wahana antariksa berdasarkan kondisi operasional.</li><li>Mengintegrasikan penanganan data dan komponen manajemen operasional.</li><li>Pengujian dan debugging fungsionalitas perangkat lunak.</li></ul>"
+                },
+            "ja": {
+                "title": "CCSDSベースの衛星データ処理ソフトウェアプロトタイプ",
+                "category": "組み込みシステム · 衛星ソフトウェア · データ通信",
+                "date": "2025年6月",
+                "overview": "衛星データ処理システム（DHS）向けの組み込みソフトウェアプロトタイプを開発しました。CCSDSベースのデータ処理、テレメトリおよびテレコマンドの管理、マヌーバ（軌道制御）のスケジューリング、宇宙機の運用状態管理に重点を置いています。\n\nこのシステムは、予定されたマヌーバ活動を調整し、運用条件に基づいて宇宙機の状態遷移を管理しながら、衛星データとコマンド処理を整理するように設計されています。\n\nこのプロジェクトでは、宇宙機のハウスキーピング、コマンド処理、および運用制御をサポートするために必要な組み込みソフトウェア機能の実装を探求しています。",
+                "architecture": "このシステムは、衛星のデータ処理と運用ロジックを、相互接続された機能コンポーネントに整理します。\n\nソフトウェアプロトタイプは、テレメトリおよびテレコマンド管理用のCCSDSベースのデータ構造とプロトコルを実装しています。また、マヌーバスケジューリング、宇宙機の状態管理、およびハウスキーピングデータ処理用のモジュールも含まれています。\n\n <b>システムフロー:</b>\n\nTMデータ → テレメトリ処理 → ハウスキーピング / 状態監視\n\nTCデータ → コマンド処理 → コマンドハンドリング\n\nマヌーバスケジュール → スケジュール管理 → 条件評価 → 宇宙機の状態遷移\n\n組み込みソフトウェアの処理内容:<ul><li>CCSDS準拠のテレメトリおよびテレコマンドデータ構造。</li><li>運用要件に基づく宇宙機マヌーバのスケジューリング。</li><li>宇宙機の状態遷移（セーフモード、運用モードなど）の管理。</li><li>システムヘルス監視のためのハウスキーピングデータの処理。</li><li>コマンド実行のための衛星通信プロトコルとの統合。</li></ul>",
+                "technical": "<b>衛星データ処理</b><ul><li>CCSDSベースのデータ構造とプロトコル</li><li>テレメトリ（TM）データ管理</li><li>テレコマンド（TC）データ管理</li><li>パケット処理とハンドリング</li><li>宇宙機の状態遷移管理</li></ul><b>マヌーバ管理</b><ul><li>マヌーバスケジュール管理</li><li>予定されたイベントの処理</li><li>マヌーバ関連の運用ロジック</li></ul><b>宇宙機状態管理</b><ul><li>運用条件の評価</li><li>状態遷移ロジック</li><li>条件に基づく宇宙機の状態管理</li></ul><b>組み込みソフトウェア開発</b><ul><li>C/C++ プログラミング</li><li>リアルタイムデータ処理</li><li>宇宙機運用向けステートマシンの実装</li><li>モジュール化されたソフトウェアの実装</li><li>衛星通信プロトコルとの統合</li></ul>",
+                "results": "このプロトタイプは、衛星のデータ処理、TM/TC管理、マヌーバスケジューリング、および条件に基づく宇宙機の状態管理を、共通のソフトウェア開発の取り組みとして統合しています。\n\nこのプロジェクトは、構造化されたデータ処理、運用ロジック、および衛星管理機能間の統合に重点を置いた、宇宙機アプリケーション向けの組み込みソフトウェア開発における私の実績を示しています。",
+                "client": "社外秘の製造企業",
+                "technologies": "STM32, CCSDS, C/C++, 組み込みシステム, テレメトリ (TM), テレコマンド (TC), マヌーバスケジューリング, 宇宙機状態管理",
+                "duration": "5ヶ月",
+                "role": "組み込みシステムおよび宇宙機エンジニア",
+                "type": "衛星ソフトウェアおよび組み込みシステム",
+                "responsibility": "私の主な責任は、組み込みデバイスの開発とハードウェアの統合でした。業務内容は以下の通りです:<ul><li>衛星データ処理システム（DHS）向けの組み込みソフトウェア開発。</li><li>CCSDSベースのデータ処理およびパケット処理の実装。</li><li>テレメトリ（TM）データ管理機能の開発。</li><li>テレコマンド（TC）データ管理機能の開発。</li><li>マヌーバスケジュール管理の実装。</li><li>運用条件に基づく宇宙機の状態遷移ロジックの開発。</li><li>データ処理コンポーネントと運用管理コンポーネントの統合。</li><li>ソフトウェア機能のテストとデバッグ。</li></ul>"
+                }
+        },
+        "mainImage": "data/projects img/DHS/diagram leo sat.webp",
+        "thumbnails": [
+            "data/projects img/DHS/diagram leo sat.webp",
+            "data/projects img/DHS/DHS Top.webp",
+            "data/projects img/DHS/DHS Bottom.webp"
+        ]
     }
 }
